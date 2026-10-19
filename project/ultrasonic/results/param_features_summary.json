@@ -1,0 +1,5353 @@
+{
+ "U": {
+  "(0.0, 0.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 0.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 1.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 2.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 3.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(0.0, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(0.0, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": false,
+   "maxima": [
+    {
+     "x": 110.0,
+     "y": 1.4239801261544858
+    }
+   ]
+  },
+  "(0.0, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": false,
+   "maxima": [
+    {
+     "x": 102.5,
+     "y": 1.2394052963336024
+    }
+   ]
+  },
+  "(0.0, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 4.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 5.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 6.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 6.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 6.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 6.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 6.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 6.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 6.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.0, 6.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.1, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.1, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.1, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.1, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.1, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.1, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.1, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.1, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.2, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.2, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.2, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.2, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.2, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.2, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.2, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.2, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.3, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.3, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.3, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.3, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.3, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.3, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.3, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.3, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 2.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 3.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": false,
+   "maxima": [
+    {
+     "x": 117.5,
+     "y": 1.4610009899651302
+    }
+   ]
+  },
+  "(0.4082, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": false,
+   "maxima": [
+    {
+     "x": 110.0,
+     "y": 1.3252989887750095
+    }
+   ]
+  },
+  "(0.4082, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 4.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 5.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 6.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 6.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 6.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 6.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 6.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 6.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 6.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.4082, 6.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.5, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.5, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.5, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.5, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.5, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.5, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.5, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.5, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.6, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.6, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.6, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.6, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.6, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.6, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.6, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.6, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.7, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.7, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.7, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.7, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.7, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.7, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.7, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.7, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.8, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.8, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.8, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.8, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.8, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.8, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.8, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.8, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.9, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.9, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.9, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.9, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.9, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.9, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.9, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(0.9, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(1.0, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(1.0, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(1.0, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(1.0, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(1.0, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(1.0, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(1.0, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(1.0, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  }
+ },
+ "VSO": {
+  "(50.0, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 2.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 3.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 4.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 5.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 6.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 6.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 6.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 6.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 6.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 6.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 6.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 6.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 2.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 3.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.5) | a_signed, T=0.1t": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(125.0, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": false,
+   "maxima": [
+    {
+     "x": 0.5,
+     "y": 1.3537024833145177
+    }
+   ]
+  },
+  "(125.0, 4.5) | Case-II, T=0.1t": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(125.0, 4.5) | a_signed, T=0.2t": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(125.0, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": false,
+   "maxima": [
+    {
+     "x": 0.6000000000000001,
+     "y": 1.3872821987711517
+    }
+   ]
+  },
+  "(125.0, 4.5) | Case-II, T=0.2t": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(125.0, 4.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 4.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.25) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.25) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.25) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.25) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.25) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.25) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.25) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.25) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.75) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.75) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.75) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.75) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.75) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.75) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.75) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 5.75) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 6.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 6.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 6.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 6.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 6.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 6.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 6.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 6.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 4.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 4.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 4.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 4.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 4.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 4.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 4.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 4.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  }
+ },
+ "Dt": {
+  "(50.0, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(50.0, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(57.5, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(65.0, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(72.5, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(80.0, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(87.5, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(95.0, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(95.0, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": false,
+   "maxima": [
+    {
+     "x": 4.25,
+     "y": 1.559976220025645
+    }
+   ]
+  },
+  "(95.0, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": false,
+   "maxima": [
+    {
+     "x": 4.25,
+     "y": 1.0853302498455597
+    }
+   ]
+  },
+  "(95.0, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.1) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.1) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.1) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.1) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.1) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.1) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.1) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.1) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.2) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.2) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.2) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.2) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.2) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.2) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.2) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.2) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.3) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.3) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.3) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.3) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.3) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.3) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.3) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.3) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.4) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.4) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.4) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.4) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.4) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.4) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.4) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.4) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(95.0, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(95.0, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": false,
+   "maxima": [
+    {
+     "x": 4.0,
+     "y": 1.4796704257426878
+    }
+   ]
+  },
+  "(95.0, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(95.0, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.6) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.6) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.6) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.6) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.6) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.6) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.6) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.6) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.7) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.7) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.7) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.7) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.7) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.7) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.7) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.7) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.8) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.8) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.8) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.8) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.8) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.8) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.8) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.8) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.9) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.9) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.9) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.9) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.9) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.9) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.9) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 0.9) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(95.0, 1.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(102.5, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(110.0, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(117.5, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(125.0, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(125.0, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": false,
+   "maxima": [
+    {
+     "x": 4.75,
+     "y": 1.3196581502909783
+    }
+   ]
+  },
+  "(125.0, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": false,
+   "maxima": [
+    {
+     "x": 5.0,
+     "y": 1.1813438577586421
+    }
+   ]
+  },
+  "(125.0, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.1) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.1) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.1) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.1) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.1) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.1) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.1) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.1) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.2) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.2) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.2) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.2) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.2) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.2) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.2) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.2) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.3) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.3) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.3) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.3) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.3) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.3) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.3) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.3) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.4) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.4) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.4) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.4) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.4) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.4) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.4) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.4) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(125.0, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": false,
+   "maxima": []
+  },
+  "(125.0, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": false,
+   "maxima": [
+    {
+     "x": 4.5,
+     "y": 1.266392690448526
+    }
+   ]
+  },
+  "(125.0, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": false,
+   "maxima": [
+    {
+     "x": 4.75,
+     "y": 1.195419419286803
+    }
+   ]
+  },
+  "(125.0, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.5) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.6) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.6) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.6) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.6) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.6) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.6) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.6) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.6) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.7) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.7) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.7) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.7) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.7) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.7) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.7) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.7) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.8) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.8) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.8) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.8) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.8) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.8) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.8) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.8) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.9) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.9) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.9) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.9) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.9) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.9) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.9) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 0.9) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(125.0, 1.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(132.5, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(140.0, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(147.5, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(155.0, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(162.5, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(170.0, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.4082) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.4082) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(177.5, 0.4082) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(185.0, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(192.5, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 0.0) | a_signed, T/Tc=0.5": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 0.0) | a_signed, T/Tc=0.9": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 0.0) | a_signed, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 0.0) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 0.0) | Case-II, T=0.1t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 0.0) | a_signed, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 0.0) | total (sc+pair), T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  },
+  "(200.0, 0.0) | Case-II, T=0.2t": {
+   "monotone": true,
+   "maxima": []
+  }
+ }
+}

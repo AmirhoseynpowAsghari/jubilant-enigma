@@ -1,0 +1,42 @@
+loaded cached scan: 121 points
+curves: 1320, monotone: 1292, candidate maxima: 13
+  cand U [0.0, 4.5] total (sc+pair), T=0.1t: x=110.000 y=1.4240
+  cand U [0.0, 4.5] total (sc+pair), T=0.2t: x=102.500 y=1.2394
+  cand U [0.4082, 4.5] total (sc+pair), T=0.1t: x=117.500 y=1.4610
+  cand U [0.4082, 4.5] total (sc+pair), T=0.2t: x=110.000 y=1.3253
+  cand VSO [125.0, 4.5] total (sc+pair), T=0.1t: x=0.500 y=1.3537
+  cand VSO [125.0, 4.5] total (sc+pair), T=0.2t: x=0.600 y=1.3873
+  cand Dt [95.0, 0.0] total (sc+pair), T=0.1t: x=4.250 y=1.5600
+  cand Dt [95.0, 0.0] total (sc+pair), T=0.2t: x=4.250 y=1.0853
+  cand Dt [95.0, 0.4082] total (sc+pair), T=0.1t: x=4.000 y=1.4797
+  cand Dt [125.0, 0.0] total (sc+pair), T=0.1t: x=4.750 y=1.3197
+  cand Dt [125.0, 0.0] total (sc+pair), T=0.2t: x=5.000 y=1.1813
+  cand Dt [125.0, 0.4082] total (sc+pair), T=0.1t: x=4.500 y=1.2664
+  cand Dt [125.0, 0.4082] total (sc+pair), T=0.2t: x=4.750 y=1.1954
+  peak U [0.0, 4.5] total (sc+pair), T=0.1t: x=105.000 y=1.5608 vertex=105.598 dense=104.583 (shift 1.015)
+  peak U [0.0, 4.5] total (sc+pair), T=0.2t: x=98.750 y=1.3886 vertex=99.333 dense=98.125 (shift 1.208)
+  peak U [0.4082, 4.5] total (sc+pair), T=0.1t: x=116.250 y=1.4922 vertex=116.849 dense=115.521 (shift 1.328)
+  peak U [0.4082, 4.5] total (sc+pair), T=0.2t: x=108.750 y=1.3632 vertex=109.338 dense=108.646 (shift 0.692)
+  peak VSO [125.0, 4.5] total (sc+pair), T=0.1t: x=0.552 y=1.3990 vertex=0.544 dense=0.556 (shift 0.012)
+  peak VSO [125.0, 4.5] total (sc+pair), T=0.2t: x=0.567 y=1.5764 vertex=0.573 dense=0.569 (shift 0.003)
+  peak Dt [95.0, 0.0] total (sc+pair), T=0.1t: x=4.250 y=1.5600 vertex=4.230 dense=4.260 (shift 0.030)
+  peak Dt [95.0, 0.0] total (sc+pair), T=0.2t: x=4.417 y=1.4048 vertex=4.398 dense=4.420 (shift 0.023)
+  peak Dt [95.0, 0.4082] total (sc+pair), T=0.1t: x=4.000 y=1.4797 vertex=3.981 dense=4.028 (shift 0.047)
+  peak Dt [125.0, 0.0] total (sc+pair), T=0.1t: x=4.958 y=1.5516 vertex=4.939 dense=4.976 (shift 0.037)
+  peak Dt [125.0, 0.0] total (sc+pair), T=0.2t: x=5.125 y=1.3771 vertex=5.106 dense=5.149 (shift 0.043)
+  peak Dt [125.0, 0.4082] total (sc+pair), T=0.1t: x=4.667 y=1.4671 vertex=4.647 dense=4.705 (shift 0.058)
+  peak Dt [125.0, 0.4082] total (sc+pair), T=0.2t: x=4.833 y=1.3228 vertex=4.814 dense=4.868 (shift 0.054)
+  check @(105.0,0.000,4.50) total (sc+pair), T=0.1t: E=1.56081 nell2=1.56081 k=1.55665 devs 1.1e-10/2.7e-03
+  check @(98.8,0.000,4.50) total (sc+pair), T=0.2t: E=1.38859 nell2=1.38859 k=1.38520 devs 1.4e-08/2.4e-03
+  check @(116.2,0.408,4.50) total (sc+pair), T=0.1t: E=1.49221 nell2=1.49221 k=1.47264 devs 2.2e-09/1.3e-02
+  check @(108.8,0.408,4.50) total (sc+pair), T=0.2t: E=1.36320 nell2=1.36320 k=1.31083 devs 1.1e-07/3.8e-02
+  check @(125.0,0.552,4.50) total (sc+pair), T=0.1t: E=1.39904 nell2=1.39904 k=1.37389 devs 5.6e-09/1.8e-02
+  check @(125.0,0.567,4.50) total (sc+pair), T=0.2t: E=1.57638 nell2=1.57635 k=1.80759 devs 2.0e-05/1.5e-01
+  check @(95.0,0.000,4.25) total (sc+pair), T=0.1t: E=1.55998 nell2=1.55998 k=1.55644 devs 1.2e-10/2.3e-03
+  check @(95.0,0.000,4.42) total (sc+pair), T=0.2t: E=1.40475 nell2=1.40475 k=1.39164 devs 1.7e-08/9.3e-03
+  check @(95.0,0.408,4.00) total (sc+pair), T=0.1t: E=1.47967 nell2=1.47967 k=1.46013 devs 2.2e-09/1.3e-02
+  check @(125.0,0.000,4.96) total (sc+pair), T=0.1t: E=1.55162 nell2=1.55162 k=1.54745 devs 1.2e-10/2.7e-03
+  check @(125.0,0.000,5.12) total (sc+pair), T=0.2t: E=1.37714 nell2=1.37714 k=1.37304 devs 1.5e-08/3.0e-03
+  check @(125.0,0.408,4.67) total (sc+pair), T=0.1t: E=1.46708 nell2=1.46708 k=1.44740 devs 2.3e-09/1.3e-02
+  check @(125.0,0.408,4.83) total (sc+pair), T=0.2t: E=1.32284 nell2=1.32285 k=1.30498 devs 1.1e-07/1.4e-02
+TOTAL 351s
