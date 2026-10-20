@@ -44,10 +44,11 @@ The primary (scattering-only) channel shows no peak in the temperature direction
 flat tails), and its maxima over T/T_c are 0.400 / 0.505 / 0.761 at V_SO = 0 / 0.4082 / 0.8.
 The 1.3-1.6 features previously reported arose from adding S_pair to the numerator only;
 they are withdrawn.  One genuine scattering-only non-monotonicity survives and is retained:
-a local maximum vs U at U* ~ 19-21 for V_SO <= 0.2 (heights 0.058/0.311/0.597/0.873/0.999 at
-T/T_c = 0.3/0.5/0.7/0.9/0.999), from the competition of the falling Delta0/Tc with the
-falling normal-state anchor R(hw, (T/Tc)Tc(U)) - see §7 addendum and
-`figures/WWN_vs_U_families_VSO.png`.
+a local maximum vs U at U* = 20 (22.5 at T/T_c = 0.999) for V_SO <= 0.2 (heights
+0.053/0.303/0.593/0.872/0.999 at T/T_c = 0.3/0.5/0.7/0.9/0.999 for V_SO = 0), from the
+competition of the falling Delta0/Tc with the falling normal-state anchor
+R(hw, (T/Tc)Tc(U)) - see §7 addendum and `figures/WWN_vs_U_families_VSO.png` (dense
+grid dU = 2.5t, dV_SO = 0.025t).
 
 ## 3. Artifact checks
 
@@ -96,13 +97,16 @@ shaded in the figures — never merged into the in-range curves.
 The original U grid was [50, 200] t. Extending to U ∈ [15, 150] t
 (`ultrasonic/make_uvso_families.py`, figure `WWN_vs_U_families_VSO.png`, data
 `results/uvso_families.json`) reveals a **genuine local maximum of the primary
-(scattering-only) ratio vs U** at U* ≈ 19–21 t for V_SO = 0–0.2 (and at T/T_c ≥ 0.9 also
-for V_SO = 0.4), at every T/T_c:
+(scattering-only) ratio vs U** at U* = 20 t (22.5 t at T/T_c = 0.999) for V_SO = 0–0.2
+(and at T/T_c ≥ 0.9 also for V_SO = 0.4), at every T/T_c.  The figures now use the dense
+grids dU = 2.5 t (55 points) and dV_SO = 0.025 t (37 points), so the curves are smooth and
+the genuine root-switch dip at U ≈ 47.5–62.5 (correlated-hopping-dominated root, red
+squares) is resolved instead of appearing as a jump:
 
 | V_SO | T/T_c | 0.3 | 0.5 | 0.7 | 0.9 | 0.999 |
 |---|---|---|---|---|---|---|
-| 0 | W/W_N at U* | 0.058 | 0.311 | 0.597 | 0.873 | 0.999 |
-| 0.2 | W/W_N at U* | 0.059 | 0.314 | 0.600 | 0.873 | 0.999 |
+| 0 | W/W_N at U* | 0.053 | 0.303 | 0.593 | 0.872 | 0.999 |
+| 0.2 | W/W_N at U* | 0.056 | 0.310 | 0.598 | 0.874 | 0.999 |
 
 Mechanism (two opposing monotone factors at fixed T/T_c): (i) the suppression exponent
 Δ⁰₀/T_c falls with U (1.10 at U=15 → 0.41 at U=25 → 0.06–0.11 at U=45–55), lifting the

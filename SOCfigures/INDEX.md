@@ -79,8 +79,8 @@ Data for both: `ultrasonic/results/delta_families.json` (per T/T_c: ratio, Δ⁰
 
 | file | physics shown | regenerate with |
 |---|---|---|
-| `33_WWN_vs_U_families_VSO.png` | W/W_N vs U (15–150) at T/T_c = 0.3, 0.5, 0.7, 0.9, 0.999; panels V_SO = 0, 0.2, 0.4, 0.6, 0.8. Primary-channel local maximum at U* ≈ 20 for V_SO ≤ 0.2 (competition of Δ⁰₀/T_c vs normal-state anchor); flagged roots U=55@V_SO=0.4, 0.6 | `ultrasonic/make_uvso_families.py` |
-| `34_WWN_vs_VSO_families_U.png` | W/W_N vs V_SO (0–0.9) at the same T/T_c; panels U = 30, 45, 75, 95, 115; monotone SOC enhancement, slope steepening with U | `ultrasonic/make_uvso_families.py` |
+| `33_WWN_vs_U_families_VSO.png` | W/W_N vs U (15–150, **dense grid ΔU=2.5t**, line curves) at T/T_c = 0.3, 0.5, 0.7, 0.9, 0.999; panels V_SO = 0, 0.2, 0.4, 0.6, 0.8. Primary-channel local maximum at U* = 20 (22.5 at 0.999) for V_SO ≤ 0.2; correlated-hopping-dominated root at U ≈ 47.5–62.5 resolved as a smooth dip, marked with red open squares | `ultrasonic/make_uvso_families.py` |
+| `34_WWN_vs_VSO_families_U.png` | W/W_N vs V_SO (0–0.9, **dense grid ΔV_SO=0.025t**, line curves) at the same T/T_c; panels U = 30, 45, 75, 95, 115; monotone SOC enhancement, slope steepening with U | `ultrasonic/make_uvso_families.py` |
 
 Data for both: `ultrasonic/results/uvso_families.json`.
 
