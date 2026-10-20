@@ -100,7 +100,7 @@ factors C_I/C_II and tests T0–T7 are untouched (they never depended on the pai
 | file | before | after |
 |---|---|---|
 | README.md:18 (headline) | "(W+W_p)/W_N = 1 exactly (1e-4 level)… total exceeds 1" | scattering-only headline: W/W_N < 1 inside window; maxima 0.4000/0.5054/0.7611; pair = outlook (no number, no identity) |
-| README.md:28,94,99,116 | 36 PNGs; "sharp peaks 1.3–1.6"; sum-rule gallery line; T4 "0≤C_I≤1 pointwise" | 29 citable PNGs + non_citable/; peaks withdrawn (U*≈20 scattering-only feature kept); outlook wording; T4 ratio-bound row; E8/E9 in errata |
+| README.md:28,94,99,116 | 36 PNGs; "sharp peaks 1.3–1.6"; sum-rule gallery line; T4 "0≤C_I≤1 pointwise" | 29 citable PNGs + non_citable/; peaks withdrawn (shallow U≈17.5–22.5 scattering-only feature kept, E10-corrected); outlook wording; T4 ratio-bound row; E8/E9 in errata |
 | REFEREE_RESPONSE.md §2,§3,§5 | defended the identity and the >1 totals | WITHDRAWN; Route A vs rejected Route B recorded |
 | project/paper_correction/COVER_NOTE.md item 3 | "sum rule holds exactly… total tends to 1 at Tc⁻" | verbatim Route-A T_c⁻ sentence + per-pair statement |
 | project/paper_correction/build_corrected_pdf.py | W_N^QP identity strings (3 places); absolute /home/user paths | outlook wording (E3, §1 checks, Fig. A3 caption); E8/E9 appended; vendored relative inputs; output → results/ + local copy; PDF rebuilt (md5 differs from 47e6144b…) |
@@ -109,9 +109,39 @@ factors C_I/C_II and tests T0–T7 are untouched (they never depended on the pai
 | project/ultrasonic/DERIVATION_HHM_scattering.md:250 | "(W+W_p)/W_N = 1 (1e-4 level, all T) holds exactly" | "C_I + C_pair = 1 per pair; no single-normal-state-reference identity; Δ→0 limit only (T1)" |
 | project/ultrasonic/param_scan_features.py docstring | "(R2) … pair channel … TOTAL peaks" | marked WITHDRAWN as quantitative claim; shading = orientation only |
 | project/ultrasonic/physics_ua.py __main__ | NameError: NormalDOS | `from dos_ua import NormalDOS` added; quick start runs |
-| project/PARAM_SCAN_PEAKS.md §0,§2,§8 | "physical total peaks 1.32–1.58 … robust" | §0 bullet withdrawn; §2 = single honest paragraph (1292/1320 monotone; maxima 0.400/0.505/0.761; 1.3–1.6 withdrawn; U*≈20 kept); §8 = Route-A decision |
+| project/PARAM_SCAN_PEAKS.md §0,§2,§8 | "physical total peaks 1.32–1.58 … robust" | §0 bullet withdrawn; §2 = single honest paragraph (1292/1320 monotone; maxima 0.400/0.505/0.761; 1.3–1.6 withdrawn; shallow U≈17.5–22.5 feature kept, E10-corrected); §8 = Route-A decision |
 | project/SOC_EFFECT_SCATTERING.md:53 | cross-ref to physical-total peaks | cross-ref replaced (scattering-only SOC figures unaffected) |
-| project/DEFENSE_referee_QA.md:22,69–70,203,258 | B5 "sum rule (W+W_p)/W_N=1"; Q4 "identity holds exactly (1e-4 level)"; Q18c "physical total peaks"; oral Q6 "prove the sum rule" | B5 → C_I+C_pair=1 per pair, no identity; Q4 → outlook sentence; Q18c → withdrawal + surviving U*≈20; Q6 → honest answer (per-pair conservation; no finite-Δ identity; T1 is the Δ→0 limit) |
+| project/DEFENSE_referee_QA.md:22,69–70,203,258 | B5 "sum rule (W+W_p)/W_N=1"; Q4 "identity holds exactly (1e-4 level)"; Q18c "physical total peaks"; oral Q6 "prove the sum rule" | B5 → C_I+C_pair=1 per pair, no identity; Q4 → outlook sentence; Q18c → withdrawal + surviving shallow U≈17.5–22.5 feature; Q6 → honest answer (per-pair conservation; no finite-Δ identity; T1 is the Δ→0 limit) |
 | project/lecture_note_WWN_corrected.md:87,105 | "holds exactly (verified at the 1e-4 level)… W/W_N→1 at Tc⁻ once both channels kept"; "T0 2.1e-4; sum rule (5)" | Δ→0-limit-only wording + T_c⁻ sentence; T0 ≤3.9e-4 (double Jacobian); "not a finite-Δ identity" |
 | SOCfigures/INDEX.md + files | 14,15,21–24 citable with identity/peak captions | moved to SOCfigures/non_citable/ (historical record); INDEX rows struck through; reading order updated; non_citable section added |
 
+
+## 7. Post-audit finding (erratum E10): stage-1 T_c bisection artifact at low U
+
+Found while densifying the family figures (33/34): isolated notches in W/W_N vs U at
+U ≤ 20 (deepest at V_SO = 0.4–0.8). Diagnosis, all measured:
+
+* The gaps (D0_0, DS_0, Deff_0) are SMOOTH across every notch; only T_c collapses
+  (e.g. U=17.5, V_SO=0.6: Tc = 1.376 between neighbours 2.675 / 2.026).
+* A multi-seed census of the gap equation at (17.5, 0.6) finds EXACTLY ONE nontrivial
+  root at each T = 1.2…2.5 (Deff 2.457 → 0.504): no branch coexistence, no first-order
+  transition — the branch is alive.
+* Root cause: the trivial solution (D0,DS)=(0,0) is an exact root of the residual at
+  every T. The old `_gap_at_T` ran ONE fsolve from the warm guess with no convergence /
+  nontriviality check; at some bisection midpoints it slid into the trivial root
+  (demonstrated: warm continuation dies at T=1.70 while the root exists at 2.5), and the
+  bisection then capped T_high at the slide temperature forever. T = (T/T_c)·T_c too low
+  ⇒ over-strong exponential suppression ⇒ the notch in the ratio.
+* Fix (E10): `_gap_at_T` now takes the max-gap over converged multi-starts (scaled copies
+  of the T=0 root, same philosophy as `find_T0_solution`), with a full 20-seed escalation
+  at midpoints that report "no SC" while the bracket is wide (`sc_params/solvers.py`).
+* Invariance proofs: master sets U=95: Tc 0.2861/0.3809/0.6494 unchanged; 50-point master
+  V_SO scan max abs diff 5.6e-9; all sets with U ≥ 25 identical (tested across the
+  parameter-scan and delta-family grids). Only U ≤ 20 moves (e.g. 1.185→2.183 at
+  (15, 0), 1.376→2.533 at (17.5, 0.6)).
+* Consequence: figures 31–34 regenerated (33/34 also on the dense grids); PARAM_SCAN §7,
+  README gallery, INDEX and DEFENSE Q18c re-worded: with the corrected T_c(15) the ratio
+  vs U is edge-maximal (U=15) for T/T_c ≤ 0.5 and only shallowly interior-maximal
+  (U ≈ 17.5–22.5, +0.6 % at T/T_c=0.9) for T/T_c ≥ 0.7 — the formerly quoted pronounced
+  U* ≈ 20 peak at every T/T_c was partly an E10 artifact.  Nothing else in the repository
+  depends on T_c at U ≤ 20 (parameter scans start at U = 50; master/Levy/MB/T7 use U = 95).

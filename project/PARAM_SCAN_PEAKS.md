@@ -44,11 +44,8 @@ The primary (scattering-only) channel shows no peak in the temperature direction
 flat tails), and its maxima over T/T_c are 0.400 / 0.505 / 0.761 at V_SO = 0 / 0.4082 / 0.8.
 The 1.3-1.6 features previously reported arose from adding S_pair to the numerator only;
 they are withdrawn.  One genuine scattering-only non-monotonicity survives and is retained:
-a local maximum vs U at U* = 20 (22.5 at T/T_c = 0.999) for V_SO <= 0.2 (heights
-0.053/0.303/0.593/0.872/0.999 at T/T_c = 0.3/0.5/0.7/0.9/0.999 for V_SO = 0), from the
-competition of the falling Delta0/Tc with the falling normal-state anchor
-R(hw, (T/Tc)Tc(U)) - see §7 addendum and `figures/WWN_vs_U_families_VSO.png` (dense
-grid dU = 2.5t, dV_SO = 0.025t).
+after the E10 T_c fix, the scattering-only ratio vs U is maximal at the grid edge U=15 for T/T_c <= 0.5 and develops a shallow interior maximum at U ~ 17.5-22.5 for T/T_c >= 0.7 (+0.6 % at T/T_c=0.9: 0.8732 vs 0.8681 at U=15); the previously quoted pronounced interior maximum at U* ~ 20 for all T/T_c was partly an artifact of erratum E10 (the underestimated T_c at U=15 suppressed the left edge) - see §7 addendum and `figures/WWN_vs_U_families_VSO.png`
+(dense grid dU = 2.5t, dV_SO = 0.025t).
 
 ## 3. Artifact checks
 
@@ -97,23 +94,30 @@ shaded in the figures — never merged into the in-range curves.
 The original U grid was [50, 200] t. Extending to U ∈ [15, 150] t
 (`ultrasonic/make_uvso_families.py`, figure `WWN_vs_U_families_VSO.png`, data
 `results/uvso_families.json`) reveals a **genuine local maximum of the primary
-(scattering-only) ratio vs U** at U* = 20 t (22.5 t at T/T_c = 0.999) for V_SO = 0–0.2
-(and at T/T_c ≥ 0.9 also for V_SO = 0.4), at every T/T_c.  The figures now use the dense
-grids dU = 2.5 t (55 points) and dV_SO = 0.025 t (37 points), so the curves are smooth and
-the genuine root-switch dip at U ≈ 47.5–62.5 (correlated-hopping-dominated root, red
-squares) is resolved instead of appearing as a jump:
+(scattering-only) ratio vs U**, after the E10 T_c fix: the curve is maximal at the grid
+edge U = 15 t for T/T_c ≤ 0.5 and develops a SHALLOW interior maximum at U ≈ 17.5–22.5 t
+for T/T_c ≥ 0.7 (and at T/T_c ≥ 0.9 also for V_SO = 0.4).  The figures use the dense grids
+dU = 2.5 t (55 points) and dV_SO = 0.025 t (37 points), so the curves are smooth and the
+genuine root-switch dip at U ≈ 47.5–62.5 (correlated-hopping-dominated root, red squares)
+is resolved instead of appearing as a jump.  Values at the interior maximum:
 
-| V_SO | T/T_c | 0.3 | 0.5 | 0.7 | 0.9 | 0.999 |
-|---|---|---|---|---|---|---|
-| 0 | W/W_N at U* | 0.053 | 0.303 | 0.593 | 0.872 | 0.999 |
-| 0.2 | W/W_N at U* | 0.056 | 0.310 | 0.598 | 0.874 | 0.999 |
+| V_SO | T/T_c | 0.7 | 0.9 | 0.999 |
+|---|---|---|---|---|
+| 0 | W/W_N at U≈17.5–20 | 0.600 | 0.873 | 0.999 |
+| 0.2 | W/W_N at U≈17.5–22.5 | 0.601 | 0.874 | 0.999 |
+
+(For T/T_c = 0.3 / 0.5 the maxima sit at the U=15 edge: 0.070 / 0.324 at V_SO = 0.)  The
+pronounced interior maximum at U* ≈ 20 formerly quoted at every T/T_c was partly an
+artifact of erratum E10: the bisection's trivial-root slide had underestimated T_c(15)
+(1.185 instead of 2.183), artificially suppressing the left edge and manufacturing a peak.
 
 Mechanism (two opposing monotone factors at fixed T/T_c): (i) the suppression exponent
 Δ⁰₀/T_c falls with U (1.10 at U=15 → 0.41 at U=25 → 0.06–0.11 at U=45–55), lifting the
 ratio; (ii) the normal-state anchor R(ħω, T = (T/T_c)·T_c(U)) falls with U because T_c(U)
 falls (ω/T grows), pulling it down. Their competition places an interior maximum at
-U* ≈ 20. For V_SO ≥ 0.6 the SOC-driven T_c(U) is flat at small U, the two factors no
-longer compete, and the curves are monotone (maximum at the U=15 endpoint).
+U ≈ 17.5–22.5 for T/T_c ≥ 0.7, while for T/T_c ≤ 0.5 the suppression exponent wins
+everywhere and the maximum sits at the U=15 edge. For V_SO ≥ 0.6 the SOC-driven T_c(U) is
+flat at small U, the two factors no longer compete, and the curves are monotone.
 The V_SO direction (U = 30…115, figure `WWN_vs_VSO_families_U.png`) and the Δ_t direction
 remain monotone in the primary channel. The §0/§2 statement "no peaks in the primary
 channel" therefore holds for the originally scanned range U ≥ 50 and for the V_SO/Δ_t

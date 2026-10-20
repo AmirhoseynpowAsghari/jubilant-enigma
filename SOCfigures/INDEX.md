@@ -43,7 +43,7 @@ scattering formalism shape the ultrasonic attenuation ratio W/W_N of the HHM mod
 
 | file | physics shown | regenerate with |
 |---|---|---|
-| ~~`21..23_peaks_vs_{U,VSO,Dt}.png`~~ → **non_citable/** | the 1.3–1.6 'physical total' peaks are WITHDRAWN (pair channel demoted; PARAM_SCAN_PEAKS §2, §8); scattering-only maxima 0.400/0.505/0.761 — use `33_WWN_vs_U_families_VSO.png` for the surviving U*≈20 feature | `ultrasonic/make_param_figures.py` |
+| ~~`21..23_peaks_vs_{U,VSO,Dt}.png`~~ → **non_citable/** | the 1.3–1.6 'physical total' peaks are WITHDRAWN (pair channel demoted; PARAM_SCAN_PEAKS §2, §8); scattering-only maxima 0.400/0.505/0.761 — use `33_WWN_vs_U_families_VSO.png` for the surviving shallow U≈17.5–22.5 feature (T/T_c≥0.7) | `ultrasonic/make_param_figures.py` |
 | ~~`24_peaks_diagnostics_dome_threshold.png`~~ → **non_citable/** | peak diagnostics of the withdrawn combination (historical record only) | `ultrasonic/make_param_figures.py` |
 | `25_Dt_scan_groupC.png` | Group-C Δ_t scan of the paper (regenerated) | `ultrasonic/plotting_ua.py` |
 | `26..28_U_*.png` | U-family sweeps: production U scan, attractive-branch sweep, U-temperature composite | `ultrasonic_U/` plotting |
@@ -70,8 +70,8 @@ Companion texts: `project/SOC_EFFECT_SCATTERING.md`, `project/PARAM_SCAN_PEAKS.m
 
 | file | physics shown | regenerate with |
 |---|---|---|
-| `31_WWN_vs_TTc_and_Delta_Ufamilies.png` | W/W_N vs T/T_c (left) and vs Δ_eff(T)/Δ_eff(0) (right, paper convention; Δ_eff = band mean of |Δ̄|, gap_equations.effective_gap); rows V_SO = 0, 0.4, 0.8; curves U = 15…115. Ordering at fixed T/T_c follows Δ⁰₀/T_c (suppression exponent); U=55, V_SO=0.4 flagged (correlated-hopping-dominated root) | `ultrasonic/make_delta_families.py` |
-| `32_WWN_vs_TTc_and_Delta_VSOfamilies.png` | same axes, rows U = 35, 75, 115; curves V_SO = 0…0.9. At U=35 the T/T_c curves nearly collapse while the normalized-gap representation separates through Δ⁰₀/T_c; at U=115 the curves differ at equal Δ_eff(T)/Δ_eff(0) (DOS/branch SOC effect beyond the gap scale) | `ultrasonic/make_delta_families.py` |
+| `31_WWN_vs_TTc_and_Delta_Ufamilies.png` | W/W_N vs T/T_c (left) and vs Δ_eff(T)/Δ_eff(0) (right, paper convention; Δ_eff = band mean of |Δ̄|, gap_equations.effective_gap); rows V_SO = 0, 0.4, 0.8; curves U = 15…115 (stage-1 Tc per E10 fix). Ordering at fixed T/T_c follows Δ⁰₀/T_c (suppression exponent); U=55, V_SO=0.4 flagged (correlated-hopping-dominated root) | `ultrasonic/make_delta_families.py` |
+| `32_WWN_vs_TTc_and_Delta_VSOfamilies.png` | same axes, rows U = 35, 75, 115; curves V_SO = 0…0.9 (stage-1 Tc per E10 fix). At U=35 the T/T_c curves nearly collapse while the normalized-gap representation separates through Δ⁰₀/T_c; at U=115 the curves differ at equal Δ_eff(T)/Δ_eff(0) (DOS/branch SOC effect beyond the gap scale) | `ultrasonic/make_delta_families.py` |
 
 Data for both: `ultrasonic/results/delta_families.json` (per T/T_c: ratio, Δ⁰(T), E_min, T).
 
@@ -79,7 +79,7 @@ Data for both: `ultrasonic/results/delta_families.json` (per T/T_c: ratio, Δ⁰
 
 | file | physics shown | regenerate with |
 |---|---|---|
-| `33_WWN_vs_U_families_VSO.png` | W/W_N vs U (15–150, **dense grid ΔU=2.5t**, line curves) at T/T_c = 0.3, 0.5, 0.7, 0.9, 0.999; panels V_SO = 0, 0.2, 0.4, 0.6, 0.8. Primary-channel local maximum at U* = 20 (22.5 at 0.999) for V_SO ≤ 0.2; correlated-hopping-dominated root at U ≈ 47.5–62.5 resolved as a smooth dip, marked with red open squares | `ultrasonic/make_uvso_families.py` |
+| `33_WWN_vs_U_families_VSO.png` | W/W_N vs U (15–150, **dense grid ΔU=2.5t**, line curves) at T/T_c = 0.3, 0.5, 0.7, 0.9, 0.999; panels V_SO = 0, 0.2, 0.4, 0.6, 0.8. Primary-channel shallow interior maximum at U ≈ 17.5–22.5 for T/T_c ≥ 0.7 (edge max at U=15 for lower T/T_c, E10-corrected) for V_SO ≤ 0.2; correlated-hopping-dominated root at U ≈ 47.5–62.5 resolved as a smooth dip, marked with red open squares | `ultrasonic/make_uvso_families.py` |
 | `34_WWN_vs_VSO_families_U.png` | W/W_N vs V_SO (0–0.9, **dense grid ΔV_SO=0.025t**, line curves) at the same T/T_c; panels U = 30, 45, 75, 95, 115; monotone SOC enhancement, slope steepening with U | `ultrasonic/make_uvso_families.py` |
 
 Data for both: `ultrasonic/results/uvso_families.json`.

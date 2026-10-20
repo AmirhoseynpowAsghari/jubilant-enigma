@@ -41,13 +41,39 @@ def find_T0_solution(n_fill, epsilon_ks, term, residual):
     return D0, DS, mu, effective_gap(D0, DS, epsilon_ks)
 
 
-def _gap_at_T(TT, guess, n_fill, epsilon_ks, term, residual):
-    try:
-        s = fsolve(residual, guess, args=(1.0 / TT, n_fill, epsilon_ks, term))
+SEED_FRACS = (1.0, 0.8, 0.6, 0.4, 0.2, 0.05)
+SEED_FRACS_FULL = tuple(round(0.05 * i, 3) for i in range(1, 21))
+
+
+def _gap_at_T(TT, guess, n_fill, epsilon_ks, term, residual, t0=None, full=False):
+    """Effective gap at temperature TT (max-gap over converged starts).
+
+    The trivial solution (D0, DS) = 0 is an EXACT root of the residual at every T, and a
+    single warm-started fsolve can slide into it even deep inside the SC state (the
+    nontrivial root's basin is narrow at intermediate T for some (U, V_SO)).  Such a slide
+    used to cap the Tc bisection at the slide temperature and produced notches in Tc(U)
+    (e.g. U=17.5, V_SO=0.6: Tc 1.376 instead of ~2.55).  Multi-start over scaled copies of
+    the T=0 root -- same max-gap philosophy as find_T0_solution -- removes the artifact;
+    `full=True` widens the seed grid (used as escalation in the bisection).
+    """
+    seeds = [guess]
+    if t0 is not None:
+        for f in (SEED_FRACS_FULL if full else SEED_FRACS):
+            seeds.append([t0[0] * f, t0[1] * f, t0[2]])
+    best = (0.0, guess)
+    for g in seeds:
+        try:
+            s, _, ier, _ = fsolve(residual, g, args=(1.0 / TT, n_fill, epsilon_ks, term),
+                                  full_output=True)
+        except Exception:
+            continue
+        if ier != 1:
+            continue
         D0, DS = abs(s[0]), abs(s[1])
-        return effective_gap(D0, DS, epsilon_ks), [D0, DS, s[2]]
-    except Exception:
-        return 0.0, guess
+        Deff = effective_gap(D0, DS, epsilon_ks)
+        if Deff > best[0]:
+            best = (Deff, [D0, DS, s[2]])
+    return best
 
 
 def solve_set(U, Delta_t, n_fill, V_SO, Nk=Nk_DEF):
@@ -59,18 +85,26 @@ def solve_set(U, Delta_t, n_fill, V_SO, Nk=Nk_DEF):
         return dict(U=U, Delta_t=Delta_t, n=n_fill, V_SO=V_SO,
                     Tc=0.0, D0_0=0.0, DS_0=0.0, Deff_0=0.0, mu_0=mu_T0)
     threshold = GAP_THRESHOLD_FRAC * Deff_T0
+    t0 = [D0_T0, DS_T0, mu_T0]
     T_max = 0.57 * Deff_T0 * 3.0
-    Deff, sol = _gap_at_T(T_max, [D0_T0, DS_T0, mu_T0], n_fill, eps, term, residual)
+    Deff, sol = _gap_at_T(T_max, t0, n_fill, eps, term, residual, t0=t0)
     for _ in range(10):
         if Deff <= threshold:
             break
         T_max *= 1.5
-        Deff, sol = _gap_at_T(T_max, sol, n_fill, eps, term, residual)
+        Deff, sol = _gap_at_T(T_max, sol, n_fill, eps, term, residual, t0=t0)
     T_low, T_high = 0.0, T_max
-    sol = [D0_T0, DS_T0, mu_T0]
+    sol = list(t0)
     for _ in range(BISECTION_ITER):
         T_mid = 0.5 * (T_low + T_high)
-        Deff, out = _gap_at_T(T_mid, sol, n_fill, eps, term, residual)
+        Deff, out = _gap_at_T(T_mid, sol, n_fill, eps, term, residual, t0=t0)
+        if Deff <= threshold and (T_high - T_low) > 0.1:
+            # narrow-basin guard: retry this midpoint with the full seed grid before
+            # accepting "no SC here" (prevents trivial-root slides from capping Tc)
+            Deff2, out2 = _gap_at_T(T_mid, sol, n_fill, eps, term, residual,
+                                    t0=t0, full=True)
+            if Deff2 > Deff:
+                Deff, out = Deff2, out2
         if Deff > threshold:
             T_low, sol = T_mid, out
         else:

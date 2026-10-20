@@ -200,7 +200,7 @@ The reason is structural: the naive peak candidate, the gapless ridge E_min = |D
 coincides with the collapse of the SC dome (T_c → 0), so the ratio dies smoothly instead of
 peaking (`PARAM_SCAN_PEAKS.md` §1). Features of height 1.32–1.58 previously reported for (S_sc+S_pair)/S_N are WITHDRAWN
 (pair channel demoted to outlook, REPORT App. A2); the only surviving non-monotonicity is
-the scattering-only local maximum vs U at U* ≈ 19–21 for V_SO ≤ 0.2 (heights up to 0.999),
+the shallow scattering-only interior maximum vs U at U ≈ 17.5–22.5 for V_SO ≤ 0.2 and T/T_c ≥ 0.7 (edge max at U=15 for lower T/T_c; E10-corrected),
 from the competition of falling Δ⁰₀/T_c with the falling anchor R(ħω,(T/T_c)T_c(U)); at
 U=125, Δ_t* ≈ 4.0–5.1 (grows with U and T, shrinks with V_SO). They survive 13/25-point
 refinement (shifts ≤0.06 in Δ_t), doubled quadrature (≤2·10⁻⁵) and an independent k-space
@@ -209,7 +209,7 @@ smallest E_min). Case-II channel: monotone in these directions (its Hebel–Slic
 resonance lives in the T-direction, T6). Figures `param_scan_{U,VSO,Dt}.png`; nothing was
 tuned to create peaks, and the null result for the primary channel is reported as such.
 Addendum: extending the U-grid below 50 (U ∈ [15,150], `WWN_vs_U_families_VSO.png`) adds ONE
-primary-channel feature — a local maximum at U* ≈ 20 for V_SO ≤ 0.2 (heights 0.31/0.60/0.87
+primary-channel feature — a shallow interior maximum at U ≈ 17.5–22.5 for V_SO ≤ 0.2 and T/T_c ≥ 0.7 (heights 0.60/0.87
 at T/T_c = 0.5/0.7/0.9) from the competition of the falling Δ⁰₀/T_c with the falling
 normal-state anchor R(ħω, (T/T_c)T_c(U)); documented in `PARAM_SCAN_PEAKS.md` §7 addendum.
 
