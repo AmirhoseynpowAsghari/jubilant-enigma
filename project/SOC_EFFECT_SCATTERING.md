@@ -24,6 +24,14 @@ U = 95 t (and 125 t in panels b/d), Δ_t = 4.5 t.
   scattering phase space; near T_c the fallen coupling ratio Δ⁰₀/T_c (0.906→0.500)
   weakens the f(Δ/T) suppression and wins. The crossing at T/T_c ≈ 0.22 is itself a
   spin–orbit signature.
+* **Histogram view (figure 36, `make_soc_enhancement_hist.py`):** over all (U, T/T_c)
+  points per V_SO level (root-switch sets excluded), the per-point enhancement
+  R(V_SO)/R(0) has median 1.06 / 1.21 / 1.40 / 1.67 and p90 1.26 / 2.17 / 3.72 / 5.73 for
+  V_SO = 0.2 / 0.4 / 0.6 / 0.8; the fraction of points enhanced by >5 % grows 0.58 → 0.90.
+  Per U-bin: median enhancement ≈1 for U ≤ 30 at T/T_c ≥ 0.7 (saturated plateau) but
+  ×1.5–×14 in the decay tail (U ≥ 75); at T/T_c = 0.3 the suppression is active already at
+  U ≈ 30, so the SOC leverage appears there too.  Each +0.2 step of V_SO raises the ratio
+  at ~96–100 % of the points (median ×1.05–×1.25 per step).
 * **Fixed physical T:** the effect is even stronger and opposite in sign — at T=0.2 t the
   ratio falls ×39 (0.103→0.0027) because T_c doubles (0.286→0.649 t) and the system sits
   deeper inside the dome (figure 1d). Any comparison statement must name its ensemble.

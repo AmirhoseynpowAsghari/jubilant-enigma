@@ -89,5 +89,6 @@ Data for both: `ultrasonic/results/uvso_families.json`.
 | file | physics shown | regenerate with |
 |---|---|---|
 | `35_soc_explicit_vertex.png` | (a) inter-helicity fraction of S_sc vs V_SO (0.50→0.29): the explicit kernel-level SOC signature; (b) isotropic vertex R_A vs strict q→0 helicity-diagonal R_B: SOC trend survives (×1.70 vs ×1.75); (c) signed effect R(V_SO)−R(0) vs T/T_c with sign change; (d) size of the vertex systematic | `ultrasonic/make_soc_explicit.py` |
+| `36_SOC_enhancement_histogram.png` | histogram of the per-point SOC enhancement R(V_SO)/R(0) at FIXED (U, T/T_c): (a) median enhancement per U-bin — plateau ≈1 for U≤30 at high T/T_c, decay tail up to ×14; (b) the whole distribution shifts right as V_SO grows (median 1.06/1.21/1.40/1.67); (c) per +0.2 step ~96–100 % of points increase, median ×1.05–×1.25. Root-switch and Tc=0 sets excluded | `ultrasonic/make_soc_enhancement_hist.py` |
 
 Data: `ultrasonic/results/soc_explicit.json`; discussion `project/SOC_EFFECT_SCATTERING.md` §4.
