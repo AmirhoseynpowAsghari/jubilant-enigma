@@ -1,5 +1,12 @@
 # Parameter scans of W/W_N(U, V_SO, Δ_t): peaks and non-monotonic features
 
+> **SUPERSEDED IN PART (2026-10-24).** This document was written before the audit-driven correction
+> campaign. Numbers, statements and figure references below are PRE-CORRECTION unless explicitly
+> stated otherwise. The current status of every claim is in `CORRECTION_LOG.md` (§2 per-finding status,
+> §5 before/after, §6.3 superseded statements). Do not quote figures from this file without checking
+> them against `CORRECTION_TABLES.md` and `results/BEFORE_AFTER.json`.
+
+
 Scripts: `ultrasonic/param_scans_peaks.py` (coarse fixed-T/Tc survey),
 `ultrasonic/param_scan_features.py` (fixed-T ensembles, peak detection, refinement,
 artifact checks), `ultrasonic/make_param_figures.py` (figures).

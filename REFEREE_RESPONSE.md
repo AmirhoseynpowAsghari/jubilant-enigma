@@ -1,4 +1,11 @@
 # REFEREE_RESPONSE.md — replication audit of the corrected repository
+
+> **SUPERSEDED IN PART (2026-10-24).** This document was written before the audit-driven correction
+> campaign. Numbers, statements and figure references below are PRE-CORRECTION unless explicitly
+> stated otherwise. The current status of every claim is in `CORRECTION_LOG.md` (§2 per-finding status,
+> §5 before/after, §6.3 superseded statements). Do not quote figures from this file without checking
+> them against `CORRECTION_TABLES.md` and `results/BEFORE_AFTER.json`.
+
 (commit bbfaad1 mirror; manuscript arXiv:2607.02812 v1)
 
 Every number below was re-measured in this workspace (scratch clone for destructive

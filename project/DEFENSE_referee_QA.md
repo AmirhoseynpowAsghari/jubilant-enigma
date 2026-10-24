@@ -1,5 +1,12 @@
 # Referee & defense package — how to prove the computation is correct
 
+> **SUPERSEDED IN PART (2026-10-24).** This document was written before the audit-driven correction
+> campaign. Numbers, statements and figure references below are PRE-CORRECTION unless explicitly
+> stated otherwise. The current status of every claim is in `CORRECTION_LOG.md` (§2 per-finding status,
+> §5 before/after, §6.3 superseded statements). Do not quote figures from this file without checking
+> them against `CORRECTION_TABLES.md` and `results/BEFORE_AFTER.json`.
+
+
 Companion of `REPORT_WWN_corrected.md`, `DERIVATION_HHM_scattering.md`,
 `levy1963_check.py`, `case2_checks.py`, `validate_ua.py`.
 Everything below is reproducible by running the named scripts; no number in this document

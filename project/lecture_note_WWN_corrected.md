@@ -1,5 +1,12 @@
 # Lecture note — the corrected W/W_N for η = +1 (ultrasound, Case I)
 
+> **SUPERSEDED IN PART (2026-10-24).** This document was written before the audit-driven correction
+> campaign. Numbers, statements and figure references below are PRE-CORRECTION unless explicitly
+> stated otherwise. The current status of every claim is in `CORRECTION_LOG.md` (§2 per-finding status,
+> §5 before/after, §6.3 superseded statements). Do not quote figures from this file without checking
+> them against `CORRECTION_TABLES.md` and `results/BEFORE_AFTER.json`.
+
+
 Companion of `project/lecture_note_WWN_fluctuations.md` (original repository note).
 Everything here is derived first and computed second; the code lives in
 `project/sc_params` (stage 1) and `project/ultrasonic` (stage 2).

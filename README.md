@@ -1,5 +1,26 @@
 # Power absorbed by a Rashba superconductor — corrected reconstruction
 
+> ## ⚠ Correction notice (2026-10-24) — read first
+>
+> This repository has been through a full audit-driven correction campaign
+> (`AUDIT_symmetrical-octo-pancake.md`, findings F-01…F-18). **The numbers quoted anywhere in this
+> README before this notice, and in any document listed as superseded below, are pre-correction.**
+> * Full record, per-finding status, decisions and tests: **`CORRECTION_LOG.md`**.
+> * Before/after numbers (generated from files): **`CORRECTION_TABLES.md`**, `results/BEFORE_AFTER.json`.
+> * Pre-correction outputs, unmodified: `archive/pre_f02_baseline/` (md5 manifest included).
+> * Reproduce everything: `bash project/run_full_regeneration.sh`; hashes in `results/REGEN_MANIFEST.json`.
+>
+> **Corrected headline (master set U=95t, Δt=4.5t, n=1.885, ħω=0.7t, variant (a), scattering channel):**
+> lim W/W_N (T/Tc → 0.999) = **0.3867 / 0.4835 / 0.7434** at V_SO = 0 / 0.4082 / 0.8
+> (previously 0.4000 / 0.5054 / 0.7611). Tc = **0.2782 / 0.3738 / 0.6467** (previously 0.2861 / 0.3808 / 0.6494).
+>
+> **Open decisions that change numbers** (see `CORRECTION_LOG.md` §4): **D1** the chemical-potential
+> window rule removes the superconducting state of the low-U region (U = 15–30, 163 of 435 companion
+> sets), Group C Δt = 4.5 and U = −75 — the choice of policy is the authors' to make; **D2** the DOS
+> smoothing σ→0 limit is not reached (≈1 % systematic). The coherence kernel (a) is confirmed by an
+> independent Bogoliubov derivation; variant (d) is **not** a Bogoliubov matrix element (its "textbook"
+> description was wrong).
+
 > **Power absorbed in the presence of an external time-dependent perturbation**
 > Ultrasonic attenuation ratio W/W_N for a spin–orbit-coupled Hubbard superconductor,
 > recomputed from scratch, validated, and reconciled with arXiv:2607.02812.
@@ -15,7 +36,7 @@ over all parameter sets of the paper.
 |---|---|
 | Physics | η = +1 (ultrasound, Case I), scattering channel with signed coherence factor C_I = ½[1+(ξξ′−Δ̄Δ̄′)/(EE′)], energy conservation E′ = E+ħω on quasiparticle energies, explicit branch (σ) sums |
 | Master set | U = 95t, Δ_t = 4.5t, n = 1.885, ħω = 0.7t, V_SO = 0 / 0.4082 / 0.8 |
-| Headline result | W/W_N < 1 everywhere inside 2Delta_eff > hw (scattering-only quantitative claim); maxima at Tc-: 0.4000 / 0.5054 / 0.7611 at V_SO = 0 / 0.4082 / 0.8; pair channel = outlook only (no number, no identity) |
+| Headline result (corrected) | W/W_N < 1 for T < Tc (scattering-only quantitative claim); limits at T/Tc→0.999: 0.3867 / 0.4835 / 0.7434 at V_SO = 0 / 0.4082 / 0.8 (superseded: 0.4000 / 0.5054 / 0.7611); pair channel = outlook only (no number, no identity) |
 | Defense package | `project/DEFENSE_referee_QA.md`: benchmarks B1-B6 vs accepted literature, 22 referee Q&A (Q1–Q18d), 12 oral-exam Q&A, honest limitations |
 | Deliverables | `project/paper_correction/results/arXiv_2607.02812_corrected.pdf` (English, original text verbatim + replaced figures + addendum), `.../corrections_fa.pdf` (Farsi, B Nazanin, typeset equations) |
 

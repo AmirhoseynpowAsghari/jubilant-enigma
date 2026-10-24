@@ -1,5 +1,12 @@
 # The spin–orbit (V_SO) effect in the scattering channel
 
+> **SUPERSEDED IN PART (2026-10-24).** This document was written before the audit-driven correction
+> campaign. Numbers, statements and figure references below are PRE-CORRECTION unless explicitly
+> stated otherwise. The current status of every claim is in `CORRECTION_LOG.md` (§2 per-finding status,
+> §5 before/after, §6.3 superseded statements). Do not quote figures from this file without checking
+> them against `CORRECTION_TABLES.md` and `results/BEFORE_AFTER.json`.
+
+
 Companion to `ultrasonic/make_soc_figures.py` (data: `ultrasonic/results/soc_scan.json`);
 figures `ultrasonic/figures/soc_effect_scattering.png` and `soc_mechanism.png`.
 Channel: η=+1 signed coherence factor, **scattering only**, ħω = 0.7 t, n = 1.885,
