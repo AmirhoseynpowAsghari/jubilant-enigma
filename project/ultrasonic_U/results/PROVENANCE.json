@@ -1,0 +1,10 @@
+{
+ "git_head": "605aacbe4abe98a2454351efa947e263076088fc",
+ "utc": "2026-10-24T10:39:06+00:00",
+ "python": "3.13.16",
+ "numpy": "2.3.5",
+ "scipy": "1.17.1",
+ "stage": "2-master",
+ "with_pair": true,
+ "schema": "ua-temp-sweep-v2"
+}

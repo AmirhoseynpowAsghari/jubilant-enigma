@@ -1,0 +1,13 @@
+{
+ "git_head": "605aacbe4abe98a2454351efa947e263076088fc",
+ "utc": "2026-10-24T10:42:32+00:00",
+ "python": "3.13.16",
+ "numpy": "2.3.5",
+ "scipy": "1.17.1",
+ "stage": "1",
+ "grid": "midpoint",
+ "Nk_DEF": 80,
+ "check_conv": true,
+ "GRID_CONV_TOL": 0.002,
+ "conv_all_ok": true
+}

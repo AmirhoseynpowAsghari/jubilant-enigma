@@ -1,5 +1,12 @@
 # SOCfigures — curated figure collection for the underlying physics
 
+> **SUPERSEDED IN PART (2026-10-24).** This document was written before the audit-driven correction
+> campaign. Numbers, statements and figure references below are PRE-CORRECTION unless explicitly
+> stated otherwise. The current status of every claim is in `CORRECTION_LOG.md` (§2 per-finding status,
+> §5 before/after, §6.3 superseded statements). Do not quote figures from this file without checking
+> them against `CORRECTION_TABLES.md` and `results/BEFORE_AFTER.json`.
+
+
 All figures are PNG, 150 dpi, regenerated from code in `project/` (nothing hand-drawn).
 Theme: how spin–orbit coupling (V_SO), the correlated-hopping gap structure and the
 scattering formalism shape the ultrasonic attenuation ratio W/W_N of the HHM model

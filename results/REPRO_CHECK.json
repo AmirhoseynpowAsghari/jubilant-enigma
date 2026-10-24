@@ -1,0 +1,12 @@
+{
+ "run1_snapshot": 35,
+ "identical": 34,
+ "differ": [
+  "project/sc_params/results/groups_stage1.json"
+ ],
+ "missing": [],
+ "added": [
+  "project/ultrasonic/results/calibrate_smooth_sigma0025_convergence.json"
+ ],
+ "result": "differences listed"
+}

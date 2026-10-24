@@ -1,5353 +1,5578 @@
 {
  "U": {
-  "(0.0, 0.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 0.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 1.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.0, 2.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
   "(0.0, 3.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.0, 3.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.0, 3.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.0, 3.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.0, 3.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 3.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 3.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 3.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 3.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 3.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 4.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 4.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 4.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.0, 4.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.0, 4.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.0, 4.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 4.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 4.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 4.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 4.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 4.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.0, 4.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.0, 4.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.0, 4.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 4.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 4.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.0, 4.5) | a_signed, T/Tc=0.5": {
    "monotone": false,
-   "maxima": []
+   "n_points": 20,
+   "maxima": [
+    {
+     "x": 57.5,
+     "y": 0.06568714308011232
+    }
+   ]
   },
   "(0.0, 4.5) | a_signed, T/Tc=0.9": {
    "monotone": false,
-   "maxima": []
+   "n_points": 20,
+   "maxima": [
+    {
+     "x": 57.5,
+     "y": 0.6001562384032458
+    }
+   ]
   },
   "(0.0, 4.5) | a_signed, T=0.1t": {
    "monotone": true,
+   "n_points": 10,
    "maxima": []
   },
   "(0.0, 4.5) | total (sc+pair), T=0.1t": {
    "monotone": false,
+   "n_points": 10,
    "maxima": [
     {
      "x": 110.0,
-     "y": 1.4239801261544858
+     "y": 1.3920346446549008
     }
    ]
   },
   "(0.0, 4.5) | Case-II, T=0.1t": {
    "monotone": true,
+   "n_points": 10,
    "maxima": []
   },
   "(0.0, 4.5) | a_signed, T=0.2t": {
    "monotone": true,
+   "n_points": 8,
    "maxima": []
   },
   "(0.0, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": false,
-   "maxima": [
-    {
-     "x": 102.5,
-     "y": 1.2394052963336024
-    }
-   ]
+   "monotone": true,
+   "n_points": 8,
+   "maxima": []
   },
   "(0.0, 4.5) | Case-II, T=0.2t": {
    "monotone": true,
+   "n_points": 8,
    "maxima": []
   },
   "(0.0, 4.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 4.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 4.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 4.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 4.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 4.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.0, 4.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.0, 4.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.0, 5.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 5.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 6.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 6.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 6.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 6.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 6.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 6.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 6.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.0, 6.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.1, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.1, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.1, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.1, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.1, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.1, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.1, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.1, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.2, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.2, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.2, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.2, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.2, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.2, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.2, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.2, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.3, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.3, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.3, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.3, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.3, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.3, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.3, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.3, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(0.4082, 2.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 3.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 3.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 3.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 3.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 3.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 3.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 3.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 3.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 3.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 3.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 3.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 3.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 3.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 4.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 4.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 4.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 4.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 4.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 4.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 4.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 4.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(0.4082, 4.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 4.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 4.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 4.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 4.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 4.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 4.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 4.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": false,
+   "n_points": 20,
+   "maxima": [
+    {
+     "x": 65.0,
+     "y": 0.06276282982683605
+    }
+   ]
   },
   "(0.4082, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": false,
+   "n_points": 20,
+   "maxima": [
+    {
+     "x": 65.0,
+     "y": 0.5806340068933905
+    }
+   ]
   },
   "(0.4082, 4.5) | a_signed, T=0.1t": {
    "monotone": true,
+   "n_points": 11,
    "maxima": []
   },
   "(0.4082, 4.5) | total (sc+pair), T=0.1t": {
    "monotone": false,
+   "n_points": 11,
    "maxima": [
     {
      "x": 117.5,
-     "y": 1.4610009899651302
+     "y": 1.3889817446803365
     }
    ]
   },
   "(0.4082, 4.5) | Case-II, T=0.1t": {
    "monotone": true,
+   "n_points": 11,
    "maxima": []
   },
   "(0.4082, 4.5) | a_signed, T=0.2t": {
    "monotone": true,
+   "n_points": 8,
    "maxima": []
   },
   "(0.4082, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": false,
-   "maxima": [
-    {
-     "x": 110.0,
-     "y": 1.3252989887750095
-    }
-   ]
+   "monotone": true,
+   "n_points": 8,
+   "maxima": []
   },
   "(0.4082, 4.5) | Case-II, T=0.2t": {
    "monotone": true,
+   "n_points": 8,
    "maxima": []
   },
   "(0.4082, 4.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 4.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 4.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 4.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 4.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 4.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 4.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 4.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 5.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.4082, 6.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 6.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 6.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 6.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 6.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 6.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 6.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.4082, 6.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.5, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.5, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.5, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.5, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.5, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.5, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.5, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.5, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(0.6, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.6, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.6, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.6, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.6, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.6, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.6, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.6, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.7, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.7, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.7, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.7, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.7, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.7, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.7, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.7, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.8, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.8, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.8, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.8, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.8, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.8, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.8, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.8, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.9, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.9, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.9, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.9, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.9, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.9, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.9, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(0.9, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(1.0, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(1.0, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(1.0, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(1.0, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(1.0, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(1.0, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(1.0, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(1.0, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   }
  },
  "VSO": {
   "(50.0, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(57.5, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(57.5, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(57.5, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(57.5, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(57.5, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(57.5, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(57.5, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(65.0, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(65.0, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(65.0, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(65.0, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(65.0, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(65.0, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(65.0, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(65.0, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(72.5, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(72.5, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(72.5, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(72.5, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(72.5, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(72.5, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(72.5, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(72.5, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(80.0, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(80.0, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(80.0, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(80.0, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(80.0, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(80.0, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(80.0, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(80.0, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(87.5, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(87.5, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(87.5, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(87.5, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(87.5, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(87.5, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(87.5, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(87.5, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 0.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 0.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 0.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 0.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 0.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 0.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 0.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 0.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 2.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 3.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 3.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 3.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 3.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 3.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 3.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 3.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 3.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 3.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 3.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 3.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 3.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 3.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 4.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 4.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 4.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(95.0, 4.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 4.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 4.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 4.5) | a_signed, T/Tc=0.5": {
    "monotone": true,
+   "n_points": 11,
    "maxima": []
   },
   "(95.0, 4.5) | a_signed, T/Tc=0.9": {
    "monotone": true,
+   "n_points": 11,
    "maxima": []
   },
   "(95.0, 4.5) | a_signed, T=0.1t": {
    "monotone": true,
+   "n_points": 11,
    "maxima": []
   },
   "(95.0, 4.5) | total (sc+pair), T=0.1t": {
    "monotone": true,
+   "n_points": 11,
    "maxima": []
   },
   "(95.0, 4.5) | Case-II, T=0.1t": {
    "monotone": true,
+   "n_points": 11,
    "maxima": []
   },
   "(95.0, 4.5) | a_signed, T=0.2t": {
    "monotone": true,
+   "n_points": 11,
    "maxima": []
   },
   "(95.0, 4.5) | total (sc+pair), T=0.2t": {
    "monotone": true,
+   "n_points": 11,
    "maxima": []
   },
   "(95.0, 4.5) | Case-II, T=0.2t": {
    "monotone": true,
+   "n_points": 11,
    "maxima": []
   },
   "(95.0, 4.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 4.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 5.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(95.0, 6.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 6.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 6.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 6.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 6.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 6.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 6.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 6.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(102.5, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(102.5, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(102.5, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(102.5, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(102.5, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(102.5, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(102.5, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(110.0, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(110.0, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(110.0, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(110.0, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(110.0, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(110.0, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(117.5, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(117.5, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(117.5, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(117.5, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(117.5, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(117.5, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(117.5, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(117.5, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 0.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 0.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 0.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 0.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 0.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 0.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 0.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 0.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 1.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 2.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(125.0, 3.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 3.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 3.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 3.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 3.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 3.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 3.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 3.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 3.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 3.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 3.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 3.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 3.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 3.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 3.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 3.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 3.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 4.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 4.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 4.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 4.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 4.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 4.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 4.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 4.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 4.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 4.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 4.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 4.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 4.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 4.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 4.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 4.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
+   "monotone": false,
+   "n_points": 12,
    "maxima": []
   },
   "(125.0, 4.5) | a_signed, T/Tc=0.9": {
    "monotone": true,
+   "n_points": 12,
    "maxima": []
   },
   "(125.0, 4.5) | a_signed, T=0.1t": {
-   "monotone": false,
+   "monotone": true,
+   "n_points": 9,
    "maxima": []
   },
   "(125.0, 4.5) | total (sc+pair), T=0.1t": {
    "monotone": false,
+   "n_points": 9,
    "maxima": [
     {
      "x": 0.5,
-     "y": 1.3537024833145177
+     "y": 1.2734977406202044
     }
    ]
   },
   "(125.0, 4.5) | Case-II, T=0.1t": {
-   "monotone": false,
+   "monotone": true,
+   "n_points": 9,
    "maxima": []
   },
   "(125.0, 4.5) | a_signed, T=0.2t": {
-   "monotone": false,
+   "monotone": true,
+   "n_points": 5,
    "maxima": []
   },
   "(125.0, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": false,
-   "maxima": [
-    {
-     "x": 0.6000000000000001,
-     "y": 1.3872821987711517
-    }
-   ]
+   "monotone": true,
+   "n_points": 5,
+   "maxima": []
   },
   "(125.0, 4.5) | Case-II, T=0.2t": {
-   "monotone": false,
+   "monotone": true,
+   "n_points": 5,
    "maxima": []
   },
   "(125.0, 4.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 4.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 4.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 4.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 4.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 4.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 4.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 4.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 5.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.25) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.25) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.25) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.25) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.25) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.25) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.25) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.25) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.75) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.75) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.75) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.75) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.75) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.75) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.75) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 5.75) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 6.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 6.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 6.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 6.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 6.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 6.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 6.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(125.0, 6.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(132.5, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(132.5, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(132.5, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(132.5, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(132.5, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(132.5, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(132.5, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(132.5, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(140.0, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(140.0, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(147.5, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(147.5, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(155.0, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(155.0, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(162.5, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(162.5, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(170.0, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(170.0, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(177.5, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(177.5, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(185.0, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(185.0, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(185.0, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(185.0, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(185.0, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(185.0, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(185.0, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(185.0, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(192.5, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(192.5, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 2
   },
   "(192.5, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(192.5, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(192.5, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(192.5, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(192.5, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(192.5, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(200.0, 4.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(200.0, 4.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(200.0, 4.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(200.0, 4.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(200.0, 4.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(200.0, 4.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(200.0, 4.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(200.0, 4.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   }
  },
  "Dt": {
   "(50.0, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(50.0, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(50.0, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(50.0, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(50.0, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(50.0, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(50.0, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(50.0, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(50.0, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(50.0, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(57.5, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(65.0, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(72.5, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(80.0, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(87.5, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.0) | a_signed, T/Tc=0.5": {
    "monotone": false,
+   "n_points": 13,
    "maxima": []
   },
   "(95.0, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": false,
+   "monotone": true,
+   "n_points": 13,
    "maxima": []
   },
   "(95.0, 0.0) | a_signed, T=0.1t": {
    "monotone": true,
+   "n_points": 9,
    "maxima": []
   },
   "(95.0, 0.0) | total (sc+pair), T=0.1t": {
    "monotone": false,
+   "n_points": 9,
    "maxima": [
     {
      "x": 4.25,
-     "y": 1.559976220025645
+     "y": 1.530854600622813
     }
    ]
   },
   "(95.0, 0.0) | Case-II, T=0.1t": {
    "monotone": true,
+   "n_points": 9,
    "maxima": []
   },
   "(95.0, 0.0) | a_signed, T=0.2t": {
    "monotone": true,
+   "n_points": 7,
    "maxima": []
   },
   "(95.0, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": false,
-   "maxima": [
-    {
-     "x": 4.25,
-     "y": 1.0853302498455597
-    }
-   ]
+   "monotone": true,
+   "n_points": 7,
+   "maxima": []
   },
   "(95.0, 0.0) | Case-II, T=0.2t": {
    "monotone": true,
+   "n_points": 7,
    "maxima": []
   },
   "(95.0, 0.1) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.1) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.1) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.1) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.1) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.1) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.1) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.1) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.2) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.2) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.2) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.2) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.2) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.2) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.2) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.2) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.3) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.3) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.3) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.3) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.3) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.3) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.3) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.3) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.4) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.4) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.4) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.4) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.4) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.4) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.4) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.4) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.4082) | a_signed, T/Tc=0.5": {
    "monotone": false,
-   "maxima": []
-  },
-  "(95.0, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": false,
-   "maxima": []
-  },
-  "(95.0, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": false,
+   "n_points": 12,
    "maxima": [
     {
-     "x": 4.0,
-     "y": 1.4796704257426878
+     "x": 5.5,
+     "y": 0.0649349390044556
     }
    ]
   },
+  "(95.0, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": false,
+   "n_points": 12,
+   "maxima": [
+    {
+     "x": 5.5,
+     "y": 0.5857807323786833
+    }
+   ]
+  },
+  "(95.0, 0.4082) | a_signed, T=0.1t": {
+   "monotone": true,
+   "n_points": 9,
+   "maxima": []
+  },
+  "(95.0, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": true,
+   "n_points": 9,
+   "maxima": []
+  },
   "(95.0, 0.4082) | Case-II, T=0.1t": {
    "monotone": true,
+   "n_points": 9,
    "maxima": []
   },
   "(95.0, 0.4082) | a_signed, T=0.2t": {
    "monotone": true,
+   "n_points": 7,
    "maxima": []
   },
   "(95.0, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": false,
+   "monotone": true,
+   "n_points": 7,
    "maxima": []
   },
   "(95.0, 0.4082) | Case-II, T=0.2t": {
    "monotone": true,
+   "n_points": 7,
    "maxima": []
   },
   "(95.0, 0.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.6) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.6) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.6) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.6) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.6) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.6) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.6) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.6) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.7) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.7) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.7) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.7) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.7) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.7) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.7) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.7) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.8) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.8) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.8) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.8) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.8) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.8) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.8) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.8) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.9) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.9) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.9) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.9) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.9) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.9) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.9) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(95.0, 0.9) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
-  },
-  "(95.0, 1.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(102.5, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(110.0, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(110.0, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(110.0, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(110.0, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(117.5, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(117.5, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(117.5, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(117.5, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(117.5, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(117.5, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(117.5, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(117.5, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(117.5, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(117.5, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(117.5, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(117.5, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(117.5, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(117.5, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(117.5, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(117.5, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.0) | a_signed, T/Tc=0.5": {
    "monotone": false,
+   "n_points": 11,
    "maxima": []
   },
   "(125.0, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": false,
+   "monotone": true,
+   "n_points": 11,
    "maxima": []
   },
   "(125.0, 0.0) | a_signed, T=0.1t": {
    "monotone": true,
+   "n_points": 6,
    "maxima": []
   },
   "(125.0, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": false,
-   "maxima": [
-    {
-     "x": 4.75,
-     "y": 1.3196581502909783
-    }
-   ]
+   "monotone": true,
+   "n_points": 6,
+   "maxima": []
   },
   "(125.0, 0.0) | Case-II, T=0.1t": {
    "monotone": true,
+   "n_points": 6,
    "maxima": []
   },
   "(125.0, 0.0) | a_signed, T=0.2t": {
    "monotone": true,
+   "n_points": 5,
    "maxima": []
   },
   "(125.0, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": false,
-   "maxima": [
-    {
-     "x": 5.0,
-     "y": 1.1813438577586421
-    }
-   ]
+   "monotone": true,
+   "n_points": 5,
+   "maxima": []
   },
   "(125.0, 0.0) | Case-II, T=0.2t": {
    "monotone": true,
+   "n_points": 5,
    "maxima": []
   },
   "(125.0, 0.1) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.1) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.1) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.1) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.1) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.1) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.1) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.1) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.2) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.2) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.2) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.2) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.2) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.2) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.2) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.2) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.3) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.3) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.3) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.3) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.3) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.3) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.3) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.3) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.4) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.4) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.4) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.4) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.4) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.4) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.4) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.4) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.4082) | a_signed, T/Tc=0.5": {
    "monotone": false,
+   "n_points": 11,
    "maxima": []
   },
   "(125.0, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": false,
+   "monotone": true,
+   "n_points": 11,
    "maxima": []
   },
   "(125.0, 0.4082) | a_signed, T=0.1t": {
    "monotone": true,
+   "n_points": 7,
    "maxima": []
   },
   "(125.0, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": false,
-   "maxima": [
-    {
-     "x": 4.5,
-     "y": 1.266392690448526
-    }
-   ]
+   "monotone": true,
+   "n_points": 7,
+   "maxima": []
   },
   "(125.0, 0.4082) | Case-II, T=0.1t": {
    "monotone": true,
+   "n_points": 7,
    "maxima": []
   },
   "(125.0, 0.4082) | a_signed, T=0.2t": {
    "monotone": true,
+   "n_points": 6,
    "maxima": []
   },
   "(125.0, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": false,
-   "maxima": [
-    {
-     "x": 4.75,
-     "y": 1.195419419286803
-    }
-   ]
+   "monotone": true,
+   "n_points": 6,
+   "maxima": []
   },
   "(125.0, 0.4082) | Case-II, T=0.2t": {
    "monotone": true,
+   "n_points": 6,
    "maxima": []
   },
   "(125.0, 0.5) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.5) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.5) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.5) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.5) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.5) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.5) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.5) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(125.0, 0.6) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.6) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.6) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.6) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.6) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.6) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.6) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.6) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.7) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.7) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.7) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.7) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.7) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.7) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.7) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.7) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.8) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.8) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.8) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.8) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.8) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.8) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.8) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.8) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.9) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.9) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.9) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.9) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.9) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.9) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.9) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 0.9) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 1.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 1.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 1.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 1.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 1.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 1.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 1.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(125.0, 1.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(132.5, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(132.5, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(132.5, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(132.5, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(132.5, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(132.5, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(132.5, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(132.5, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(132.5, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(132.5, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(132.5, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(132.5, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(132.5, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(132.5, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(132.5, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(132.5, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(140.0, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(140.0, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(140.0, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(140.0, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(140.0, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(147.5, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(147.5, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(147.5, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(147.5, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(147.5, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(155.0, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(155.0, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(155.0, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(155.0, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(155.0, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(162.5, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(162.5, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(162.5, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(162.5, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(162.5, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(170.0, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(170.0, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(170.0, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(170.0, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(170.0, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(177.5, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(177.5, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 0.4082) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(177.5, 0.4082) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(177.5, 0.4082) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 0.4082) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 0.4082) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 0.4082) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 0.4082) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(177.5, 0.4082) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(185.0, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(185.0, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(185.0, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(185.0, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(185.0, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(185.0, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(185.0, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(185.0, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
+  },
+  "(185.0, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
+  },
+  "(185.0, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
+  },
+  "(185.0, 0.4082) | a_signed, T=0.1t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
+  },
+  "(185.0, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
+  },
+  "(185.0, 0.4082) | Case-II, T=0.1t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
+  },
+  "(185.0, 0.4082) | a_signed, T=0.2t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
+  },
+  "(185.0, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
+  },
+  "(185.0, 0.4082) | Case-II, T=0.2t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(192.5, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(192.5, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
   "(192.5, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(192.5, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(192.5, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(192.5, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(192.5, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
   "(192.5, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
-  "(200.0, 0.0) | a_signed, T/Tc=0.5": {
-   "monotone": true,
-   "maxima": []
+  "(192.5, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
-  "(200.0, 0.0) | a_signed, T/Tc=0.9": {
-   "monotone": true,
-   "maxima": []
+  "(192.5, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
   },
-  "(200.0, 0.0) | a_signed, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+  "(192.5, 0.4082) | a_signed, T=0.1t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
-  "(200.0, 0.0) | total (sc+pair), T=0.1t": {
-   "monotone": true,
-   "maxima": []
+  "(192.5, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
-  "(200.0, 0.0) | Case-II, T=0.1t": {
-   "monotone": true,
-   "maxima": []
+  "(192.5, 0.4082) | Case-II, T=0.1t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
-  "(200.0, 0.0) | a_signed, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+  "(192.5, 0.4082) | a_signed, T=0.2t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
-  "(200.0, 0.0) | total (sc+pair), T=0.2t": {
-   "monotone": true,
-   "maxima": []
+  "(192.5, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   },
-  "(200.0, 0.0) | Case-II, T=0.2t": {
-   "monotone": true,
-   "maxima": []
+  "(192.5, 0.4082) | Case-II, T=0.2t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
+  },
+  "(200.0, 0.4082) | a_signed, T/Tc=0.5": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
+  },
+  "(200.0, 0.4082) | a_signed, T/Tc=0.9": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 1
+  },
+  "(200.0, 0.4082) | a_signed, T=0.1t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
+  },
+  "(200.0, 0.4082) | total (sc+pair), T=0.1t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
+  },
+  "(200.0, 0.4082) | Case-II, T=0.1t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
+  },
+  "(200.0, 0.4082) | a_signed, T=0.2t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
+  },
+  "(200.0, 0.4082) | total (sc+pair), T=0.2t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
+  },
+  "(200.0, 0.4082) | Case-II, T=0.2t": {
+   "monotone": null,
+   "maxima": [],
+   "n_points": 0
   }
  }
 }

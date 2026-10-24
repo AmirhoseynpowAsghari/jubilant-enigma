@@ -1,0 +1,1 @@
+U=-75t: no superconducting state at any V_SO in the physical window

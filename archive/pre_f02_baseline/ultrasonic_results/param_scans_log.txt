@@ -1,0 +1,4 @@
+coarse scan: 359 parameter sets x 2 temperatures
+coarse done: 301 valid points in 239s
+candidate maxima: 0
+TOTAL 239s
