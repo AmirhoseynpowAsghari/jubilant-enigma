@@ -65,7 +65,7 @@ _DOS = {}
 def get_dos(VSO):
     key = round(float(VSO), 4)
     if key not in _DOS:
-        _DOS[key] = NormalDOS(key, Nk=1200, nbins=6000, smooth=0.02)
+        _DOS[key] = NormalDOS(key, Nk=1200)
     return _DOS[key]
 
 
@@ -128,6 +128,28 @@ def run_pool(tasks, nproc=2):
 
 
 # --------------------------------------------------------------------------- peaks
+def threshold_crossings(xv, em, omega):
+    """F-15 fix: where does 2*E_min(x) cross hbar*omega along the scan?
+
+    Returns a list of dicts {x_cross, bracket:(x_i, x_{i+1}), kind} with the crossing LINEARLY
+    INTERPOLATED between the two bracketing grid points (not the grid argmin of E_min, which
+    is only a grid-resolution artefact).  kind="crossing" for a sign change of g = 2E_min - w;
+    an empty list means the pair channel never switches within the scanned range.
+    """
+    xv = np.asarray(xv, float); em = np.asarray(em, float)
+    g = 2.0 * em - omega
+    out = []
+    for i in range(len(g) - 1):
+        if g[i] == 0.0:
+            out.append(dict(x_cross=float(xv[i]), bracket=(float(xv[i]), float(xv[i])),
+                            kind="grid-exact"))
+        elif g[i] * g[i + 1] < 0.0:
+            t = g[i] / (g[i] - g[i + 1])
+            out.append(dict(x_cross=float(xv[i] + t * (xv[i + 1] - xv[i])),
+                            bracket=(float(xv[i]), float(xv[i + 1])), kind="crossing"))
+    return out
+
+
 def find_local_maxima(x, y, prom_rel=0.10, prom_abs=0.015):
     """Interior strict local maxima with prominence; returns list of indices."""
     idx = []
@@ -148,10 +170,22 @@ def is_monotone(y, tol=1e-9):
 
 
 def refine_peak(task_of_x, lo, hi, n=13):
-    """Dense rescan of [lo, hi]."""
+    """Dense rescan of [lo, hi]: evaluates the (U, V_SO, Delta_t) task at each x in the pool.
+
+    task_of_x(x) must return the 3-tuple task.  Results keep the scan order; every valid result
+    carries its scan coordinate as '_x' (invalid points are dropped, never mis-aligned).
+    """
+    from multiprocessing import Pool
     xs = np.linspace(lo, hi, n)
-    res = run_pool([task_of_x(v) for v in xs])
-    return [r for r in res if r is not None and "fracs" in r]
+    tasks = [task_of_x(float(v)) for v in xs]
+    with Pool(2) as p:
+        out = p.map(evaluate, tasks, chunksize=2)
+    res = []
+    for x, r in zip(xs, out):
+        if r is not None and "fracs" in r:
+            r["_x"] = float(x)
+            res.append(r)
+    return res
 
 
 def parabola_vertex(xv, yv, i):
@@ -200,7 +234,7 @@ if __name__ == "__main__":
                 yv = np.array([r["fracs"][fi]["ratio"] for r in rs])
                 em = np.array([r["fracs"][fi]["Emin"] for r in rs])
                 entry = dict(monotone=is_monotone(yv), maxima=[], emin_min=float(em.min()),
-                             emin_arg=float(xv[int(np.argmin(em))]))
+                             pair_thresholds=threshold_crossings(xv, em, OMEGA))
                 for i in find_local_maxima(xv, yv):
                     entry["maxima"].append(dict(i=int(i), x=float(xv[i]), y=float(yv[i]),
                                                 emin=float(em[i])))
@@ -213,14 +247,15 @@ if __name__ == "__main__":
 
     # --------------------------------------------------------------- refinement
     def task_of(which, key):
+        """x -> (U, V_SO, Delta_t) with the scanned coordinate replaced by x (tuple, not dict)."""
         if which == "U":
             _, VSO, Dt = key
-            return lambda v: dict(evaluate((float(v), VSO, Dt)) or {}, _x=float(v))
+            return lambda v: (float(v), VSO, Dt)
         if which == "VSO":
             _, U, Dt = key
-            return lambda v: dict(evaluate((U, float(v), Dt)) or {}, _x=float(v))
+            return lambda v: (U, float(v), Dt)
         _, U, VSO = key
-        return lambda v: dict(evaluate((U, VSO, float(v))) or {}, _x=float(v))
+        return lambda v: (U, VSO, float(v))
 
     refined = []
     for p in peaks:
@@ -233,7 +268,7 @@ if __name__ == "__main__":
         yv = np.array([r["fracs"][fi]["ratio"] for r in res])
         em = np.array([r["fracs"][fi]["Emin"] for r in res])
         i = int(np.argmax(yv))
-        j = int(np.argmin(em))
+        j = int(np.argmin(em))          # kept only for the diagnostic dump; see thresholds
         vert = parabola_vertex(xv, yv, i) if 0 < i < len(yv) - 1 else float(xv[i])
         # second, denser refinement on the half window (resolution check)
         lo, hi = xv[max(i - 1, 0)], xv[min(i + 1, len(xv) - 1)]
@@ -243,13 +278,14 @@ if __name__ == "__main__":
         i2 = int(np.argmax(yv2)) if len(yv2) else i
         p2 = dict(p, x_ref=float(xv[i]), y_ref=float(yv[i]), vertex=float(vert),
                   x_ref2=float(xv2[i2]), y_ref2=float(yv2[i2]),
-                  emin_ref=float(em[j]), emin_arg_ref=float(xv[j]),
+                  emin_ref=float(em[j]),
+                  pair_thresholds=threshold_crossings(xv, em, OMEGA),
                   shift=abs(float(xv2[i2]) - float(vert)))
         refined.append(p2)
         print(f"  peak {p['scan']} {p['key']} frac={p['frac']}: coarse x={p['x']:.3f} "
               f"y={p['y']:.4f} -> refined x={p2['x_ref']:.3f} y={p2['y_ref']:.4f} "
               f"(vertex {vert:.3f}, dense {p2['x_ref2']:.3f}, E_min,min={p2['emin_ref']:.4f} "
-              f"@ {p2['emin_arg_ref']:.3f})", flush=True)
+              f"thresholds={[round(t['x_cross'],3) for t in p2['pair_thresholds']]})", flush=True)
 
     # --------------------------------------------------------------- artifact checks
     for p in refined:

@@ -53,25 +53,42 @@ VSO_LIST = (0.0, 0.2, 0.4082, 0.6, 0.8)
 
 
 def hel_states(VSO, Nk, D0, DS, mu, t=T_HOP):
-    """Particle-branch quasiparticle states on the quarter zone, helicity-resolved."""
-    kx = np.linspace(0, np.pi, Nk)
-    KX, KY = np.meshgrid(kx, kx)
-    w = (np.pi / Nk) ** 2 / (np.pi ** 2 / 4)          # quarter-zone weight -> 1
-    cs = np.cos(KX) + np.cos(KY)
-    g = np.sqrt(np.sin(KX) ** 2 + np.sin(KY) ** 2)
+    """All (helicity h, branch sigma) quasiparticle states on the quarter zone.
+
+    F-14 fix: the k-grid is the MIDPOINT rule (kgrid_ua.kgrid) with uniform weight 1/Nk^2
+    (the old endpoint linspace double-counted boundary nodes).  Every state carries
+      h     = Rashba helicity (+1/-1), which ONLY the helicity-diagonal vertex R_B uses;
+      sigma = branch label of the E -> eps inversion, sigma = sign(eps - eps*), which the
+              coherence factor needs (bruteforce_ua docstring: binning by helicity mixes the
+              two branches inside one bin and makes the coherence factor wrong).
+    """
+    from kgrid_ua import kgrid
+    e0, R = kgrid(Nk)
+    eps_base = e0                              # e0 = -2 t (cos kx + cos ky)
+    b = DS / (4 * t)
+    estar = (mu + b * D0) / (1.0 + b * b)
     out = []
-    for s in (+1, -1):
-        eps = -2 * t * cs - 2 * s * VSO * g
+    for h in (+1, -1):
+        eps = (eps_base - 2 * h * VSO * R).ravel()
         xi = eps - mu
-        Db = D0 - (DS / (4 * t)) * eps
+        Db = D0 - b * eps
         E = np.hypot(xi, Db)
-        out.append(dict(s=s, eps=eps.ravel(), xi=xi.ravel(), Db=Db.ravel(),
-                        E=E.ravel(), w=w))
+        sig = np.where(eps >= estar, +1, -1)
+        for s_ in (+1, -1):
+            m = sig == s_
+            out.append(dict(h=h, s=s_, eps=eps[m], xi=xi[m], Db=Db[m], E=E[m],
+                            w=np.full(m.sum(), 1.0 / (Nk * Nk))))
     return out
 
 
 def sums(states, T, omega, mu, nbin=NBIN):
-    """Per-(s,s') scattering sums and per-variant normal references, Gaussian delta."""
+    """Per-(sigma,sigma') scattering sums, helicity-resolved for the vertex, and normal refs.
+
+    Blocks are the (h, sigma) groups of states.  Coherence C is evaluated from the bin-mean
+    (xi, Dbar) of each (h, sigma) block, so every block contains only ONE branch.
+    Vertex A (isotropic): all (h,sigma) x (h',sigma') pairs.
+    Vertex B (helicity-diagonal): only pairs with h = h'.
+    """
     Eall = np.concatenate([st["E"] for st in states])
     Emin, Emax = Eall.min() * 0.995, Eall.max() * 1.002
     de = (Emax - Emin) / nbin
@@ -80,45 +97,63 @@ def sums(states, T, omega, mu, nbin=NBIN):
     therm = f[:, None] - f[None, :]
     blocks = {}
     for st in states:
+        key = (st["h"], st["s"])
         idx = ((st["E"] - Emin) / de).astype(int)
         ok = (idx >= 0) & (idx < nbin)
         idx = idx[ok]
-        cnt = np.bincount(idx, weights=np.full(ok.sum(), st["w"]), minlength=nbin)
-        xi = np.bincount(idx, weights=st["w"] * st["xi"][ok], minlength=nbin) / np.maximum(cnt, 1e-300)
-        Db = np.bincount(idx, weights=st["w"] * st["Db"][ok], minlength=nbin) / np.maximum(cnt, 1e-300)
-        epsb = np.bincount(idx, weights=st["w"] * st["eps"][ok], minlength=nbin) / np.maximum(cnt, 1e-300)
-        blocks[st["s"]] = dict(cnt=cnt, xi=xi, Db=Db, eps=epsb)
+        wv = st["w"][ok] if np.ndim(st["w"]) else np.full(ok.sum(), st["w"])
+        cnt = np.bincount(idx, weights=wv, minlength=nbin)
+        den = np.maximum(cnt, 1e-300)
+        xi = np.bincount(idx, weights=wv * st["xi"][ok], minlength=nbin) / den
+        Db = np.bincount(idx, weights=wv * st["Db"][ok], minlength=nbin) / den
+        blocks[key] = dict(cnt=cnt, xi=xi, Db=Db)
     epsall = np.concatenate([st["eps"] for st in states])
     lo, hi = epsall.min() * 0.999, epsall.max() * 1.001
     nen = 4000
-    den = (hi - lo) / nen
-    en = lo + (np.arange(nen) + 0.5) * den
+    den_e = (hi - lo) / nen
+    en = lo + (np.arange(nen) + 0.5) * den_e
     fn = 1.0 / (np.exp((en - mu) / T) + 1.0)
     tn = fn[:, None] - fn[None, :]
     cntN = {}
     for st in states:
-        ie = ((st["eps"] - lo) / den).astype(int)
+        ie = ((st["eps"] - lo) / den_e).astype(int)
         ok = (ie >= 0) & (ie < nen)
-        cntN[st["s"]] = np.bincount(ie[ok], weights=st["w"][ok] if np.ndim(st["w"]) else np.full(ok.sum(), st["w"]), minlength=nen)
+        wv = st["w"][ok] if np.ndim(st["w"]) else np.full(ok.sum(), st["w"])
+        key = st["h"]
+        cntN[key] = cntN.get(key, np.zeros(nen)) + np.bincount(ie[ok], weights=wv, minlength=nen)
     cntN_tot = cntN[+1] + cntN[-1]
     res = {}
+    ROW = 400                                   # row chunk: bounds peak memory (F-11 pattern)
+    keys = list(blocks.keys())
     for w in WS:
-        dlt = np.exp(-(((Eb[None, :] - Eb[:, None] - omega) / w) ** 2)) / (w * np.sqrt(np.pi))
-        base = therm * dlt
-        ss = {}
-        for sa in (+1, -1):
-            for sb in (+1, -1):
-                A, B = blocks[sa], blocks[sb]
-                EE = np.maximum(Eb[:, None] * Eb[None, :], 1e-300)
-                C = 0.5 * (1 + (A["xi"][:, None] * B["xi"][None, :]
-                                - A["Db"][:, None] * B["Db"][None, :]) / EE)
-                ss[(sa, sb)] = float((A["cnt"][:, None] * B["cnt"][None, :] * C * base).sum())
-        # normal references with the SAME width and weights: A = all pairs, B = diag in s
-        dn = np.exp(-(((en[None, :] - en[:, None] - omega) / w) ** 2)) / (w * np.sqrt(np.pi))
-        bn = tn * dn
-        SA = float((cntN_tot[:, None] * cntN_tot[None, :] * bn).sum())
-        SB = sum(float((cntN[sq][:, None] * cntN[sq][None, :] * bn).sum()) for sq in cntN)
-        ss["SA"], ss["SB"] = SA, SB
+        ss = {}                                 # keyed by (h,s),(h',s')
+        acc = {(kA, kB): 0.0 for kA in keys for kB in keys}
+        for i0 in range(0, nbin, ROW):
+            i1 = min(i0 + ROW, nbin)
+            Ebi = Eb[i0:i1]
+            therm_c = therm[i0:i1]
+            dlt = np.exp(-(((Eb[None, :] - Ebi[:, None] - omega) / w) ** 2)) / (w * np.sqrt(np.pi))
+            base = therm_c * dlt
+            EE = np.maximum(Ebi[:, None] * Eb[None, :], 1e-300)
+            for kA in keys:
+                A = blocks[kA]
+                for kB in keys:
+                    B = blocks[kB]
+                    C = 0.5 * (1 + (A["xi"][i0:i1, None] * B["xi"][None, :]
+                                    - A["Db"][i0:i1, None] * B["Db"][None, :]) / EE)
+                    acc[(kA, kB)] += float((A["cnt"][i0:i1, None] * B["cnt"][None, :] * C * base).sum())
+        ss.update(acc)
+        # normal references, chunked the same way
+        SA = 0.0; SB = {h: 0.0 for h in (+1, -1)}
+        for i0 in range(0, nen, ROW):
+            i1 = min(i0 + ROW, nen)
+            dn = np.exp(-(((en[None, :] - en[i0:i1, None] - omega) / w) ** 2)) / (w * np.sqrt(np.pi))
+            bn = tn[i0:i1] * dn
+            SA += float((cntN_tot[i0:i1, None] * cntN_tot[None, :] * bn).sum())
+            for h in (+1, -1):
+                SB[h] += float((cntN[h][i0:i1, None] * cntN[h][None, :] * bn).sum())
+        ss["SA"] = SA
+        ss["SB"] = SB[+1] + SB[-1]
         res[w] = ss
     return res
 
@@ -144,8 +179,12 @@ if __name__ == "__main__":
             st = sc.at(frac)
             states = hel_states(v, 240, st["D0"], st["DS"], st["mu"])
             res = sums(states, st["T"], OMEGA, st["mu"])
-            A_tot = [sum(res[w][k] for k in ((1, 1), (1, -1), (-1, 1), (-1, -1))) for w in WS]
-            B_dia = [res[w][(1, 1)] + res[w][(-1, -1)] for w in WS]
+            keysA = [(a, b) for a in ((1, 1), (1, -1), (-1, 1), (-1, -1))
+                     for b in ((1, 1), (1, -1), (-1, 1), (-1, -1))]
+            A_tot = [sum(res[w][k] for k in keysA) for w in WS]
+            B_dia = [sum(res[w][(a, b)] for a in ((1, 1), (1, -1), (-1, 1), (-1, -1))
+                         for b in ((1, 1), (1, -1), (-1, 1), (-1, -1)) if a[0] == b[0])
+                     for w in WS]
             SA = [res[w]["SA"] for w in WS]
             SB = [res[w]["SB"] for w in WS]
             RA = rich(A_tot) / rich(SA)

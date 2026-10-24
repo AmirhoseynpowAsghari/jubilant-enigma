@@ -142,7 +142,7 @@ def T7a(VSOs=(0.4082, 0.0), fracs=(0.5, 0.9, 0.999), Nks=(160, 240, 320, 452)):
     print("=" * 96)
     out = {}
     for VSO in VSOs:
-        dos = NormalDOS(VSO, Nk=1200, nbins=6000, smooth=0.02)
+        dos = NormalDOS(VSO, Nk=1200)
         sc = SCState(VSO, Nk_mu=200)
         print(f"  V_SO = {VSO}   (Tc = {sc.Tc:.4f} t)")
         print(f"    {'T/Tc':>6} " + "".join(f"{'Nk=' + str(n):>34}" for n in Nks))
@@ -167,7 +167,7 @@ def T7a(VSOs=(0.4082, 0.0), fracs=(0.5, 0.9, 0.999), Nks=(160, 240, 320, 452)):
 # --------------------------------------------------------------------------- T7b
 def _tri_state(T):
     D = gap_BCS(T)
-    dos = NormalDOS(0.0, Nk=1200, nbins=6000, smooth=0.02)
+    dos = NormalDOS(0.0, Nk=1200)
     return D, dos
 
 
@@ -181,7 +181,7 @@ def T7b(fracs=(0.3, 0.5, 0.7, 0.9), Nk=320):
     print("     widths w1 = 0.2T (the fixed production widths w ~ 0.03-0.08 >> T fail at omega->0;")
     print("     Rich.cons = consistency of the w^2 extrapolation, all widths vs two smallest.")
     print("=" * 96)
-    dos = NormalDOS(0.0, Nk=1200, nbins=6000, smooth=0.02)
+    dos = NormalDOS(0.0, Nk=1200)
     print(f"    {'T/Tc':>6} {'2f(D) Levy':>11} {'E-sp flat':>11} {'E-sp band':>11} {'k-space':>11}"
           f" {'dev(i,ii)':>10} {'dev(ii,iii)':>12} {'Rich.cons':>10}")
     out = {}
@@ -218,7 +218,7 @@ def make_figure(t7a, path="figures/dual_space_k_vs_energy.png"):
     # (a) s-wave triangle sweep
     ax = axes[0]
     fr = np.linspace(0.05, 0.99, 30)
-    dos = NormalDOS(0.0, Nk=1200, nbins=6000, smooth=0.02)
+    dos = NormalDOS(0.0, Nk=1200)
     rA, rB, rC = [], [], []
     for f in fr:
         T = f * TC
@@ -241,7 +241,7 @@ def make_figure(t7a, path="figures/dual_space_k_vs_energy.png"):
     ax = axes[1]
     VSO = 0.4082
     fracs = (0.3, 0.5, 0.7, 0.9, 0.99, 0.999)
-    dos = NormalDOS(VSO, Nk=1200, nbins=6000, smooth=0.02)
+    dos = NormalDOS(VSO, Nk=1200)
     sc = SCState(VSO, Nk_mu=200)
     res, ksp = [], []
     for f in fracs:

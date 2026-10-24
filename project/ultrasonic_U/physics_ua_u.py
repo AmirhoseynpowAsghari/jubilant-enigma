@@ -4,6 +4,8 @@ superconducting state at a given T/Tc (stage 2).
 Part of the corrected reconstruction of
   AmirhoseynpowAsghari/power-absorbed-in-the-presence-of-external-time-dependent-perturbation
 """
+# AUTO-SYNCED from project/ultrasonic/physics_ua.py by sync_u_tree.py.  Only module names are renamed
+# (*_u); the physics is identical to the main tree.  Do not edit by hand.
 from __future__ import annotations
 
 import json
@@ -90,8 +92,10 @@ class SCState:
 
 
 if __name__ == "__main__":
+    from kgrid_ua_u import band_edge
+    from dos_ua_u import NormalDOS
     for v in (0.0, 0.4082, 0.8):
-        p = sc_params_at(v)
+        p = sc_loader.sc_params_at(v)
         print(f"V_SO={p['VSO']:.4f}  Tc={p['Tc']:.4f}  D0(0)={p['D0_0']:.4f}  "
               f"DS(0)={p['DS_0']:.4f}  Deff(0)={p['Deff_0']:.4f}  band edge={band_edge(v):.4f}")
     d = NormalDOS(0.4082, Nk=400)

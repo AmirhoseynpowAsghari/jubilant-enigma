@@ -25,7 +25,13 @@ GAP_FIT_P = 3.434          # MASTER rigid gap shape phi(T) = (1-(T/Tc)^p)^q for 
 GAP_FIT_Q = 0.553
 
 Nk_DOS   = 1400            # k-grid of the normal DOS histogram
-NBINS    = 6000            # DOS bins
-SMOOTH   = 0.02            # Gaussian smoothing of the DOS (units of t)
+NBINS    = 48000           # DOS histogram bins: sigma/de >= 14; bin-converged to 0.04 % (F-03)
+SMOOTH   = 0.0025          # DOS Gaussian smoothing (units of t), adopted by the pre-declared rule of calibrate_smooth.py (F-03)
+                           # (calibrate_smooth.py, results/calibrate_smooth*.json): the old
+                           # 0.02 carried a 2.2 % bias relative to 0.005 and the dependence
+                           # on sigma has NOT converged (see CORRECTION_LOG.md).
 Nk_MU    = 300             # k-grid of the number-equation solve for mu(T)
 NELL     = 6000            # midpoint points per (sigma, sigma') branch integral
+NEPS_NORMAL = 4          # Gauss-Legendre nodes per kink-aligned cell of S_normal (F-04)
+SN_RTOL     = 1e-8         # accepted agreement of the order-n and order-(n+2) S_normal rules (F-04); achieved values are typically <1e-12, the 1e-10 setting was too tight for the tiny-omega Levy integrand (rel 1.9e-10)
+BF_CHUNK    = 512          # row-chunk of the brute-force dense pair sums (F-11 memory bound)

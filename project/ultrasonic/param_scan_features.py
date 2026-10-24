@@ -99,9 +99,18 @@ def evaluate(task):
                              "case2_signed", nell=NELL)
         Sp, _ = S_paircreation(dos, st["T"], OMEGA, st["D0"], st["DS"], st["mu"],
                                "a_signed", nell=NELL)
+        is_sc = bool(st["T"] < s["Tc"])
+        # F-06 fix: only SUPERCONDUCTING points carry physics values.  For T >= Tc the
+        # "gap" is zero and the ratio is the normal-state band projector (not an SC
+        # observable); it is kept only under normal_ref for diagnostics and is excluded
+        # from every curve, peak search and figure.
+        nref = dict(a=float(S / SN), tot=float((S + Sp) / SN), c2=float(S2 / SN))
         out["temps"][f"{T:.2f}"] = dict(
-            T=float(st["T"]), sc=float(st["T"] < s["Tc"]),
-            a=float(S / SN), tot=float((S + Sp) / SN), c2=float(S2 / SN),
+            T=float(st["T"]), sc=float(is_sc),
+            a=float(S / SN) if is_sc else None,
+            tot=float((S + Sp) / SN) if is_sc else None,
+            c2=float(S2 / SN) if is_sc else None,
+            normal_ref=None if is_sc else nref,
             pair=float(Sp / SN), Emin=float(P["Emin"]), D0=float(st["D0"]),
             DS=float(st["DS"]), mu=float(st["mu"]),
             pair_open=bool(2.0 * P["Emin"] < OMEGA))
@@ -155,6 +164,8 @@ def curves(data, which):
         f = fams.setdefault(key, {c[3]: ([], [], [], []) for c in CHAN})
         for grp, gk, ch, lab in CHAN:
             d = r[grp][gk]
+            if d.get(ch) is None or d.get("sc", 1.0) < 0.5:   # F-06: SC points only
+                continue
             f[lab][0].append(x)
             f[lab][1].append(d[ch])
             f[lab][2].append(d.get("Emin", np.nan))
@@ -170,19 +181,13 @@ if __name__ == "__main__":
     os.chdir(HERE)
     t0 = time.time()
     tl = tasks()
-    data = None
-    if os.path.exists("results/param_features.json"):
-        with open("results/param_features.json") as fh:
-            cand = json.load(fh)
-        if cand and "temps" in cand[0]:
-            data = cand
-            print(f"loaded cached scan: {len(data)} points", flush=True)
-    if data is None:
-        print(f"feature scan: {len(tl)} sets", flush=True)
-        data = run_pool_local(tl)
-        print(f"done {len(data)} valid in {time.time()-t0:.0f}s", flush=True)
-        with open("results/param_features.json", "w") as fh:
-            json.dump(data, fh, indent=1)
+    # F-06/regeneration policy: NO cache reuse.  The scan is always recomputed from the current
+    # code and stage-1 inputs, so a stale JSON can never be carried into a regenerated study.
+    print(f"feature scan: {len(tl)} sets", flush=True)
+    data = run_pool_local(tl)
+    print(f"done {len(data)} valid in {time.time()-t0:.0f}s", flush=True)
+    with open("results/param_features.json", "w") as fh:
+        json.dump(data, fh, indent=1, allow_nan=False)
 
     summary = {}
     peaks = []
@@ -191,17 +196,22 @@ if __name__ == "__main__":
         summary[which] = {}
         for key, chans in sorted(fams.items()):
             for lab, (x, y, em, po) in chans.items():
+                if len(x) < 3:                    # F-06: too few SC points for a curve
+                    summary[which][f"{key} | {lab}"] = dict(monotone=None, maxima=[],
+                                                            n_points=int(len(x)))
+                    continue
                 mono = is_monotone(y)
                 mx = find_local_maxima(x, y, prom_rel=0.06, prom_abs=0.01)
                 summary[which][f"{key} | {lab}"] = dict(
-                    monotone=mono, maxima=[dict(x=float(x[i]), y=float(y[i])) for i in mx])
+                    monotone=mono, n_points=int(len(x)),
+                    maxima=[dict(x=float(x[i]), y=float(y[i])) for i in mx])
                 for i in mx:
                     peaks.append(dict(scan=which, key=list(key), chan=lab,
                                       x=float(x[i]), y=float(y[i]),
                                       xl=float(x[i - 1]), xr=float(x[i + 1])))
     with open("results/param_features_summary.json", "w") as fh:
         json.dump(summary, fh, indent=1)
-    n_mono = sum(1 for w in summary.values() for e in w.values() if e["monotone"])
+    n_mono = sum(1 for w in summary.values() for e in w.values() if e["monotone"] is True)
     n_tot = sum(len(w) for w in summary.values())
     print(f"curves: {n_tot}, monotone: {n_mono}, candidate maxima: {len(peaks)}", flush=True)
     for p in peaks:

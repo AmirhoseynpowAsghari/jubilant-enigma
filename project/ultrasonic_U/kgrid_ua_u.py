@@ -5,6 +5,8 @@ Part of the corrected reconstruction of
 This file keeps the repository's module name and role; the physics inside is the
 validated one (see project/lecture_note_WWN_corrected.md and README.md).
 """
+# AUTO-SYNCED from project/ultrasonic/kgrid_ua.py by sync_u_tree.py.  Only module names are renamed
+# (*_u); the physics is identical to the main tree.  Do not edit by hand.
 from __future__ import annotations
 
 import json

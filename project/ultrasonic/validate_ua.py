@@ -90,7 +90,7 @@ def T1_delta_to_zero():
     print(f"   {'T':>7} {'hw':>6} | {'(a) numeric':>12} {'R closed':>10} | {'(b)':>10} {'(c)':>10}")
     for T in (0.05, 0.2, 0.5, 1.0):
         for om in (0.7, 0.2):
-            SN = S_normal(dos, T, om, 0.0, neps=200000)
+            SN = S_normal(dos, T, om, 0.0)
             r = {}
             for v, lab in VARIANTS:
                 S, _ = S_scattering(dos, T, om, 0.0, 0.0, 0.0, v, nell=200000)
@@ -118,7 +118,7 @@ def T2_bcs_limit():
             row = []
             for om in (0.02, 0.005, 0.001, 0.0002):
                 S, _ = S_scattering(dos, T, om, Delta, 0.0, 0.0, "a_signed", nell=400000)
-                SN = S_normal(dos, T, om, 0.0, neps=200000)
+                SN = S_normal(dos, T, om, 0.0)
                 row.append(S / SN)
             worst = max(worst, abs(row[-1] - want) / want)
             print(f"   {Delta:6.2f} {T:6.2f} | " + "".join(f"{x:9.5f}" for x in row[:3])
@@ -132,7 +132,7 @@ def T3_lattice(VSO=0.4082, fracs=(0.5, 0.7, 0.9, 0.99, 0.999), Nk=320, nbin=3000
     print(f"T3  energy space vs explicit lattice sum over (k,helicity) x (k',helicity),  V_SO={VSO}")
     print("    sigma = sign(eps - eps*);  delta(E'-E-hw) Gaussian, Richardson in its width")
     print("=" * 92)
-    dos = NormalDOS(VSO, Nk=1200, nbins=6000, smooth=0.02)
+    dos = NormalDOS(VSO, Nk=1200)
     sc = SCState(VSO, Nk_mu=200)
     out = {}
     for frac in fracs:
@@ -185,6 +185,7 @@ def T4_bound():
 
 
 if __name__ == "__main__":
+    import sys
     t0 = T0_quadrature()
     print()
     t1 = T1_delta_to_zero()
@@ -202,3 +203,13 @@ if __name__ == "__main__":
     rng = "  ".join(f"{kk}:{min(vv):.1e}-{max(vv):.1e}" for kk, vv in sorted(byv.items()))
     print(f"SUMMARY  T0 {t0:.1e}   T1 {t1:.1e}   T2 {t2:.1e}   T3 per variant {rng}")
     print("=" * 92)
+    # ------------------------------------------------------------------ pass/fail (F-05)
+    # Thresholds fixed BEFORE the recomputation; a failing check makes the script exit 1 so
+    # that `make test` (pipefail) cannot report success on a broken validation.
+    TOL = dict(T0=1e-3, T1=1e-4, T2=1e-4, T3_a=3e-2)
+    t3a = max(v[2] for k, v in t3.items() if (k[1] if isinstance(k, tuple) else k) == "a_signed")
+    checks = dict(T0=t0 < TOL["T0"], T1=t1 < TOL["T1"], T2=t2 < TOL["T2"], T3_a=t3a < TOL["T3_a"])
+    print("VALIDATE_UA " + " ".join(f"{k}={'PASS' if ok else 'FAIL'}" for k, ok in checks.items())
+          + "   (T3 is reported for d_std but not gated: that variant is not a BdG matrix element,"
+          + " see kernel_bdg_check.py)")
+    sys.exit(0 if all(checks.values()) else 1)

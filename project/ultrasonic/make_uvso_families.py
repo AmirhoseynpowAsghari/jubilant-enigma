@@ -51,7 +51,7 @@ def get_dos(VSO):
     if key not in _DOS:
         if len(_DOS_ORDER) >= 3:
             del _DOS[_DOS_ORDER.pop(0)]
-        _DOS[key] = NormalDOS(key, Nk=1200, nbins=6000, smooth=0.02)
+        _DOS[key] = NormalDOS(key, Nk=1200)
         _DOS_ORDER.append(key)
     return _DOS[key]
 

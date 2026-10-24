@@ -16,7 +16,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 FA_TTF = os.path.join(HERE, "assets", "BNazanin.ttf")
 ETA1 = os.path.join(HERE, "vendor", "eta1") + os.sep
 os.makedirs(os.path.join(HERE, "results"), exist_ok=True)
-EN_TTF = "/usr/local/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf"
+from matplotlib import font_manager as _fm
+EN_TTF = _fm.findfont("DejaVu Serif", fallback_to_default=False)   # F-16: no absolute path
 
 W, H = 595.0, 842.0
 MR = ML = 60.0

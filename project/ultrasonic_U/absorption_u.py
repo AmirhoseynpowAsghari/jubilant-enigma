@@ -64,12 +64,47 @@ The substitution  ell = sqrt(E^2 - Emin^2)  (i.e. E = sqrt(Emax_eff^2 + ell^2)) 
 1/sqrt(E^2 - Emin^2) behaviour of nu_s at the gap edge:  dE = ell dEll / E, hence
 nu_s dE = N(eps_s(E)) dEll / kappa, which is smooth.  In the double-density integrand int dE nu_s(E) nu_s'(E+hw) C [f-f'] only ONE factor absorbs dE->dEll; the second stays per unit E':  nu_s'(E') = N(eps_s'(E')) E'/(kappa ell').  (Using N/kappa for both suppresses the integrand by ell'/E' -- the defect found by the Levy-1963 s-wave check.)
 """
+# AUTO-SYNCED from project/ultrasonic/absorption.py by sync_u_tree.py.  Only module names are renamed
+# (*_u); the physics is identical to the main tree.  Do not edit by hand.
 from __future__ import annotations
 
 import numpy as np
 
-from parameters_ua_u import T_HOP, OMEGA, ETA
+from parameters_ua_u import T_HOP, OMEGA, ETA, NEPS_NORMAL, SN_RTOL
 from dos_ua_u import NormalDOS
+
+
+# ---------------------------------------------------------------------------------------------
+# input validation (audit F-13): every public integrator checks its arguments and raises a
+# descriptive ValueError instead of silently returning a wrong number or a bare scipy error.
+# ---------------------------------------------------------------------------------------------
+def _check_common(T, omega, nell):
+    if not np.isfinite(T) or T < 0.0:
+        raise ValueError(f"T must be finite and >= 0 (got {T!r})")
+    if not np.isfinite(omega) or omega <= 0.0:
+        raise ValueError(f"hbar*omega must be finite and > 0 (got {omega!r})")
+    nell = int(nell)
+    if nell < 16:
+        raise ValueError(f"nell must be >= 16 quadrature points (got {nell!r})")
+    return nell
+
+
+def _check_branches(branches):
+    br = tuple(int(s) for s in branches)
+    if not br or any(s not in (+1, -1) for s in br):
+        raise ValueError(f"branches must be a nonempty subset of (+1, -1) (got {branches!r})")
+    return br
+
+
+def _check_state(st):
+    for key in ("frac", "T", "D0", "DS", "mu", "mu_N"):
+        v = st.get(key, None)
+        if v is None or not np.isfinite(float(v)):
+            raise ValueError(f"state field {key!r} must be finite (got {v!r})")
+    if not (0.0 <= float(st["frac"]) < 1.0):
+        raise ValueError(f"frac must lie in [0, 1) for a superconducting state "
+                         f"(got {st['frac']!r}); T >= Tc is the normal state, W/W_N = 1 by "
+                         f"definition and must not be routed through the SC integrators")
 
 
 # ---------------------------------------------------------------------------------------------
@@ -94,19 +129,34 @@ def E_of_ell(ell, Emin):
 
 
 def fermi_qp(E, T):
-    """Quasiparticle occupation 1/(exp(E/T)+1); no chemical potential (E measured from condensate)."""
+    """Quasiparticle occupation 1/(exp(E/T)+1); no chemical potential (E measured from condensate).
+
+    F-18: overflow-safe by masking (no exp of clipped huge arguments; the mask threshold
+    700 is where exp() itself would overflow double precision -- contributions above it
+    are < 1e-300 and exactly zero in double).
+    """
+    E = np.asarray(E, float)
     if T <= 1e-12:
-        return np.zeros_like(np.asarray(E, float))
-    x = np.asarray(E, float) / T
-    return np.where(x > 500.0, 0.0, 1.0 / (np.exp(np.minimum(x, 500.0)) + 1.0))
+        return np.zeros_like(E)
+    x = E / T
+    out = np.zeros_like(x)
+    m = x < 700.0
+    out[m] = 1.0 / (np.exp(x[m]) + 1.0)
+    return out
 
 
 def fermi_normal(eps, T, mu):
+    eps = np.asarray(eps, float)
     if T <= 1e-12:
-        return np.where(np.asarray(eps, float) < mu, 1.0, 0.0)
-    x = (np.asarray(eps, float) - mu) / T
-    return np.where(x > 500.0, 0.0, np.where(x < -500.0, 1.0,
-                                             1.0 / (np.exp(np.clip(x, -500, 500)) + 1.0)))
+        return np.where(eps < mu, 1.0, 0.0)
+    x = (eps - mu) / T
+    out = np.zeros_like(x)
+    lo = x < -700.0
+    mid = (~lo) & (x < 700.0)
+    out[lo] = 1.0
+    out[mid] = 1.0 / (np.exp(x[mid]) + 1.0)
+    return out
+
 
 
 def coherence(E, xi, Dbar, Ep, xip, Dbarp, variant: str) -> np.ndarray:
@@ -196,6 +246,8 @@ def S_scattering(dos: NormalDOS, T: float, omega: float, D0: float, DS: float, m
 
     Returns (S_sc, {(sigma, sigma'): contribution}).
     """
+    nell = _check_common(T, omega, nell)
+    branches = _check_branches(branches)
     P = qp_constants(D0, DS, mu, t)
     Emin = P["Emin"]
     kappa = P["kappa"]
@@ -229,14 +281,51 @@ def S_scattering(dos: NormalDOS, T: float, omega: float, D0: float, DS: float, m
     return total, parts
 
 
-def S_normal(dos: NormalDOS, T: float, omega: float, mu_N: float, neps: int = 20000):
-    """Normal-state absorption of the same model: S_N = int dE N(E) N(E+omega) [f_N(E) - f_N(E+omega)]."""
-    E = np.linspace(-dos.Wband, dos.Wband, neps)
-    dE = E[1] - E[0]
-    Emid = E + 0.5 * dE
-    val = dos.N(Emid) * dos.N(Emid + omega) * (fermi_normal(Emid, T, mu_N)
-                                               - fermi_normal(Emid + omega, T, mu_N))
-    return float(val.sum() * dE)
+def S_normal(dos: NormalDOS, T: float, omega: float, mu_N: float, neps: int = None):
+    """Normal-state absorption of the same model:
+        S_N = int dE N(E) N(E+omega) [f_N(E) - f_N(E+omega)],   N = dos.N (piecewise linear).
+
+    F-04 fix.  The DOS is a piecewise-linear interpolant with kinks at every histogram bin
+    centre, so a uniform Simpson/midpoint rule converges only at O(h) and the old midpoint
+    sum carried an unchecked error in the DENOMINATOR of every ratio.  Here the integration
+    mesh is the union of all kinks: {bin centres} U {bin centres - omega} U {+-Wband}.  On
+    each cell N(E) and N(E+omega) are linear and f_N is smooth, so an n-point Gauss-Legendre
+    rule is accurate to high order.  The order is checked AT RUNTIME: the rule is evaluated
+    with `order` and `order+2` nodes per cell and must agree to SN_RTOL, else RuntimeError.
+    `neps` is retained only for call-site compatibility and is interpreted as the Gauss order
+    (default 4).
+    """
+    if not np.isfinite(T) or T <= 1e-12:
+        raise ValueError(f"S_normal requires a finite temperature T > 0 (got {T!r}); "
+                         f"the T -> 0 integrand is discontinuous")
+    if not np.isfinite(omega) or omega <= 0.0:
+        raise ValueError(f"hbar*omega must be finite and > 0 (got {omega!r})")
+    if not np.isfinite(mu_N):
+        raise ValueError(f"mu_N must be finite (got {mu_N!r})")
+    order = int(neps) if neps is not None else 4
+    if not (2 <= order <= 12):
+        raise ValueError(f"Gauss order must be in [2, 12] (got {order!r})")
+    W = float(dos.Wband)
+    kinks = np.concatenate([dos.grid, dos.grid - omega, [-W, W]])
+    kinks = np.unique(kinks[(kinks >= -W) & (kinks <= W)])
+
+    def integrate(n):
+        x, w = np.polynomial.legendre.leggauss(n)
+        a, b = kinks[:-1], kinks[1:]
+        keep = b > a
+        a, b = a[keep], b[keep]
+        E = (0.5 * (b - a))[:, None] * x[None, :] + (0.5 * (b + a))[:, None]
+        wt = (0.5 * (b - a))[:, None] * w[None, :]
+        f = (dos.N(E) * dos.N(E + omega)
+             * (fermi_normal(E, T, mu_N) - fermi_normal(E + omega, T, mu_N)))
+        return float((f * wt).sum())
+
+    I_n = integrate(order)
+    I_m = integrate(order + 2)
+    if abs(I_n - I_m) > SN_RTOL * max(abs(I_m), 1e-300):
+        raise RuntimeError(f"S_normal quadrature not converged (F-04): order={order} gives "
+                           f"{I_n!r}, order={order + 2} gives {I_m!r} (rtol={SN_RTOL:g})")
+    return I_m
 
 
 def ratio_all(dos: NormalDOS, st: dict, omega: float, variant_list=None, nell: int = 6000,
@@ -245,6 +334,8 @@ def ratio_all(dos: NormalDOS, st: dict, omega: float, variant_list=None, nell: i
     W/W_N for the three variants at one thermodynamic state st (from model.SCState.at).
     Returns a dict with S_sc per variant, the (sigma,sigma') decomposition, S_N and the ratios.
     """
+    _check_state(st)
+    nell = _check_common(st["T"], omega, nell)
     T, D0, DS, mu = st["T"], st["D0"], st["DS"], st["mu"]
     mu_N = st["mu_N"]
     out = dict(T=T, frac=st["frac"], D0=D0, DS=DS, Deff=st["Deff"], mu=mu, mu_N=mu_N)
@@ -297,6 +388,8 @@ def S_paircreation(dos: NormalDOS, T: float, omega: float, D0: float, DS: float,
     S_pair = sum_{sig,sig'} int dE_b nu_s(E_b) nu_s'(E_a) C_p [1 - f(E_a) - f(E_b)],
     E_a = hbar*omega - E_b,  E_b in [E_min, hbar*omega/2].   Zero when hbar*omega < 2 E_min.
     """
+    nell = _check_common(T, omega, nell)
+    branches = _check_branches(branches)
     P = qp_constants(D0, DS, mu, t)
     Emin = P["Emin"]
     kappa = P["kappa"]

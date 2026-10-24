@@ -14,8 +14,12 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "vendor", "eta1_code"))
-import model
+# SINGLE SOURCE OF PHYSICS (2026-10-24): the corrected main code, not the vendored copy of an
+# earlier stage-2 reconstruction (which still used the 0.02 DOS smoothing and the endpoint-era
+# settings).  All W/W_N numbers come from the regenerated JSON; mu(T) uses the same solver.
+sys.path.insert(0, os.path.join(HERE, "..", "ultrasonic"))
+sys.path.insert(0, os.path.join(HERE, "..", "sc_params"))
+import physics_ua as model
 
 G = json.load(open(os.path.join(HERE, "vendor", "results", "groups.json")))
 S = json.load(open(os.path.join(HERE, "vendor", "results", "scans.json")))
@@ -41,12 +45,17 @@ def phi(f):
     return (1.0 - f ** 3.434) ** 0.553
 
 
+NO_SC_NOTE = []
 for grp in "ABCD":
     rows = [r for r in G if r["set"]["group"] == grp]
     FS = {"A": (15.45, 14.43), "B": (15.39, 16.29), "C": (15.45, 12.37), "D": (15.95, 10.95)}
     fig, ax = plt.subplots(2, 3, figsize=FS[grp])
     for i, r in enumerate(rows):
         s, st1 = r["set"], r["stage1"]
+        if r.get("no_superconductivity") or r.get("a_ratio") is None:
+            NO_SC_NOTE.append(f"{s['label']} (group {grp}): no superconducting state in the physical "
+                              f"window (chemical potential outside the band); not plotted")
+            continue
         fr = np.array(r["fracs"])
         rat = np.array(r["a_ratio"])
         Deff0, Tc, VSO = st1["Deff_0"], st1["Tc"], st1["V_SO"]
@@ -105,6 +114,8 @@ for grp in "ABCD":
 SCAN_FS = {"95": (12.0, 4.07), "125": (12.0, 5.95), "-75": (12.0, 6.1)}
 for key, title in (("95", "U=95t"), ("125", "U=125t"), ("-75", "U=-75t")):
     rec = S[key]
+    if all(x is None for f in rec["ratio"].values() for x in f):
+        NO_SC_NOTE.append(f"U={key}t: no superconducting state at any V_SO in the physical window")
     V = np.array(rec["V_SO"])
     fig, a = plt.subplots(figsize=SCAN_FS[key])
     for j, f in enumerate(("0.3", "0.5", "0.7", "0.9")):
@@ -122,3 +133,7 @@ for key, title in (("95", "U=95t"), ("125", "U=125t"), ("-75", "U=-75t")):
     fig.savefig(os.path.join(HERE, "vendor", "figs", f"fig_scan_{tag}.png"), dpi=100)
     plt.close(fig)
     print("scan", key, "done", flush=True)
+
+with open(os.path.join(HERE, "vendor", "figs", "NO_SC_NOTES.txt"), "w") as fh:
+    fh.write("\n".join(NO_SC_NOTE) + "\n")
+print("notes:", *NO_SC_NOTE, sep="\n  ")

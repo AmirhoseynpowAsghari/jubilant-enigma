@@ -60,9 +60,13 @@ def collect(which):
         d = fams.setdefault(k, {"x": [], "r": {}})
         d["x"].append(x)
         vals = {"a5": r["fracs"]["0.5"]["a"], "a9": r["fracs"]["0.9"]["a"]}
+        nan = float("nan")
         for tk in ("0.10", "0.20"):
             t = r["temps"][tk]
-            vals.update({f"a{tk}": t["a"], f"tot{tk}": t["tot"], f"c2{tk}": t["c2"],
+            # F-06: normal-state points (sc=0) carry no SC value -> NaN gap (never plotted as data)
+            def _v(key):
+                return nan if t.get(key) is None else float(t[key])
+            vals.update({f"a{tk}": _v("a"), f"tot{tk}": _v("tot"), f"c2{tk}": _v("c2"),
                          f"po{tk}": t["pair_open"], f"em{tk}": t["Emin"],
                          f"spo{tk}": bool(t["pair_open"] and t["sc"])})
         vals["Tc"] = r["Tc"]
@@ -74,6 +78,20 @@ def collect(which):
         for kk in fams[k]["r"]:
             fams[k]["r"][kk] = np.asarray(fams[k]["r"][kk])[o]
     return fams
+
+
+def mono_tag(fams, chan):
+    """Data-driven label: monotone only if EVERY family curve is monotone (NaN gaps skipped)."""
+    flags = []
+    for f in fams.values():
+        y = np.asarray(f["r"][chan], float)
+        y = y[np.isfinite(y)]
+        if len(y) >= 2:
+            d = np.diff(y)
+            flags.append(bool(np.all(d >= -1e-12) or np.all(d <= 1e-12)))
+    if not flags:
+        return "[no SC points]"
+    return "[monotone]" if all(flags) else f"[NON-monotone in {sum(not x for x in flags)} of {len(flags)} families]"
 
 
 def panel(ax, fams, which, chan, title, peaks_for, shade=None):
@@ -102,9 +120,9 @@ def figure(which, path):
     fams = collect(which)
     fig, axes = plt.subplots(2, 2, figsize=(11.5, 8.0))
     panel(axes[0, 0], fams, which, "a5",
-          f"(a) primary: $\\eta=+1$ signed, scattering only, $T/T_c=0.5$  [monotone]", None)
+          f"(a) primary: $\\eta=+1$ signed, scattering only, $T/T_c=0.5$  {mono_tag(fams, 'a5')}", None)
     panel(axes[0, 1], fams, which, "a0.10",
-          "(b) primary channel at fixed $T=0.1t$  [monotone]", None)
+          f"(b) primary channel at fixed $T=0.1t$  {mono_tag(fams, 'a0.10')}", None)
     ax = axes[1, 0]
     panel(ax, fams, which, "tot0.10",
           "(c) physical TOTAL (sc+pair), $T=0.1t$; grey = pair-open $2E_{min}<\\hbar\\omega$",

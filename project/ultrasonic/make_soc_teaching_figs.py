@@ -30,7 +30,16 @@ from physics_ua import SCState
 from absorption import qp_constants, coherence
 from parameters_ua import OMEGA
 
-VSO_MU = {0.0: 3.32, 0.4082: 3.63, 0.8: 4.41}     # mu(0.5 Tc) from results/soc_scan.json
+# F-18/F-02 fix: no hand-typed stage-1 numbers.  mu(0.5 Tc) and the stage-1 inputs are
+# computed from the regenerated sc_params results at call time (see state_for).
+def _state_for(v):
+    import sc_loader
+    p = sc_loader.sc_params_at(v)
+    return SCState(params=dict(VSO=p["VSO"], Tc=p["Tc"], D0_0=p["D0_0"], DS_0=p["DS_0"],
+                               Deff_0=p["Deff_0"]), Nk_mu=200)
+
+
+VSO_MU = {v: _state_for(v).at(0.5)["mu"] for v in (0.0, 0.4082, 0.8)}
 
 
 def bands_figure():
@@ -75,8 +84,7 @@ def bands_figure():
 
 
 def branch_figure():
-    sc = SCState(params=dict(VSO=0.4082, Tc=0.3808, D0_0=0.2855, DS_0=1.1124,
-                             Deff_0=0.5489), Nk_mu=200)
+    sc = _state_for(0.4082)
     st = sc.at(0.5)
     D0, DS, mu = st["D0"], st["DS"], st["mu"]
     P = qp_constants(D0, DS, mu)

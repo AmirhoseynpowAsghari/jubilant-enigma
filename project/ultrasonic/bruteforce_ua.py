@@ -20,14 +20,24 @@ energy-space reduction.  Here we verify it by keeping the k-labels explicitly.
 Discretisation: E is binned with width de, delta is represented by exp(-(x/w)^2)/(w sqrt(pi)).
 The exact answer is recovered by w -> 0 at fixed de; both errors are O(w^2) and O(de^2) and are
 Richardson-extrapolated.
+
+AUDIT FIXES (2026-10-24)
+  F-01  the coherence kernels are no longer duplicated here: _coh() DELEGATES to
+        absorption.coherence(), the single production implementation.  The old local copy
+        had the d_std sign inverted (num = +D*Dp instead of -D*Dp), which made the whole
+        T3 d_std column a harness artifact.  test_fixes.py asserts kernel-by-kernel
+        identity of the two implementations on random physical states.
+  F-11  the dense (nbin x nbin) pair sums are evaluated in row chunks (parameters_ua.
+        BF_CHUNK), bounding peak memory at O(chunk * nbin) instead of O(nbin^2) so that
+        convergence studies at large nbin are possible on small machines.
 """
 from __future__ import annotations
 
 import numpy as np
 
 from kgrid_ua import kgrid
-from parameters_ua import T_HOP
-from absorption import fermi_qp
+from parameters_ua import T_HOP, BF_CHUNK
+from absorption import fermi_qp, coherence as _coherence_production
 
 
 def lattice_states(VSO: float, Nk: int, D0: float, DS: float, mu: float, t: float = T_HOP):
@@ -45,7 +55,8 @@ def lattice_states(VSO: float, Nk: int, D0: float, DS: float, mu: float, t: floa
     and every state, of either helicity, carries one of the two values.  Grouping the lattice
     states by the helicity instead mixes the two branches inside one group and makes the
     coherence factor wrong (it is exactly wrong in the Delta -> 0 limit, where it produces
-    spurious cross-branch weight); that was the bug in the first version of this cross-check.
+    spurious cross-branch weight); that was the bug in the first version of this cross-check
+    (and, until the F-14 fix, of make_soc_explicit.py).
     """
     e0, R = kgrid(Nk)
     eps = np.concatenate([(e0 - 2.0 * (+1.0) * VSO * R).ravel(),
@@ -69,20 +80,49 @@ def lattice_states(VSO: float, Nk: int, D0: float, DS: float, mu: float, t: floa
 
 
 def _coh(x, xp, D, Dp, E, Ep, variant):
-    EE = np.maximum(E * Ep, 1e-300)
-    if variant in ("a_signed", "signed"):
-        num = x * xp - D * Dp
-    elif variant in ("b_abs", "abs_minus"):
-        num = np.abs(x) * np.abs(xp) - D * Dp
-    elif variant in ("c_paper", "abs_plus"):
-        num = np.abs(x) * np.abs(xp) + D * Dp
-    elif variant in ("d_std", "std"):
-        num = D * Dp
-    elif variant in ("case2_signed", "mb"):
-        num = x * xp + D * Dp          # Case-II (eta = -1) kernel, cf. case2_checks.py T6
-    else:
-        raise ValueError(variant)
-    return 0.5 * (1.0 + num / EE)
+    """F-01 fix: single source of truth -- delegate to the production kernel.
+
+    Argument order kept for call-site compatibility: (xi, xi', Dbar, Dbar', E, E').
+    absorption.coherence(E, xi, Dbar, Ep, xip, Dbarp, variant) implements exactly the same
+    five kernels (a_signed, b_abs, c_paper, d_std, case2_signed).
+    """
+    return _coherence_production(E, x, D, Ep, xp, Dp, variant)
+
+
+def _bin_block(st, mask, idx, nbin):
+    """Per-bin counts and bin-mean (xi, Dbar) of one (branch) group of lattice states."""
+    cnt = np.bincount(idx[mask], minlength=nbin).astype(float)
+    safe = np.maximum(cnt, 1)
+    xi = np.bincount(idx[mask], weights=st["xi"][mask], minlength=nbin) / safe
+    Db = np.bincount(idx[mask], weights=st["Dbar"][mask], minlength=nbin) / safe
+    return dict(cnt=cnt, xi=xi, D=Db)
+
+
+def _pair_sum(B, A, f, Ebin, omega, w, variant, nbin, mode, chunk=BF_CHUNK):
+    """Chunked dense pair sum over bins.
+
+    mode="scattering": weight [f(E_b) - f(E_a)] * delta(E_a - E_b - omega)
+    mode="pair"      : weight [1 - f(E_b) - f(E_a)] * delta(E_a + E_b - omega)
+    Rows (lower state b) are processed in chunks -> peak memory O(chunk * nbin) (F-11).
+    """
+    total = 0.0
+    for i0 in range(0, nbin, chunk):
+        i1 = min(i0 + chunk, nbin)
+        Eb = Ebin[i0:i1]
+        fb = f[i0:i1]
+        if mode == "scattering":
+            therm = fb[:, None] - f[None, :]
+            dlt = np.exp(-(((Ebin[None, :] - Eb[:, None] - omega) / w) ** 2)) / (w * np.sqrt(np.pi))
+        else:
+            therm = 1.0 - fb[:, None] - f[None, :]
+            dlt = np.exp(-(((Ebin[None, :] + Eb[:, None] - omega) / w) ** 2)) / (w * np.sqrt(np.pi))
+        C = _coh(B["xi"][i0:i1, None], A["xi"][None, :],
+                 B["D"][i0:i1, None], A["D"][None, :],
+                 Eb[:, None], Ebin[None, :], variant)
+        weight = (1.0 - C) if mode == "pair" else C
+        total += float((B["cnt"][i0:i1, None] * A["cnt"][None, :] * weight
+                        * therm * dlt).sum())
+    return total
 
 
 def S_sc_bf(st, T, omega, variant, Egrid, nbin, w):
@@ -95,28 +135,16 @@ def S_sc_bf(st, T, omega, variant, Egrid, nbin, w):
     inside = (idx >= 0) & (idx < nbin)
     idx = np.clip(idx.astype(np.int64), 0, nbin - 1)
     f = fermi_qp(Ebin, T)
-    thermal = f[:, None] - f[None, :]
-    delta = np.exp(-(((Ebin[None, :] - Ebin[:, None] - omega) / w) ** 2)) / (w * np.sqrt(np.pi))
-    base = thermal * delta
     pref = 1.0 / st["nstates"]          # <...>_k ; the helicity sum is explicit below
-    total = 0.0
+    blocks = {}
     for sb in (+1, -1):
         mb = (st["sig"] == sb) & inside
-        if not mb.any():
-            continue
-        cnt_b = np.bincount(idx[mb], minlength=nbin).astype(float)
-        xi_b = np.bincount(idx[mb], weights=st["xi"][mb], minlength=nbin) / np.maximum(cnt_b, 1)
-        D_b = np.bincount(idx[mb], weights=st["Dbar"][mb], minlength=nbin) / np.maximum(cnt_b, 1)
-        for sa in (+1, -1):
-            ma = (st["sig"] == sa) & inside
-            if not ma.any():
-                continue
-            cnt_a = np.bincount(idx[ma], minlength=nbin).astype(float)
-            xi_a = np.bincount(idx[ma], weights=st["xi"][ma], minlength=nbin) / np.maximum(cnt_a, 1)
-            D_a = np.bincount(idx[ma], weights=st["Dbar"][ma], minlength=nbin) / np.maximum(cnt_a, 1)
-            C = _coh(xi_b[:, None], xi_a[None, :], D_b[:, None], D_a[None, :],
-                     Ebin[:, None], Ebin[None, :], variant)
-            total += float((cnt_b[:, None] * cnt_a[None, :] * C * base).sum())
+        if mb.any():
+            blocks[sb] = _bin_block(st, mb, idx, nbin)
+    total = 0.0
+    for sb, B in blocks.items():
+        for sa, A in blocks.items():
+            total += _pair_sum(B, A, f, Ebin, omega, w, variant, nbin, "scattering")
     return total * pref ** 2
 
 
@@ -143,28 +171,16 @@ def S_pair_bf(st, T, omega, variant, Egrid, nbin, w):
     inside = (idx >= 0) & (idx < nbin)
     idx = np.clip(idx.astype(np.int64), 0, nbin - 1)
     f = fermi_qp(Ebin, T)
-    thermal = 1.0 - f[:, None] - f[None, :]
-    delta = np.exp(-(((Ebin[None, :] + Ebin[:, None] - omega) / w) ** 2)) / (w * np.sqrt(np.pi))
-    base = thermal * delta
     pref = 1.0 / st["nstates"]
-    total = 0.0
+    blocks = {}
     for sb in (+1, -1):
         mb = (st["sig"] == sb) & inside
-        if not mb.any():
-            continue
-        cnt_b = np.bincount(idx[mb], minlength=nbin).astype(float)
-        xi_b = np.bincount(idx[mb], weights=st["xi"][mb], minlength=nbin) / np.maximum(cnt_b, 1)
-        D_b = np.bincount(idx[mb], weights=st["Dbar"][mb], minlength=nbin) / np.maximum(cnt_b, 1)
-        for sa in (+1, -1):
-            ma = (st["sig"] == sa) & inside
-            if not ma.any():
-                continue
-            cnt_a = np.bincount(idx[ma], minlength=nbin).astype(float)
-            xi_a = np.bincount(idx[ma], weights=st["xi"][ma], minlength=nbin) / np.maximum(cnt_a, 1)
-            D_a = np.bincount(idx[ma], weights=st["Dbar"][ma], minlength=nbin) / np.maximum(cnt_a, 1)
-            C = _coh(xi_b[:, None], xi_a[None, :], D_b[:, None], D_a[None, :],
-                     Ebin[:, None], Ebin[None, :], variant)
-            total += float((cnt_b[:, None] * cnt_a[None, :] * (1.0 - C) * base).sum())
+        if mb.any():
+            blocks[sb] = _bin_block(st, mb, idx, nbin)
+    total = 0.0
+    for sb, B in blocks.items():
+        for sa, A in blocks.items():
+            total += _pair_sum(B, A, f, Ebin, omega, w, variant, nbin, "pair")
     return 0.5 * total * pref ** 2
 
 

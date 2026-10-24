@@ -16,7 +16,7 @@ plt.rcParams.update({"axes.grid": True, "grid.alpha": 0.3, "font.size": 9,
 
 
 def fig_W_vs_U():
-    g = io.load("groups_WWN_AB.json")
+    g = io.load("groups_WWN.json")       # U-tree run_groups output (scanning format, groups A and B)
     fig, ax = plt.subplots(figsize=(7.0, 4.4))
     for p in g:
         s = p["set"]

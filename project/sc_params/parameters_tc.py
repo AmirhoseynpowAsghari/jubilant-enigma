@@ -14,11 +14,13 @@ import numpy as np
 from scipy.optimize import fsolve, brentq
 
 T = 1.0
-Nk_DEF = 80
+Nk_DEF = 80                # midpoint-rule nodes per axis (F-02 fix; see kgrid.py docstring)
 BISECTION_TOL = 0.001
 BISECTION_ITER = 35
 GAP_THRESHOLD_FRAC = 0.01
 MIN_GAP_FOR_SC = 1e-6
+GRID_CONV_TOL = 2e-3       # |Tc(Nk) - Tc(2Nk)| and |Deff(Nk) - Deff(2Nk)| accepted by the
+                           # solve_set(check_conv=True) convergence assertion (F-02)
 
 # ---------------------------------------------------------------------------
 # registry of parameter sets (arXiv:2607.02812 groups A-D and the V_SO scans).
@@ -42,3 +44,13 @@ SETS = [
 MASTER = dict(U=95.0, Delta_t=4.5, n=1.885)          # the paper's master set
 SCAN_U = (95.0, 125.0, -75.0)                        # U values of the V_SO scans
 VSO_GRID = list(np.linspace(0.0, 0.8, 25))
+# V_SO values that stage-2 consumers request EXACTLY (sc_loader.sc_params_at now refuses to
+# snap, F-09): they are merged into the master scan grid so exact lookups exist.
+VSO_EXACT = (0.0, 0.4082, 0.8)
+# CHEMICAL-POTENTIAL WINDOW POLICY (scientific decision, see CORRECTION_LOG.md, section D1)
+#   "strict" (default): a superconducting root is accepted only if its mu lies inside the band
+#            [min eps, max eps] of the k-grid, i.e. a Fermi surface exists.  Roots with mu outside
+#            the band (no Fermi surface; every quasiparticle gapped) are NOT used for Tc.
+#   "relaxed"         : roots are accepted regardless of mu; mu_inside_band is recorded so that
+#            the excluded sets can be reported.  This is a SENSITIVITY setting, not the default.
+MU_WINDOW_POLICY = "strict"

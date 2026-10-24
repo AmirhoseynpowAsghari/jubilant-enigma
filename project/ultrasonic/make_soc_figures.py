@@ -155,7 +155,7 @@ if __name__ == "__main__":
     ax = axes[0, 0]
     eps = np.linspace(-4.0, 4.0, 800)
     for i, v in enumerate((0.0, 0.4082, 0.8)):
-        dos = NormalDOS(v, Nk=1400, nbins=6000, smooth=0.02)
+        dos = NormalDOS(v, Nk=1400)
         ax.plot(eps, dos.N(eps), lw=1.4, color=cols[i], label=f"$V_{{SO}}$={v:g}")
     ax.set_xlabel("$\\varepsilon/t$"); ax.set_ylabel("$N(\\varepsilon)$")
     ax.set_title("(a) route 1: van-Hove splitting of the DOS", fontsize=9)

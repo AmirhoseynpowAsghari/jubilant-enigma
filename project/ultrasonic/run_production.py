@@ -20,9 +20,14 @@ SCAN_FRACS = (0.3, 0.5, 0.7, 0.9)
 
 
 def closed_R(T):
+    """R(hw,T) = (2/hw) int_0^inf [f(E)-f(E+hw)] dE  (Delta=0 closed form, T1).
+
+    Uses the overflow-safe Fermi function of absorption.py (F-18): no exp() of huge arguments.
+    """
+    from absorption import fermi_qp
     E = np.linspace(1e-12, 400.0 * max(T, OMEGA), 400001)
-    f1 = 1.0 / (np.exp(E / T) + 1.0)
-    f2 = 1.0 / (np.exp((E + OMEGA) / T) + 1.0)
+    f1 = fermi_qp(E, T)
+    f2 = fermi_qp(E + OMEGA, T)
     return float(2.0 * np.trapezoid(f1 - f2, E) / OMEGA)
 
 
@@ -66,6 +71,11 @@ def main():
     N = {"A": 0.8, "B": 1.885, "C": 1.885, "D": 1.885}
     for p in gp:
         s = p["set"]
+        if not (p["Tc"] and p["Tc"] > 0):          # no SC state in the window (stage-1 flag)
+            raw["groups"].append(dict(set=s, stage1={k: p[k] for k in ("U", "Delta_t", "n", "V_SO", "Tc", "D0_0", "DS_0", "Deff_0", "mu_0") if k in p},
+                                      no_superconductivity=True, rows=[]))
+            print(f"  {s['group']} {s['label']}: no superconducting state (skipped)", flush=True)
+            continue
         sc = sc_from_stage1(p, n_tgt=N[s["group"]])
         rows = state_rows(sc, FRACS, ["a_signed"])
         io.save("production_raw_partial.json", raw)
