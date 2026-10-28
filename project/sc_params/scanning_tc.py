@@ -16,7 +16,7 @@ import numpy as np
 from scipy.optimize import fsolve, brentq
 
 from parameters_tc import (SETS, MASTER, SCAN_U, VSO_GRID, VSO_EXACT, Nk_DEF,
-                           GRID_CONV_TOL)
+                           GRID_CONV_TOL, MU_WINDOW_POLICY)
 from solvers import solve_set, sweep_T
 import io_utils_tc as io
 
@@ -37,7 +37,7 @@ def run_groups():
     io.save("groups_stage1.json", out)
     io.save("PROVENANCE.json", io.provenance(dict(
         stage="1", grid="midpoint", Nk_DEF=Nk_DEF, check_conv=True,
-        GRID_CONV_TOL=GRID_CONV_TOL,
+        GRID_CONV_TOL=GRID_CONV_TOL, MU_WINDOW_POLICY=MU_WINDOW_POLICY,
         conv_all_ok=bool(all(r["conv"]["ok"] for r in out)))))
     return out
 
@@ -57,6 +57,7 @@ def run_master_scan(npts=50):
         print(f"  VSO={v:.6f} Tc={_fmt_tc(r)} conv_ok={r['conv']['ok']}", flush=True)
     io.save("tc_vs_vso.json", dict(
         meta=dict(MASTER, grid="midpoint", Nk=Nk_DEF, check_conv=True,
+                  MU_WINDOW_POLICY=MU_WINDOW_POLICY,
                   npts=len(V), vso_exact=list(VSO_EXACT)),
         results=rec))
     return rec
@@ -66,12 +67,14 @@ def run_u_scans():
     out = {}
     for U in SCAN_U:
         rec = dict(V_SO=VSO_GRID, Tc=[], Deff_0=[], D0_0=[], DS_0=[],
-                   Tc_bracketed=[], conv_ok=[])
+                   mu_inside_band=[], Tc_bracketed=[], conv_ok=[],
+                   policy=MU_WINDOW_POLICY)
         for v in VSO_GRID:
             r = solve_set(U=U, Delta_t=MASTER["Delta_t"], n_fill=MASTER["n"], V_SO=v,
                           check_conv=True)
             rec["Tc"].append(r["Tc"]); rec["Deff_0"].append(r["Deff_0"])
             rec["D0_0"].append(r["D0_0"]); rec["DS_0"].append(r["DS_0"])
+            rec["mu_inside_band"].append(bool(r.get("mu_window", {}).get("inside", False)))
             rec["Tc_bracketed"].append(bool(r["Tc_bracketed"]))
             rec["conv_ok"].append(bool(r["conv"]["ok"]))
             print(f"  U={U:6.0f} VSO={v:.3f} Tc={_fmt_tc(r)}", flush=True)

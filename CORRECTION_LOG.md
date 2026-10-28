@@ -1,4 +1,9 @@
-# CORRECTION LOG — audit-driven correction campaign (2026-10-24)
+# CORRECTION LOG — audit-driven correction campaign (2026-10-24; D1 policy update 2026-10-28)
+
+**Policy decision update (2026-10-28):** the user selected the relaxed chemical-potential window. The
+current code and regenerated active outputs use `MU_WINDOW_POLICY = "relaxed"`; strict-policy numbers
+below are historical unless explicitly re-run. Out-of-band roots are flagged, not silently treated as
+ordinary Fermi-surface states.
 
 This document records every change made in response to the external audit
 `AUDIT_symmetrical-octo-pancake.md` (findings F-01 … F-18), the verification that each change
@@ -23,10 +28,10 @@ Every regenerated JSON is hashed in `results/REGEN_MANIFEST.json`.
    is not reached (decision D2, ≈1 % systematic).** Two audit statements were corrected rather than
    confirmed: F-04's magnitude is state-dependent (+0.06 % here, not 7×10⁻⁵), and F-12's "untested"
    is replaced by a reclassification of variant (d) (§3). The per-finding status is in §2.
-2. **Scientific results that move** (all measured, §5): stage-1 Tc falls by 0.4–2.7 %; the
-   W/W_N limits at T/Tc → 0.999 fall by 2.3–4.3 % on the master set; the Tc/W_N values of the
-   low-U and Δt = 4.5 sets change, and some of them **lose their superconducting state** under
-   the chemical-potential window rule (decision D1, §4).
+2. **Scientific results that move** (the 2026-10-24 strict-policy audit baseline, §5): stage-1 Tc fell by
+   0.4–2.7 %; master-set W/W_N limits fell by 2.3–4.3 %; several companion sets were excluded by the
+   strict chemical-potential window. Those figures are historical after the 2026-10-28 relaxed-policy
+   decision and the corresponding regeneration.
 3. **The coherence kernel is re-derived independently** (§3). Variant (a), the signed kernel
    C = ½[1 + (ξξ′ − Δ̄Δ̄′)/EE′], equals the numerically computed Bogoliubov matrix element
    (uu′ − vv′)² to 7×10⁻¹⁶. **Variant (d) is not a Bogoliubov matrix element at all**; the
@@ -34,10 +39,9 @@ Every regenerated JSON is hashed in `results/REGEN_MANIFEST.json`.
    "C → 1 at the gap edge" is incorrect (at E = Δ it equals 0). The paper's rejection of
    variants (b)/(c) and the claim that only (a) is physical rest on the derivation, not on the
    (d) comparison.
-4. **Open, and the most important:** the window decision D1 (§4) changes the set of superconducting
-   states that the paper describes (163 of 435 companion-family sets, the Group C Δt = 4.5 set, and
-   U = −75), and the DOS-smoothing limit D2 (§4) carries a ≈1 % systematic. Neither has been settled by me
-   alone; the numbers for both alternatives are generated and documented.
+4. **Open limitation:** D1 is now decided as relaxed (§4), but out-of-band roots are not thereby proven
+   thermodynamically stable or suitable for a Fermi-surface interpretation. D2 remains open: the DOS-
+   smoothing limit carries an approximately 1 % systematic in the earlier calibration.
 
 ---
 
@@ -135,7 +139,7 @@ closed forms and with each of the four variants (a)–(d).
 
 ---
 
-## 4. Decisions that need your sign-off
+## 4. Policy decision and remaining numerical limitations
 
 ### D1 — Chemical-potential window (**the largest scientific decision in this campaign**)
 * **What the rule says.** A superconducting root is accepted only if its μ lies inside the band
@@ -160,12 +164,13 @@ closed forms and with each of the four variants (a)–(d).
     DS ≈ −3 to −4.5): **163 of 435** companion-family sets; this includes the Tc values reported by the
     earlier E10 analysis for U = 15–17.5 (2.2–3.0 t) and the "edge maximum at U = 15" statement;
   * U = −75 at every V_SO (μ ≈ 35 t).
-* **Options.** (a) keep strict (current default; the low-U superconductivity is not described by a Fermi-surface
-  picture, so it is excluded and flagged); (b) relaxed (`MU_WINDOW_POLICY = "relaxed"`; the excluded roots are
-  included and reported with `mu_window.inside = false`; the sensitivity numbers are in
-  `project/ultrasonic/results/sensitivity/`); (c) strict for W/W_N but report Tc of the excluded roots as a
-  separate "no-Fermi-surface" branch. My recommendation is (a) for the physics claims and (c) for the
-  tables — but this is a physics judgment that belongs to the authors.
+* **Decision (2026-10-28): relaxed adopted by user instruction.** `MU_WINDOW_POLICY = "relaxed"` is now the
+  default. Every residual-verified root is retained; `mu_window.inside` is recorded and out-of-band points
+  are visibly flagged in the companion-family figures. This resolves the artificial data truncation at the
+  strict in-band cutoff, but it does **not** establish thermodynamic stability or a Fermi-surface
+  interpretation for out-of-band roots. The strict-policy numbers described earlier in this section and in
+  §5 are historical sensitivity results; regenerated relaxed outputs supersede them where the policy changes
+  the solution. The old strict-vs-relaxed sensitivity file is retained as historical evidence.
 
 ### D2 — DOS smoothing and histogram resolution
 * Adopted: SMOOTH = 0.0025, NBINS = 48000 (σ/Δε ≈ 14; bin-converged to 0.04 %; k-grid converged to 6×10⁻⁵).

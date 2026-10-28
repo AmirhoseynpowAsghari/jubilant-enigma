@@ -53,12 +53,15 @@ for grp in "ABCD":
     for i, r in enumerate(rows):
         s, st1 = r["set"], r["stage1"]
         if r.get("no_superconductivity") or r.get("a_ratio") is None:
-            NO_SC_NOTE.append(f"{s['label']} (group {grp}): no superconducting state in the physical "
-                              f"window (chemical potential outside the band); not plotted")
+            NO_SC_NOTE.append(f"{s['label']} (group {grp}): no residual-verified superconducting root under "
+                              f"the relaxed policy; not plotted")
             continue
         fr = np.array(r["fracs"])
         rat = np.array(r["a_ratio"])
         Deff0, Tc, VSO = st1["Deff_0"], st1["Tc"], st1["V_SO"]
+        mu_outside = (st1.get("mu_window") or {}).get("inside") is False
+        if mu_outside:
+            NO_SC_NOTE.append(f"{s['label']} (group {grp}): relaxed-policy root retained with mu outside the band; not a verified Fermi-surface state")
         fa = np.linspace(0.0, 1.4, 141)
         pha = np.array([phi(f) for f in fa])
         mu_cur = np.array([model.solve_mu(max(f * Tc, 1e-9), phi(f) * st1["D0_0"],
@@ -76,6 +79,9 @@ for grp in "ABCD":
         ax[1, 2].plot(fa * Tc, pha * Deff0, color=c, lw=1.4,
                       label=f"{s['label']}  $\\Delta_{{eff}}$ = {Deff0:.4f}")
         ax[1, 2].axvline(Tc, color=c, ls=":", lw=0.7)
+    if any((r.get("stage1", {}).get("mu_window") or {}).get("inside") is False for r in rows):
+        ax[0, 0].text(0.02, 0.97, "relaxed root: $\\mu_0$ outside band", transform=ax[0, 0].transAxes,
+                       va="top", fontsize=7, color="darkred")
     ax[0, 0].set_title("W/W$_N$ vs Normalised Gap")
     ax[0, 1].set_title("W/W$_N$ vs Normalised Temperature")
     ax[0, 2].set_title("Normalised Gap vs T/Tc\n(universal BCS curve)")
@@ -115,17 +121,22 @@ SCAN_FS = {"95": (12.0, 4.07), "125": (12.0, 5.95), "-75": (12.0, 6.1)}
 for key, title in (("95", "U=95t"), ("125", "U=125t"), ("-75", "U=-75t")):
     rec = S[key]
     if all(x is None for f in rec["ratio"].values() for x in f):
-        NO_SC_NOTE.append(f"U={key}t: no superconducting state at any V_SO in the physical window")
+        NO_SC_NOTE.append(f"U={key}t: no residual-verified superconducting root under the relaxed policy")
     V = np.array(rec["V_SO"])
     fig, a = plt.subplots(figsize=SCAN_FS[key])
     for j, f in enumerate(("0.3", "0.5", "0.7", "0.9")):
         y = np.array([x if x is not None else np.nan for x in rec["ratio"][f]], float)
         a.plot(V, y, color=SCANCOL[j], lw=1.4, marker="o", ms=3.5, label=f"T/$T_c$ = {f}")
+        mu_inside = rec.get("mu_inside_band")
+        if mu_inside is not None:
+            outband = ~np.asarray(mu_inside, bool)
+            a.plot(V[outband], y[outband], "^", mfc="none", mec="0.25", mew=0.7,
+                   ms=4.0, ls="none", label="$\\mu_0$ outside band" if j == 0 else None)
     a.set_ylim(0.0, 1.05)
     a.axhline(1.0, color="0.5", lw=0.7)
     a.set_xlabel("Spin–orbit coupling  V_SO  [units of t]")
     a.set_ylabel("W/W$_N$")
-    a.set_title("Ultrasonic Attenuation vs Spin–Orbit Coupling  [corrected]\n"
+    a.set_title("Ultrasonic Attenuation vs Spin–Orbit Coupling  [relaxed window]\n"
                 f"{title}, n=1.885, omega=0.7t, $\\Delta_t$=4.5t")
     a.legend(loc="lower right", title="fixed T/Tc")
     fig.tight_layout()

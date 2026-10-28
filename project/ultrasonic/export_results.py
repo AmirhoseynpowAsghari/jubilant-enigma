@@ -116,9 +116,11 @@ for key, rec in RAW["scans"].items():
         for f in fr:
             ratio[str(f)].append(None if rows is None else
                                  [r for r in rows if abs(r["frac"] - f) < 1e-9][0]["a_signed_ratio"])
-    vs[key] = dict(V_SO=rec["V_SO"], ratio=ratio)
+    vs[key] = dict(V_SO=rec["V_SO"], ratio=ratio,
+                   mu_inside_band=rec.get("mu_inside_band"))
     ps[key] = dict(U=float(key), Delta_t=4.5, n=1.885, V_SO=rec["V_SO"], Tc=rec["Tc"],
-                   Deff_0=rec["Deff_0"], D0_0=rec["D0_0"], DS_0=rec["DS_0"], ratio=ratio)
+                   Deff_0=rec["Deff_0"], D0_0=rec["D0_0"], DS_0=rec["DS_0"],
+                   mu_inside_band=rec.get("mu_inside_band"), ratio=ratio)
 json.dump(vs, open(f"{HERE}/results/vso_scan.json", "w"), indent=1)
 json.dump(ps, open(os.path.join(HERE, "results", "scans.json"), "w"), indent=1)
 print("export done:", len(wj), "master sweeps,", len(gw), "groups,", len(vs), "scans")

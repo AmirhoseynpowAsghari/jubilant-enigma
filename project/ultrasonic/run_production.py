@@ -71,8 +71,8 @@ def main():
     N = {"A": 0.8, "B": 1.885, "C": 1.885, "D": 1.885}
     for p in gp:
         s = p["set"]
-        if not (p["Tc"] and p["Tc"] > 0):          # no SC state in the window (stage-1 flag)
-            raw["groups"].append(dict(set=s, stage1={k: p[k] for k in ("U", "Delta_t", "n", "V_SO", "Tc", "D0_0", "DS_0", "Deff_0", "mu_0") if k in p},
+        if not (p["Tc"] and p["Tc"] > 0):          # no residual-verified SC root under selected policy
+            raw["groups"].append(dict(set=s, stage1={k: p[k] for k in ("U", "Delta_t", "n", "V_SO", "Tc", "D0_0", "DS_0", "Deff_0", "mu_0", "mu_window", "policy") if k in p},
                                       no_superconductivity=True, rows=[]))
             print(f"  {s['group']} {s['label']}: no superconducting state (skipped)", flush=True)
             continue
@@ -80,19 +80,20 @@ def main():
         rows = state_rows(sc, FRACS, ["a_signed"])
         io.save("production_raw_partial.json", raw)
         raw["groups"].append(dict(set=s, stage1={k: p[k] for k in
-                                 ("U", "Delta_t", "n", "V_SO", "Tc", "D0_0", "DS_0", "Deff_0", "mu_0")},
+                                 ("U", "Delta_t", "n", "V_SO", "Tc", "D0_0", "DS_0", "Deff_0", "mu_0", "mu_window", "policy") if k in p},
                                   rows=rows))
     print("== V_SO scans ==", flush=True)
     us = json.load(open(os.path.join(os.path.dirname(__file__), "..", "sc_params", "results",
                                      "u_scans_stage1.json")))
     for key, rec in us.items():
-        entry = dict(V_SO=[], Tc=[], Deff_0=[], D0_0=[], DS_0=[], rows=[])
+        entry = dict(V_SO=[], Tc=[], Deff_0=[], D0_0=[], DS_0=[], mu_inside_band=[], rows=[])
         for i, v in enumerate(rec["V_SO"]):
             p = dict(VSO=v, Tc=rec["Tc"][i], D0_0=rec["D0_0"][i], DS_0=rec["DS_0"][i],
                      Deff_0=rec["Deff_0"][i])
             entry["V_SO"].append(v)
             entry["Tc"].append(rec["Tc"][i]); entry["Deff_0"].append(rec["Deff_0"][i])
             entry["D0_0"].append(rec["D0_0"][i]); entry["DS_0"].append(rec["DS_0"][i])
+            entry["mu_inside_band"].append(rec.get("mu_inside_band", [False] * len(rec["V_SO"]))[i])
             if rec["Tc"][i] <= 0:
                 entry["rows"].append(None)
                 continue

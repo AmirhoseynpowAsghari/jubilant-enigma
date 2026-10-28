@@ -14,12 +14,13 @@
 > lim W/W_N (T/Tc → 0.999) = **0.3867 / 0.4835 / 0.7434** at V_SO = 0 / 0.4082 / 0.8
 > (previously 0.4000 / 0.5054 / 0.7611). Tc = **0.2782 / 0.3738 / 0.6467** (previously 0.2861 / 0.3808 / 0.6494).
 >
-> **Open decisions that change numbers** (see `CORRECTION_LOG.md` §4): **D1** the chemical-potential
-> window rule removes the superconducting state of the low-U region (U = 15–30, 163 of 435 companion
-> sets), Group C Δt = 4.5 and U = −75 — the choice of policy is the authors' to make; **D2** the DOS
-> smoothing σ→0 limit is not reached (≈1 % systematic). The coherence kernel (a) is confirmed by an
-> independent Bogoliubov derivation; variant (d) is **not** a Bogoliubov matrix element (its "textbook"
-> description was wrong).
+> **Policy update (2026-10-28):** D1 now uses the **relaxed chemical-potential window**. Residual-verified
+> roots are retained even when their chemical potential lies outside the bare band; outputs and figures
+> must flag `mu_window.inside = false`. Such roots are algebraic mean-field solutions and are not, by this
+> choice alone, established as stable Fermi-surface superconductors. Historical strict-policy results are
+> documented in `CORRECTION_LOG.md` and must not be mixed with regenerated relaxed-policy outputs. **D2**
+> remains open: the DOS smoothing σ→0 limit is not reached (≈1 % systematic). The coherence kernel (a) is
+> confirmed by an independent Bogoliubov derivation; variant (d) is **not** a Bogoliubov matrix element.
 
 > **Power absorbed in the presence of an external time-dependent perturbation**
 > Ultrasonic attenuation ratio W/W_N for a spin–orbit-coupled Hubbard superconductor,

@@ -45,15 +45,15 @@ def build():
         "E6  Parameter misstatements (unchanged from the first erratum).  Group B's title reads Dt = 4; the printed "
         "values reproduce only for Dt = 4.5.  Group D's auxiliary panels belong to Group A's U = -4t row; Group D is "
         "regenerated from (U=95t, Dt=4.5t, n=1.885).\n"
-        "E7  U = -75t.  The stage-1 root that the earlier solver reported (Tc = 12.7t) was an artefact of taking the "
-        "absolute value of the two gap components separately: the correctly signed root has the same chemical potential "
-        "(about 35t), far outside the band.  The corrected solver finds no superconducting root with the chemical potential "
-        "inside the band at any V_SO; the set is reported as having no superconducting state in the physical window and is "
-        "not plotted as a curve.\n"
+        "E7  U = -75t.  The earlier Tc = 12.7t value was affected by independently taking absolute values of the two "
+        "gap components.  The corrected signed equations also admit residual-verified algebraic roots with chemical potential "
+        "far outside the bare band (about 35t).  Under the adopted relaxed window these roots are retained and explicitly "
+        "flagged mu_window.inside=false; they are not interpreted as ordinary Fermi-surface states or as proven stable phases.\n"
         "E8  Gap shape.  Stage 2 uses the rigid master shape phi(T) = (1-(T/Tc)^3.434)^0.553 for all V_SO.  The effect of a "
         "per-V_SO refit (1.3-3.4 % in the earlier measurement) was NOT re-measured in this correction; that statement is "
         "carried as an open item and is not a corrected result.\n"
-        "E9  Citability.  Outputs of the U = -75t set are excluded from the citable presentation figures.\n"
+        "E9  Citability.  Any relaxed-policy U = -75t results must carry the explicit out-of-band flag; they are not "
+        "used to support a Fermi-surface claim.\n"
         "E10 Grid convergence (F-02).  The earlier endpoint k-grid was not converged (its Tc drifted by 0.012 between "
         "40 and 160 points); the midpoint rule is converged to 3e-6 over the same range.  The master-set Tc changes by "
         f"{fmt(100*(M[0]['Tc']-0.28605)/0.28605,2)} % (V_SO=0) and by {fmt(100*(M[1]['Tc']-0.38084)/0.38084,2)} % (V_SO=0.4082).\n"
@@ -61,10 +61,10 @@ def build():
         "histogram.  The effect on W/W_N is -2.5 % to -3.0 % at the master state.  The smoothing limit is NOT reached: the "
         "value still changes by about 1 % per halving of the smoothing width; this residual is carried as a systematic of "
         "about 1 %, not a floor.\n"
-        "E12 Chemical-potential window (decision).  A superconducting root is accepted only if its chemical potential lies "
-        "inside the band, i.e. a Fermi surface exists.  This removes the superconducting state of the Group C (Dt = 4.5) "
-        "set and of the low-U region (U = 15-30) of the companion families.  The policy is a physics decision for the "
-        "authors; the numbers of the alternative are in the companion repository (sensitivity record).\n"
+        "E12 Chemical-potential window (decision, 2026-10-28).  The relaxed policy is adopted: residual-verified "
+        "self-consistent roots are retained even when mu lies outside the bare band, and mu_window.inside is recorded. "
+        "Out-of-band roots are algebraic mean-field solutions only; this policy does not establish a Fermi surface, "
+        "thermodynamic stability, or experimental relevance. Historical strict-policy results are superseded where they differ.\n"
         "E13 Coherence variant (d).  Variant (d), 1/2 [1 - D D'/(E E')], is not a Bogoliubov matrix element and vanishes at the "
         "gap edge.  The earlier description of it as the textbook Case-I factor is withdrawn.  Its (d)/(a) ratio at the master "
         "state (T/Tc=0.9, V_SO=0) is 0.83.\n")
@@ -91,15 +91,15 @@ def build():
     t["table3"] = ("Table 3 - V_SO scans at fixed T/Tc = 0.9 (range over the V_SO values that have a superconducting state):\n"
                    f"   U=95t:   {fmt(s95.get('lo'),3)} -> {fmt(s95.get('hi'),3)}   ({s95.get('n_sc')}/{s95.get('n')} V_SO values superconducting)\n"
                    f"   U=125t:  {fmt(s125.get('lo'),3)} -> {fmt(s125.get('hi'),3)}   ({s125.get('n_sc')}/{s125.get('n')} V_SO values superconducting)\n"
-                   f"   U=-75t:  no superconducting state in the physical window ({sm75.get('n_sc', 0)}/{sm75.get('n', 0)} values; E7)\n")
+                   f"   U=-75t:  {sm75.get('n_sc', 0)}/{sm75.get('n', 0)} V_SO values have a relaxed-policy root; out-of-band, flagged (E7/E12)\n")
 
     t["statements"] = (
         "Statements.  (i) In the scattering channel W/W_N < 1 for every set and every 0 < T < Tc.  (ii) The Tc- limit is "
         "R(hbar*omega, Tc) < 1 (E3), not 1.  (iii) Inside the paper's window the pair-breaking channel is identically zero "
         "(E4); pair-channel behaviour above threshold is an outlook only and carries no quantitative claim here.  "
         "(iv) The V_SO dependence of the limit is non-monotone at the largest V_SO for the master set only within the "
-        "error budget of the DOS smoothing (E11).  (v) The low-U superconducting states of the companion families depend on "
-        "the window policy (E12); no statement about them is made without that decision.\n")
+        "error budget of the DOS smoothing (E11).  (v) Out-of-band roots retained under the relaxed policy (E12) are "
+        "flagged and are not claimed to be stable Fermi-surface superconductors.\n")
 
     t["validation"] = (
         "3  Validation of the recomputation (regenerated)\n"
