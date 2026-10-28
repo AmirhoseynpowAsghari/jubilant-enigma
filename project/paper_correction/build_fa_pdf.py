@@ -17,7 +17,10 @@ FA_TTF = os.path.join(HERE, "assets", "BNazanin.ttf")
 ETA1 = os.path.join(HERE, "vendor", "eta1") + os.sep
 os.makedirs(os.path.join(HERE, "results"), exist_ok=True)
 from matplotlib import font_manager as _fm
-EN_TTF = _fm.findfont("DejaVu Serif", fallback_to_default=False)   # F-16: no absolute path
+# Prefer installed system fonts; PyMuPDF rejects some valid font copies bundled in wheels.
+_sys_ttf = sorted(_fm.findSystemFonts(fontext="ttf"))
+EN_TTF = next((p for p in _sys_ttf if os.path.basename(p).lower() == "dejavuserif.ttf"),
+              _fm.findfont("DejaVu Serif", fallback_to_default=False))
 
 W, H = 595.0, 842.0
 MR = ML = 60.0
@@ -310,10 +313,10 @@ paragraph(("بند ۶  دو نادرستیِ پارامتری.  عنوان گر�
            "مقاله تنها با @@\\Delta_t=4.5@@ بازتولید می‌شوند (غلط تایپی). پنل‌های کمکیِ گروه D هم عددهایی را "
            "نشان می‌دادند که متعلق به گروه D نبودند (عیناً سطر @@U=-4t@@ گروه A بودند). هر دو بازتولید و "
            "اصلاح شدند."), size=10.3)
-paragraph(("بند ۷  مجموعهٔ @@U=-75t@@.  برای این مجموعه، حلِ بیشینه‌شکافِ معادله‌های مرحلهٔ ۱ (همان قاعدهٔ "
-           "انتخابِ حل‌گرِ خودِ مقاله) یک ریشهٔ جفت‌شدگیِ قوی می‌دهد با سطح شیمیایی @@\\mu\\approx 35t@@، یعنی "
-           "بسیار بیرون از پهنای نوار (@@T_c\\approx 12.7t@@). چنین حلّی در این مدلِ تنگ‌بستن فیزیکی نیست؛ "
-           "منحنیِ اصلاح‌شده‌اش همان‌گونه که هست رسم شده، ولی نباید بر آن تکیهٔ فیزیکی کرد."), size=10.3)
+paragraph(("بند ۷  مجموعهٔ @@U=-75t@@.  معادله‌های علامت‌دارِ اصلاح‌شده ریشه‌های خودسازگاریِ باقیمانده‌تأییدشده‌ای "
+           "می‌دهند که پتانسیل شیمیایی‌شان (حدود @@\\mu\\approx 35t@@) بیرون از بازهٔ نوار است. با سیاستِ انتخاب‌شدهٔ "
+           "پنجرهٔ آزاد، این ریشه‌ها نگه داشته شده و با @@mu_window.inside=false@@ مشخص می‌شوند؛ این تصمیم، پایداریِ "
+           "ترمودینامیکی یا ابررساناییِ پایدارِ سطح فرمی را ثابت نمی‌کند و نباید چنین برداشتی از منحنی شود."), size=10.3)
 
 heading("صورت‌بندی و معادله‌های اصلاح‌شده")
 paragraph(("مدل: شبکهٔ مربعی با پرش @@t@@، جفت‌شدگی اسپین‌مدار راشبا @@V_{SO}@@ و برهم‌کنش هابارد @@U@@. "

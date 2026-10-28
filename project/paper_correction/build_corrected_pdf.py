@@ -21,7 +21,11 @@ for _need in (SRC, os.path.join(VEND, "figs"), os.path.join(VEND, "eta1")):
     if not os.path.exists(_need):
         raise SystemExit(f"missing vendored input: {_need}")
 from matplotlib import font_manager as _fm
-TTF = _fm.findfont("DejaVu Sans", fallback_to_default=False)   # F-16: no absolute path
+# Prefer an installed system font: PyMuPDF rejects some otherwise-valid copies bundled
+# inside matplotlib wheels. Resolve dynamically; never hard-code a host-specific path.
+_sys_ttf = sorted(_fm.findSystemFonts(fontext="ttf"))
+TTF = next((p for p in _sys_ttf if os.path.basename(p).lower() == "dejavusans.ttf"),
+           _fm.findfont("DejaVu Sans", fallback_to_default=False))
 
 doc = pymupdf.open(SRC)
 
@@ -58,7 +62,7 @@ NOTES = {
     13: (NOTE_STD + "   Upper figure: Group D regenerated consistently from (U=95t, \u0394_t=4.5t, n=1.885); "
                     "the original auxiliary panels quoted Tc values belonging to Group A, U=\u22124t (E6).  "
                     "Lower figure: recomputed V_SO scan at fixed T/Tc.", (72.0, 66.0, 540.0, 166.0)),
-    14: (NOTE_STD + "   For U=\u221275t no superconducting root with the chemical potential inside the band exists (E7); the set is not plotted.",
+    14: (NOTE_STD + "   Relaxed policy: residual-verified U=\u221275t roots may lie far outside the band; flagged mu_window.inside=false and not interpreted as Fermi-surface states (E7/E12).",
          (72.0, 84.0, 540.0, 168.0)),
 }
 for pno, (txt, rect) in NOTES.items():

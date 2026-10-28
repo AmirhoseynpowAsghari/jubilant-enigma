@@ -30,6 +30,14 @@ def fig_tc_vs_vso():
             c = "tab:blue"
         ax[0].plot(u[key]["V_SO"], u[key]["Tc"], "-o", ms=3, lw=1.0, color=c, label=f"U={key}t")
         ax[1].plot(u[key]["V_SO"], u[key]["Deff_0"], "-o", ms=3, lw=1.0, color=c)
+        mu_inside = np.asarray(u[key].get("mu_inside_band", [True] * len(u[key]["V_SO"])), dtype=bool)
+        outband = ~mu_inside
+        if outband.any():
+            ax[0].plot(np.asarray(u[key]["V_SO"])[outband], np.asarray(u[key]["Tc"])[outband],
+                       "^", ms=4, mfc="none", mec="0.25", mew=0.8, ls="none",
+                       label="mu outside band (relaxed)")
+            ax[1].plot(np.asarray(u[key]["V_SO"])[outband], np.asarray(u[key]["Deff_0"])[outband],
+                       "^", ms=4, mfc="none", mec="0.25", mew=0.8, ls="none")
     ax[0].set_ylabel("Tc / t")
     ax[1].set_ylabel("$\\Delta_{eff}(0)$ / t")
     for a in ax:
@@ -37,8 +45,8 @@ def fig_tc_vs_vso():
     ax[0].set_title("critical temperature")
     ax[1].set_title("zero-temperature effective gap")
     ax[0].legend()
-    fig.suptitle("Stage-1 V_SO scans (n=1.885, $\\Delta_t$=4.5t); U=-75t lies on an unphysical"
-                 " strong-coupling root (Tc~12.7t, off scale)")
+    fig.suptitle("Stage-1 V_SO scans (n=1.885, $\\Delta_t$=4.5t); open triangles mark relaxed-policy roots "
+                 "with mu outside the bare band (not established stable phases)")
     fig.tight_layout(rect=[0, 0, 1, 0.90])
     fig.savefig(f"{FIG}/Tc_vs_VSO.png", dpi=150)
     plt.close(fig)
@@ -55,8 +63,10 @@ def fig_gap_vs_T():
                 continue
             Tc, Deff = p["Tc"], p["Deff_0"]
             T = np.linspace(0, 1.05 * Tc, 200)
+            mu_out = (p.get("mu_window") or {}).get("inside") is False
+            status = "; mu outside band" if mu_out else ""
             ax[panel].plot(T, np.array([phi(t / Tc) for t in T]) * Deff, color=cols[i % 4],
-                           lw=1.5, label=f"{p['set']['label']} (Tc={Tc:.4f})")
+                           lw=1.5, label=f"{p['set']['label']} (Tc={Tc:.4f}{status})")
             ax[panel].axvline(Tc, color=cols[i % 4], ls=":", lw=0.7)
             i += 1
         ax[panel].set_xlabel("T [t]")

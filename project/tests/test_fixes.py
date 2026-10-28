@@ -197,6 +197,21 @@ def t_F08():
     return ok, "; ".join(out)
 
 
+# ----------------------------------------------------------------------------- D1 relaxed-window policy
+def t_D1_relaxed_window():
+    import parameters_tc as P
+    from solvers import solve_set_core
+    if P.MU_WINDOW_POLICY != "relaxed":
+        return False, f"expected selected default relaxed, got {P.MU_WINDOW_POLICY!r}"
+    # This is the last strict-policy-excluded sample from the plotted V_SO=0 family.
+    r = solve_set_core(46.5, 4.5, 1.885, 0.0, Nk=40)
+    w = r.get("mu_window") or {}
+    ok = (r["Tc"] > 0.0 and r.get("policy") == "relaxed"
+          and w.get("inside") is False and w.get("excess", 0.0) > 0.0)
+    return ok, (f"U=46.5,V_SO=0: Tc={r['Tc']:.6f}, relaxed root retained; "
+                f"mu_inside={w.get('inside')}, excess={w.get('excess')}")
+
+
 # ----------------------------------------------------------------------------- F-09 / F-10 loader
 def t_F09_F10():
     import sc_loader as L
@@ -373,6 +388,7 @@ def main():
     check("F-06", "no normal-state values stored as SC data", t_F06)
     check("F-07", "abs()-fold verified against the residual", t_F07)
     check("F-08", "unbracketed Tc flagged, not invented", t_F08)
+    check("D1", "relaxed policy retains and flags out-of-band roots", t_D1_relaxed_window)
     check("F-09/10", "exact V_SO lookup; root-keyed cache", t_F09_F10)
     check("F-11", "chunked brute-force pair sum identical", t_F11)
     check("F-13", "input validation rejects bad arguments", t_F13)

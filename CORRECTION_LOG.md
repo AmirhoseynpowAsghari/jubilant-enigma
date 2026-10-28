@@ -1,4 +1,13 @@
-# CORRECTION LOG — audit-driven correction campaign (2026-10-24)
+# CORRECTION LOG — audit-driven correction campaign (2026-10-24; D1 policy update 2026-10-28)
+
+**Policy decision update (2026-10-28):** the user selected the relaxed chemical-potential window. The
+project default is `MU_WINDOW_POLICY = "relaxed"`; strict-policy numbers below are historical unless
+explicitly re-run. The executed D1-only scope (`project/run_relaxed_regeneration.sh`) covered stage 1,
+stage 2, companion/SOC/parameter families, U-family, before/after tables, tests, paper inputs/figures,
+addendum figures/PDFs, and the JSON manifest.
+It deliberately skipped the independent D2 smoothing calibration and did not alter historical archives.
+Out-of-band roots are flagged, not silently treated as ordinary Fermi-surface states; see the verified
+regeneration record in §4.
 
 This document records every change made in response to the external audit
 `AUDIT_symmetrical-octo-pancake.md` (findings F-01 … F-18), the verification that each change
@@ -10,23 +19,24 @@ stage-2 numbers below were recomputed on that grid.
 **Pre-correction outputs** are preserved, unmodified, in `archive/pre_f02_baseline/` with an md5
 manifest (`MANIFEST_md5.txt`, 96 files). Before/after tables are generated from those files by
 `tools/before_after.py` → `CORRECTION_TABLES.md`, `results/BEFORE_AFTER.json`.
-**Reproduction:** `bash project/run_full_regeneration.sh` (one strict, ordered run; ~80 min on 2 cores).
-Every regenerated JSON is hashed in `results/REGEN_MANIFEST.json`.
+**Reproduction:** `bash project/run_full_regeneration.sh` is the broad audit rerun (~80 min); the selected
+D1-only rerun is `bash project/run_relaxed_regeneration.sh` and deliberately skips the independent D2
+calibration. Every regenerated data JSON is hashed in `results/REGEN_MANIFEST.json` (provenance files are excluded).
 
 ---
 
 ## 0. Summary for the reader
 
-1. **Eighteen findings were examined. Seventeen are RESOLVED, each with a test that exercises the fix
-   (`project/tests/test_fixes.py`, 18/18 PASS on the regenerated outputs). One, F-03, is RESOLVED-PART:
+1. **Eighteen audit findings were examined. Seventeen are RESOLVED, with 19 executable regression checks
+   (`project/tests/test_fixes.py`, 19/19 PASS on the relaxed-policy regenerated outputs; D1 adds the extra check). One, F-03, is RESOLVED-PART:
    the defect (an unexamined smoothing choice) is fixed and its magnitude is measured, but the σ → 0 limit
    is not reached (decision D2, ≈1 % systematic).** Two audit statements were corrected rather than
    confirmed: F-04's magnitude is state-dependent (+0.06 % here, not 7×10⁻⁵), and F-12's "untested"
    is replaced by a reclassification of variant (d) (§3). The per-finding status is in §2.
-2. **Scientific results that move** (all measured, §5): stage-1 Tc falls by 0.4–2.7 %; the
-   W/W_N limits at T/Tc → 0.999 fall by 2.3–4.3 % on the master set; the Tc/W_N values of the
-   low-U and Δt = 4.5 sets change, and some of them **lose their superconducting state** under
-   the chemical-potential window rule (decision D1, §4).
+2. **Scientific results that move** (the 2026-10-24 strict-policy audit baseline, §5): stage-1 Tc fell by
+   0.4–2.7 %; master-set W/W_N limits fell by 2.3–4.3 %; several companion sets were excluded by the
+   strict chemical-potential window. Those figures are historical after the 2026-10-28 relaxed-policy
+   decision and the corresponding regeneration.
 3. **The coherence kernel is re-derived independently** (§3). Variant (a), the signed kernel
    C = ½[1 + (ξξ′ − Δ̄Δ̄′)/EE′], equals the numerically computed Bogoliubov matrix element
    (uu′ − vv′)² to 7×10⁻¹⁶. **Variant (d) is not a Bogoliubov matrix element at all**; the
@@ -34,10 +44,9 @@ Every regenerated JSON is hashed in `results/REGEN_MANIFEST.json`.
    "C → 1 at the gap edge" is incorrect (at E = Δ it equals 0). The paper's rejection of
    variants (b)/(c) and the claim that only (a) is physical rest on the derivation, not on the
    (d) comparison.
-4. **Open, and the most important:** the window decision D1 (§4) changes the set of superconducting
-   states that the paper describes (163 of 435 companion-family sets, the Group C Δt = 4.5 set, and
-   U = −75), and the DOS-smoothing limit D2 (§4) carries a ≈1 % systematic. Neither has been settled by me
-   alone; the numbers for both alternatives are generated and documented.
+4. **Open limitation:** D1 is now decided as relaxed (§4), but out-of-band roots are not thereby proven
+   thermodynamically stable or suitable for a Fermi-surface interpretation. D2 remains open: the DOS-
+   smoothing limit carries an approximately 1 % systematic in the earlier calibration.
 
 ---
 
@@ -135,37 +144,44 @@ closed forms and with each of the four variants (a)–(d).
 
 ---
 
-## 4. Decisions that need your sign-off
+## 4. Policy decision and remaining numerical limitations
 
 ### D1 — Chemical-potential window (**the largest scientific decision in this campaign**)
 * **What the rule says.** A superconducting root is accepted only if its μ lies inside the band
   [min ε, max ε] of the k-grid, i.e. a Fermi surface exists. Roots with μ outside the band have every
   quasiparticle gapped: there is no Fermi surface for the scattering integrals, and the normal reference
   S_N is evaluated at a μ_N inside the band.
-* **Why I set it.** The solver, after the sign fix, returns such roots as genuine solutions. The project's
-  own E7 note already called the U = −75 root "outside the physical window". I did not want to keep
-  results whose quasiparticle picture does not exist.
-* **Sensitivity record** (`project/ultrasonic/results/sensitivity/relaxed_window_sensitivity.json`, 166 sets,
-  all superconducting under the relaxed policy). Summary of what the relaxed policy would add:
+* **Historical strict-policy rationale (2026-10-24; superseded).** The earlier audit excluded these roots
+  because the chemical potential lies outside the bare band and a Fermi surface is absent. That was a
+  conservative presentation choice, not a demonstration that the self-consistent roots do not exist. The
+  active 2026-10-28 decision is relaxed; out-of-band roots are retained and explicitly flagged.
+* **Historical sensitivity record** (`project/ultrasonic/results/sensitivity/relaxed_window_sensitivity.json`,
+  166 strict-excluded sets, all reporting superconducting under the relaxed solver at that time). These are
+  not the active full-family results. Historical comparison ranges:
   * U = 15–30 (67 sets): Tc 1.49–3.01 t, μ = 4.79–8.48 t, μ excess over the band 0.79–3.88 t, D0 0.47–2.00 t, DS −4.8 to −3.4;
   * U = 30–50 (69 sets): Tc 1.01–2.13 t, μ excess 0.04–2.03 t (the small excesses are at U ≈ 30–50);
   * U = 75, Δt = 4.5, V_SO = 0–0.8 (8 sets): Tc 0.87–1.07 t, μ excess 0.01–0.31 t (**marginal**);
   * U = −75 (3 sets): Tc 12.69–13.17 t, μ excess ≈ 31 t (**far outside**; the audited value is reproduced).
-  The excluded sets therefore form a continuum from marginal (≤ 0.3 t) to deep (≥ 0.8 t). Any cut in that
-  continuum other than μ-in-band would be arbitrary, which is why the strict criterion is proposed as the
-  clean physics statement. The relaxed numbers are NOT used for any result.
-* **What it removes (measured, §5.4):**
+  These counts and ranges are the historical strict-baseline sensitivity comparison. They motivate visible
+  out-of-band flags but do not decide physical stability. The newly regenerated relaxed-policy outputs now
+  use the active default; do not substitute this old sensitivity JSON for those outputs.
+* **What the former strict filter excluded (historical comparison, §5.4):**
   * the Group C Δt = 4.5 set (U = 75 t, V_SO = 0.8; μ = 4.72 vs band edge 4.60, i.e. 3 % outside): Tc = 0.9536 → none;
   * the whole U = 15–30 low-U region at every V_SO (μ ≈ 4.8–7.2 vs band ≈ ±4.0–4.6; D0 ≈ 0.5–1.5,
     DS ≈ −3 to −4.5): **163 of 435** companion-family sets; this includes the Tc values reported by the
     earlier E10 analysis for U = 15–17.5 (2.2–3.0 t) and the "edge maximum at U = 15" statement;
   * U = −75 at every V_SO (μ ≈ 35 t).
-* **Options.** (a) keep strict (current default; the low-U superconductivity is not described by a Fermi-surface
-  picture, so it is excluded and flagged); (b) relaxed (`MU_WINDOW_POLICY = "relaxed"`; the excluded roots are
-  included and reported with `mu_window.inside = false`; the sensitivity numbers are in
-  `project/ultrasonic/results/sensitivity/`); (c) strict for W/W_N but report Tc of the excluded roots as a
-  separate "no-Fermi-surface" branch. My recommendation is (a) for the physics claims and (c) for the
-  tables — but this is a physics judgment that belongs to the authors.
+* **Decision (2026-10-28): relaxed adopted by user instruction and regenerated.** `MU_WINDOW_POLICY = "relaxed"`
+  is the default. The D1-only scope in `project/run_relaxed_regeneration.sh` completed with exit status 0:
+  stage 1/2, companion/SOC/parameter families, U-family, before/after outputs, replacement and addendum
+  figures, English and Farsi PDFs, plus the JSON manifest were refreshed. The independent D2 smoothing
+  calibration and historical archives were deliberately untouched. The active `uvso_families.json` contains
+  1,515 records, all tagged `relaxed`; each has a `mu_window` diagnostic, and 521 are out of band. Stage-1
+  provenance reports `conv_all_ok=true`; validation gates passed and the regression suite reports 19/19 PASS.
+  Out-of-band roots are visibly flagged, including former strict-cutoff points. This removes the strict
+  filter's artificial displayed truncation but does **not** establish thermodynamic stability or a
+  Fermi-surface interpretation. Strict-baseline numbers in this section remain historical; active regenerated
+  products supersede them where D1 changes results.
 
 ### D2 — DOS smoothing and histogram resolution
 * Adopted: SMOOTH = 0.0025, NBINS = 48000 (σ/Δε ≈ 14; bin-converged to 0.04 %; k-grid converged to 6×10⁻⁵).
@@ -223,14 +239,17 @@ The variant-(a) limit moves by −2.3 % to −4.3 %. The (d)/(a) ratio at T/Tc =
 | k-grid (σ = 0.0025), Nk_DOS 1200 vs 2000 | 0.0312339 vs 0.0312339 (48000 bins) | | 0 |
 
 ### 5.4 Companion families and the window decision (D1)
-* Companion family grid (435 sets): **272** superconducting under the strict rule (was 435).
-* Relaxed-policy sensitivity: summarised in §4 (D1); 166 of 166 sets superconducting when the window is
-  relaxed (the 163 lost family sets, the Group C Δt = 4.5 set and three U = −75 points).
-* SOC-enhancement histogram (fig. 36): the headline medians move (V_SO = 0.8: 1.67 → 2.52), but this is a
-  **composition** effect. On the *same* (U, V_SO, T/Tc) points present in both data sets, the median is
-  2.43 → 2.52 (+3.9 %), and the p90 tail 6.9 → 8.4 (+22 %). The 120 points removed at V_SO = 0.8 had
-  enhancements close to 1 (low-U region), so their removal raises the median. Figure 36 now prints the
-  sample size; the caption must say so.
+* **Historical strict baseline:** 435 sets were tested; 272 had an accepted in-band root. These counts
+  describe the former filter only and are not the active project outputs.
+* **Regenerated relaxed family:** `project/ultrasonic/results/uvso_families.json` contains 1,515 records;
+  all 1,515 have Tc > 0, with 994 in-band and 521 explicitly marked `mu_window.inside=false`. The five
+  former strict-cutoff samples listed in §8.2 now appear with positive Tc and an out-of-band flag.
+* The older sensitivity file's 166/166 result remains a historical strict-baseline comparison; it is
+  superseded by the full 1,515-record family regeneration, not by assumption.
+* The SOC-enhancement histogram was regenerated from the relaxed-policy dataset. The logged summary is:
+  V_SO=0.2: median 1.052, p90 1.24, max 1.66; V_SO=0.4: 1.179, 2.03, 3.62; V_SO=0.6: 1.352, 3.59, 9.47;
+  V_SO=0.8: 1.600, 5.70, 14.53 (median, p90, max). These are descriptive outputs, not evidence for a
+  physical mechanism or stability of out-of-band roots.
 
 ### 5.5 Normal reference S_N (F-04)
 Gauss–Legendre on the kink-aligned mesh: relative spread across orders 2/4/8 = 1.6×10⁻¹⁶. The former
@@ -266,15 +285,18 @@ concern (contamination of the vertex band) is confirmed in size and corrected.
   the Δ → 0 projector; the Levy 1963 limit 2f(Δ) (T5: worst deviation 1.1×10⁻⁵ in the new test suite).
 * The validation gates: T0 3.9×10⁻⁴, T1 3.1×10⁻⁶, T2 2.0×10⁻⁶ (unchanged), T7a/T7b PASS.
 
-### 6.2 Changed
-1. **Quantitative W/W_N values** of every set: −2 % to −8 % at the limit (Table in §5.2 and `CORRECTION_TABLES.md`).
-2. **Tc values**: −0.4 % to −2.7 % on the master set; −2.0 % to −6.5 % for the U = 75/115/125 sets (grid bias).
+### 6.2 Changed (audit-campaign results; D1 entries below are historical strict-policy comparisons)
+1. **Quantitative W/W_N values** in the 2026-10-24 audit baseline: −2 % to −8 % at the limit (Table in §5.2 and `CORRECTION_TABLES.md`). Master-set values remain the same under the relaxed D1 choice because those sampled roots are in band.
+2. **Tc values** in that baseline: −0.4 % to −2.7 % on the master set; −2.0 % to −6.5 % for the U = 75/115/125 sets (grid bias).
 3. **The E10 low-U Tc results** (U = 15–17.5, 2.2–3.0 t) and the "edge maximum at U = 15" statement:
-   **withdrawn under the strict rule** (D1). The statement cannot stand unless the relaxed policy is adopted.
-4. **U = −75**: no superconducting root in the physical window at any V_SO (the audited Tc ≈ 12.7 was an
-   `abs()` artefact, and the properly signed root has μ ≈ 35 t).
-5. **Group C Δt = 4.5**: no superconducting state in the window (D1). The paper's Fig. group C must be read
-   with this.
+   these were withdrawn under the former strict rule. Under the now-adopted relaxed policy, the affected
+   self-consistent roots are retained in regenerated products and flagged when out of band; physical
+   stability and the interpretation of the edge feature remain unverified.
+4. **U = −75**: the corrected signed solver yields positive-Tc roots at all scanned V_SO values, with μ far
+   outside the bare band. They are retained under the relaxed policy and flagged; this is not evidence that
+   they represent a stable superconducting phase.
+5. **Group C Δt = 4.5**: the former strict filter removed its root at the edge; the relaxed output retains it
+   and flags the out-of-band state. Thermodynamic stability remains unverified.
 6. **Parameter peaks**: the earlier "no maxima in the scattering channel" statement is superseded. The
    regenerated study finds 15 verified candidate maxima in the scattering channel, all located near the
    Tc(U) maximum and the root crossover (U ≈ 48–50, where D0 jumps from 0.002 to 0.030 and DS changes sign).
@@ -300,7 +322,7 @@ concern (contamination of the vertex band) is confirmed in size and corrected.
 
 | Test | What it establishes | Result |
 |---|---|---|
-| `project/tests/test_fixes.py` (18 checks, one per finding + PHYS) | each finding's fix works; Levy limit | **18/18 PASS**, 0 FAIL, 0 SKIP (on the regenerated outputs) |
+| `project/tests/test_fixes.py` (19 checks, including the D1 relaxed-policy regression) | each finding's fix works; Levy limit; out-of-band root is retained and flagged | **19/19 PASS**, 0 FAIL, 0 SKIP (on the regenerated outputs) |
 | `project/ultrasonic/kernel_bdg_check.py` | (a) = BdG (uu′−vv′)²; (d) not BdG; completeness; Δ→0 projector | PASS (§3.2) |
 | `validate_ua.py` (T0–T4, gated T0, T1, T2, T3(a)) | quadrature, Δ→0 closed form, BCS limit, lattice cross-check, Cauchy–Schwarz | `VALIDATE_UA T0=PASS T1=PASS T2=PASS T3_a=PASS` |
 | `dualspace_check.py` (T7a/T7b) | k-space lattice vs energy space vs Levy, convergence in Nk | `T7 dual-space: T7a PASS T7b PASS` |
@@ -336,7 +358,20 @@ finite V_SO. The peak study checks numerical convergence, not the physical inter
   is caused by two diagnostic fields (`policy`, `mu_window`) added to the stage-1 output after run 1. All
   numerical fields (Tc, D0, DS, Deff, μ) of that file are identical in both runs (checked field by field:
   e.g. Tc(V_SO=0) = 0.278211, Tc(V_SO=0.8) = 0.646688, Tc(U=75) = 0.490888).
-* The final run completed with exit status 0 and 18/18 tests passing (`regen_full.log`).
+* The final historical full run completed with exit status 0 and 18/18 tests passing (`regen_full.log`).
+
+### 8.2 Relaxed-policy D1 regeneration (2026-10-28)
+* The D1-only regeneration completed successfully in 53 minutes (main pipeline; log at
+  `/tmp/jubilant-enigma-relaxed-regeneration.log`), followed by stage-1 plotting and English/Farsi PDF
+  builds. The reproducible runner is `project/run_relaxed_regeneration.sh`; it skips the independent
+  D2 calibration and preserves historical archives.
+* Stage-1 provenance: `MU_WINDOW_POLICY=relaxed`, `conv_all_ok=true`; stage-2 validation gates passed.
+  Regression result: 19/19 PASS. The manifest covers 36 regenerated JSON files at
+  `results/REGEN_MANIFEST.json`; provenance JSON files are intentionally excluded by `tools/manifest.py`.
+* Family output: 1,515 relaxed-policy records; 521 have `mu_window.inside=false`. The five former strict
+  cutoff samples at `(V_SO,U)=(0,46.5),(.2,48.5),(.4,55),(.6,66),(.8,81.5)t` now have positive,
+  residual-verified Tc values and are visibly flagged out of band. This is a numerical root/metadata result,
+  not evidence of thermodynamic stability.
 
 ---
 
@@ -344,7 +379,7 @@ finite V_SO. The peak study checks numerical convergence, not the physical inter
 
 | Item | Status | Owner / action |
 |---|---|---|
-| D1 window policy | decision | authors: choose (a)/(b)/(c) of §4; sensitivity numbers ready |
+| D1 window policy | **resolved: relaxed adopted and regenerated (2026-10-28)** | monitor scientific interpretation of out-of-band roots; stability remains unverified |
 | D2 DOS σ-limit (≈1 %) | open | needs exact/tetrahedron DOS (Nk → ∞) |
 | E8 per-V_SO gap-shape refit (1.3–3.4 % claim) | **not re-measured** in this campaign | the old `gap_refit_check.json` is pre-correction; re-run needed |
 | Farsi PDF (`corrections_fa.pdf`) | **not regenerated; contains Route-A violations** | rewrite the Persian addendum from `addendum_numbers.py` and remove pair numbers; first open item |
@@ -363,14 +398,14 @@ finite V_SO. The peak study checks numerical convergence, not the physical inter
   physics module (`physics_ua`) for μ(T), not the vendored older copy of the stage-2 code.
 * **Paper figures:** regenerated (`vendor/figs/`); the no-superconductivity sets are annotated in
   `vendor/figs/NO_SC_NOTES.txt` and are not plotted as curves.
-* **Paper PDFs:** the addendum text of `build_corrected_pdf.py` and `build_fa_pdf.py` contains
-  hard-coded numbers from the pre-correction results. These are **not yet rewritten** in this log's
-  scope; the status of each PDF is given in §10.1.
+* **Paper PDFs:** the English addendum is generated from refreshed results. The Farsi PDF has been
+  rebuilt and its U=-75 discussion updated for the relaxed policy, but other pre-existing numeric/Route-A
+  issues remain; see §10.1 and do not treat that PDF as fully corrected.
 
 ### 10.1 PDF status
 | Document | Status | Notes |
 |---|---|---|
 | `arXiv_2607.02812_corrected.pdf` (English, 23 pp.) | **REBUILT** from regenerated results | original 18 pp. verbatim; replaced figures regenerated from the corrected physics module; addendum text generated from the results (`addendum_text_en.py`, `addendum_numbers.py`); addendum figures A1–A3 regenerated (`make_addendum_figs.py`); no pair-channel number in the addendum (Route A); page-14 note updated for U = −75 |
-| `corrections_fa.pdf` (Farsi, B Nazanin) | **NOT REGENERATED — superseded** | the Persian text still contains the pre-correction W/W_N values (0.4024 / 0.5086 / 0.7616), the old T3 explanation, and **pair-channel threshold and overshoot numbers that violate Route A**. Do not distribute it until the text is rewritten. This is the first open item. |
-| `SOCfigures/` (21 PNGs refreshed and SHA-256 verified; 08, 30 not refreshed) | partly refreshed | 08 and 30 are stage-1 figures for which no regenerated script exists in this campaign (`sc_params/plotting_tc.py` not run); they are marked as not refreshed |
+| `corrections_fa.pdf` (Farsi, B Nazanin) | **REBUILT, but still superseded/partial** | the U=-75 paragraph now describes relaxed retention and flags out-of-band roots. Other pre-existing W/W_N values (0.4024 / 0.5086 / 0.7616), T3 wording, and pair-channel content were not comprehensively rewritten; do not distribute as a fully corrected PDF. |
+| `SOCfigures/` | refreshed for this policy run | stage-1 figures 08 and 30 were regenerated from the relaxed stage-1 data; family/SOC products were regenerated in the D1 run. Other archival material is unchanged. |
 | `README.md`, `REFEREE_RESPONSE.md`, `project/DEFENSE_referee_QA.md`, `project/PARAM_SCAN_PEAKS.md`, `project/SOC_EFFECT_SCATTERING.md`, `project/LEVY_REGIME_ANALYSIS.md`, `project/lecture_note_WWN_corrected.md`, `SOCfigures/INDEX.md` | README updated (notice + corrected headline); the others carry a **superseded** banner | their full numeric rewrite is not done; they must not be quoted without checking `CORRECTION_TABLES.md` |

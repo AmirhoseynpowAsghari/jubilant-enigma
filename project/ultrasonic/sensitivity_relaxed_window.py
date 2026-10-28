@@ -1,14 +1,11 @@
 """
-sensitivity_relaxed_window.py -- what the chemical-potential WINDOW DECISION (D1) changes.
+sensitivity_relaxed_window.py -- historical strict-versus-relaxed D1 comparison.
 
-The default policy (parameters_tc.MU_WINDOW_POLICY = "strict") rejects superconducting roots whose
-chemical potential lies outside the band.  This script evaluates the SAME sets under the
-"relaxed" policy and records what they would give.  It writes a sensitivity record only; the
-main results always use the strict default.  Nothing here changes a shipped number.
-
-Sets: every point of the companion family grid (uvso_families.json) with Tc = 0 under the strict
-policy, plus group C (Dt = 4.5) and U = -75 (V_SO = 0 ... 0.8).
-Run:  python3 sensitivity_relaxed_window.py     (~15 min on 2 cores)
+As of 2026-10-28 the production default is relaxed. This script was written when strict was the
+default; its stored sensitivity JSON is a historical strict-baseline comparison, not the current
+production dataset. Do not run it against regenerated relaxed-family inputs as though they were
+strict-policy inputs. For strict sensitivity runs, explicitly set solvers.MU_WINDOW_POLICY="strict"
+and save a separate, provenance-tagged output.
 """
 from __future__ import annotations
 
@@ -66,7 +63,7 @@ def main():
     with Pool(2) as p:
         recs = p.map(one, tasks, chunksize=2)
     n_sc = sum(1 for r in recs if r["Tc_relaxed"] > 0)
-    out = dict(policy="relaxed", note="sensitivity only; main results use policy=strict",
+    out = dict(policy="relaxed", note="historical strict-baseline sensitivity script; production default now relaxed",
                n_sets=len(recs), n_superconducting_under_relaxed=n_sc, sets=recs)
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as fh:

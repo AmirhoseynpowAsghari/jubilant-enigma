@@ -47,10 +47,10 @@ VSO_GRID = list(np.linspace(0.0, 0.8, 25))
 # V_SO values that stage-2 consumers request EXACTLY (sc_loader.sc_params_at now refuses to
 # snap, F-09): they are merged into the master scan grid so exact lookups exist.
 VSO_EXACT = (0.0, 0.4082, 0.8)
-# CHEMICAL-POTENTIAL WINDOW POLICY (scientific decision, see CORRECTION_LOG.md, section D1)
-#   "strict" (default): a superconducting root is accepted only if its mu lies inside the band
-#            [min eps, max eps] of the k-grid, i.e. a Fermi surface exists.  Roots with mu outside
-#            the band (no Fermi surface; every quasiparticle gapped) are NOT used for Tc.
-#   "relaxed"         : roots are accepted regardless of mu; mu_inside_band is recorded so that
-#            the excluded sets can be reported.  This is a SENSITIVITY setting, not the default.
-MU_WINDOW_POLICY = "strict"
+# CHEMICAL-POTENTIAL WINDOW POLICY (decision recorded in CORRECTION_LOG.md, section D1).
+# "relaxed" accepts every residual-verified self-consistent root, including roots with mu
+# outside the bare-band interval.  The diagnostic mu_window.inside flag is retained in outputs;
+# out-of-band roots must not be silently presented as ordinary Fermi-surface states.
+# This is an explicit model-scope choice, not a claim that every accepted root is thermodynamically
+# stable.  Use "strict" only for a deliberate sensitivity comparison.
+MU_WINDOW_POLICY = "relaxed"

@@ -2,11 +2,10 @@
 make_soc_enhancement_hist.py -- histogram view of the spin-orbit response at FIXED
 (U, T/T_c): what happens to W/W_N when V_SO is increased, point by point.
 
-Data: results/uvso_families.json (dense grids dU=2.5t, dV_SO panels 0/0.2/0.4/0.6/0.8,
-T/T_c = 0.3/0.5/0.7/0.9/0.999; scattering-only, eta=+1 signed, hbar*omega=0.7t).
-Parameter sets on the correlated-hopping-dominated root (D0_0 < 0.05) or with Tc = 0 are
-EXCLUDED from every panel, so the histograms show the SOC response alone, not the
-root-switch dip.
+Data: results/uvso_families.json (relaxed-policy family outputs; dU=0.5t, dV_SO panels
+0/0.2/0.4/0.6/0.8, T/T_c = 0.3/0.5/0.7/0.9/0.999; scattering-only). The deliberately
+separate subset D0(0) < 0.05t and Tc=0 points are excluded from this diagnostic. Out-of-band
+roots with D0(0)>=0.05t remain in the histogram; this is not a phase-stability assertion.
 
 Panels
   (a) WHERE the effect lives: median enhancement R(V_SO=0.8)/R(V_SO=0) per U-bin,
@@ -35,7 +34,7 @@ import matplotlib.pyplot as plt
 HERE = os.path.dirname(os.path.abspath(__file__))
 FRACS = (0.3, 0.5, 0.7, 0.9, 0.999)
 VSOS = (0.0, 0.2, 0.4, 0.6, 0.8)
-FLAG = 0.05  # D0_0 threshold: correlated-hopping-dominated root -> excluded
+FLAG = 0.05  # D0_0 cutoff for the intentionally separate root-switch subset
 
 
 def load():
@@ -145,7 +144,7 @@ def main():
 
     fig.suptitle("Spin-orbit response at FIXED $(U, T/T_c)$: enhancement of $W/W_N$ when "
                  "$V_{SO}$ increases (scattering only, $\\hbar\\omega=0.7t$, $\\Delta_t=4.5t$, "
-                 "$n=1.885$; root-switch sets excluded)", fontsize=11)
+                 "$n=1.885$; relaxed window, D0(0)<0.05t subset excluded; out-of-band roots are not stability claims)", fontsize=10.5)
     fig.tight_layout(rect=(0, 0, 1, 0.93))
     out = os.path.join(HERE, "figures", "soc_enhancement_histogram.png")
     fig.savefig(out, dpi=150)
