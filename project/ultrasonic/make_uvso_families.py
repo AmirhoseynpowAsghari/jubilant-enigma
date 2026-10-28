@@ -58,7 +58,7 @@ def get_dos(VSO):
 FRACS = (0.3, 0.5, 0.7, 0.9, 0.999)
 NELL = 20000
 
-UGRID = [float(round(x, 3)) for x in np.arange(15.0, 150.01, 2.5)]   # 55 points
+UGRID = [float(round(x, 3)) for x in np.arange(15.0, 150.01, 0.5)]   # 55 points
 FAM_A_VSO = (0.0, 0.2, 0.4, 0.6, 0.8)
 FAM_B_U = (30.0, 45.0, 75.0, 95.0, 115.0)
 VSOGRID = [float(round(x, 4)) for x in np.arange(0.0, 0.9001, 0.025)]  # 37 points
