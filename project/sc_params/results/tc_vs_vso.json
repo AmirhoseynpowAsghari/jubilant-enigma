@@ -6,6 +6,7 @@
   "grid": "midpoint",
   "Nk": 80,
   "check_conv": true,
+  "MU_WINDOW_POLICY": "relaxed",
   "npts": 51,
   "vso_exact": [
    0.0,

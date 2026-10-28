@@ -1,10 +1,10 @@
 # SOCfigures — curated figure collection for the underlying physics
 
-> **SUPERSEDED IN PART (2026-10-24).** This document was written before the audit-driven correction
-> campaign. Numbers, statements and figure references below are PRE-CORRECTION unless explicitly
-> stated otherwise. The current status of every claim is in `CORRECTION_LOG.md` (§2 per-finding status,
-> §5 before/after, §6.3 superseded statements). Do not quote figures from this file without checking
-> them against `CORRECTION_TABLES.md` and `results/BEFORE_AFTER.json`.
+> **SUPERSEDED IN PART (2026-10-24; D1 update 2026-10-28).** The user selected the relaxed chemical-potential
+> window. Figures 08, 30, and 31–36 were refreshed; 31–34 show relaxed-policy family data and mark out-of-band
+> roots with open gray triangles. In those family plots, red squares mean `D0(0) < 0.05t`. Historical strict-cutoff
+> counts and other pre-correction claims below are not current results. Read `CORRECTION_LOG.md` §4 and §8.2
+> for verified D1 scope, outputs, and limitations; out-of-band roots are not thereby established as stable phases.
 
 
 All figures are PNG, 150 dpi, regenerated from code in `project/` (nothing hand-drawn).
@@ -77,8 +77,8 @@ Companion texts: `project/SOC_EFFECT_SCATTERING.md`, `project/PARAM_SCAN_PEAKS.m
 
 | file | physics shown | regenerate with |
 |---|---|---|
-| `31_WWN_vs_TTc_and_Delta_Ufamilies.png` | W/W_N vs T/T_c (left) and vs Δ_eff(T)/Δ_eff(0) (right, paper convention; Δ_eff = band mean of |Δ̄|, gap_equations.effective_gap); rows V_SO = 0, 0.4, 0.8; curves U = 15…115 (stage-1 Tc per E10 fix). Ordering at fixed T/T_c follows Δ⁰₀/T_c (suppression exponent); U=55, V_SO=0.4 flagged (correlated-hopping-dominated root) | `ultrasonic/make_delta_families.py` |
-| `32_WWN_vs_TTc_and_Delta_VSOfamilies.png` | same axes, rows U = 35, 75, 115; curves V_SO = 0…0.9 (stage-1 Tc per E10 fix). At U=35 the T/T_c curves nearly collapse while the normalized-gap representation separates through Δ⁰₀/T_c; at U=115 the curves differ at equal Δ_eff(T)/Δ_eff(0) (DOS/branch SOC effect beyond the gap scale) | `ultrasonic/make_delta_families.py` |
+| `31_WWN_vs_TTc_and_Delta_Ufamilies.png` | Refreshed relaxed-policy family curves; rows V_SO=0, 0.4, 0.8 and curves U=15…115. Open gray triangles flag out-of-band roots; red squares mean D0(0)<0.05t. These flags do not establish stability. | `ultrasonic/make_delta_families.py` |
+| `32_WWN_vs_TTc_and_Delta_VSOfamilies.png` | Refreshed relaxed-policy family curves; rows U=35, 75, 115 and curves V_SO=0…0.9. Open gray triangles flag out-of-band roots; they are not stability markers. | `ultrasonic/make_delta_families.py` |
 
 Data for both: `ultrasonic/results/delta_families.json` (per T/T_c: ratio, Δ⁰(T), E_min, T).
 
@@ -86,8 +86,8 @@ Data for both: `ultrasonic/results/delta_families.json` (per T/T_c: ratio, Δ⁰
 
 | file | physics shown | regenerate with |
 |---|---|---|
-| `33_WWN_vs_U_families_VSO.png` | W/W_N vs U (15–150, **dense grid ΔU=2.5t**, line curves) at T/T_c = 0.3, 0.5, 0.7, 0.9, 0.999; panels V_SO = 0, 0.2, 0.4, 0.6, 0.8. Primary-channel shallow interior maximum at U ≈ 17.5–22.5 for T/T_c ≥ 0.7 (edge max at U=15 for lower T/T_c, E10-corrected) for V_SO ≤ 0.2; correlated-hopping-dominated root at U ≈ 47.5–62.5 resolved as a smooth dip, marked with red open squares | `ultrasonic/make_uvso_families.py` |
-| `34_WWN_vs_VSO_families_U.png` | W/W_N vs V_SO (0–0.9, **dense grid ΔV_SO=0.025t**, line curves) at the same T/T_c; panels U = 30, 45, 75, 95, 115; monotone SOC enhancement, slope steepening with U | `ultrasonic/make_uvso_families.py` |
+| `33_WWN_vs_U_families_VSO.png` | W/W_N vs U=15…150 on the regenerated ΔU=0.5t grid; panels V_SO=0, 0.2, 0.4, 0.6, 0.8. Relaxed-policy out-of-band roots are marked with open gray triangles; red squares separately mean D0(0)<0.05t. Former strict-cutoff samples are retained, not shown as no-SC. | `ultrasonic/make_uvso_families.py` |
+| `34_WWN_vs_VSO_families_U.png` | W/W_N vs V_SO=0…0.9 (ΔV_SO=0.025t); panels U=30, 45, 75, 95, 115. Open gray triangles flag relaxed-policy out-of-band roots; these are not indicators of phase stability. | `ultrasonic/make_uvso_families.py` |
 
 Data for both: `ultrasonic/results/uvso_families.json`.
 
@@ -96,6 +96,6 @@ Data for both: `ultrasonic/results/uvso_families.json`.
 | file | physics shown | regenerate with |
 |---|---|---|
 | `35_soc_explicit_vertex.png` | (a) inter-helicity fraction of S_sc vs V_SO (0.50→0.29): the explicit kernel-level SOC signature; (b) isotropic vertex R_A vs strict q→0 helicity-diagonal R_B: SOC trend survives (×1.70 vs ×1.75); (c) signed effect R(V_SO)−R(0) vs T/T_c with sign change; (d) size of the vertex systematic | `ultrasonic/make_soc_explicit.py` |
-| `36_SOC_enhancement_histogram.png` | histogram of the per-point SOC enhancement R(V_SO)/R(0) at FIXED (U, T/T_c): (a) median enhancement per U-bin — plateau ≈1 for U≤30 at high T/T_c, decay tail up to ×14; (b) the whole distribution shifts right as V_SO grows (median 1.06/1.21/1.40/1.67); (c) per +0.2 step ~96–100 % of points increase, median ×1.05–×1.25. Root-switch and Tc=0 sets excluded | `ultrasonic/make_soc_enhancement_hist.py` |
+| `36_SOC_enhancement_histogram.png` | regenerated on relaxed-policy data; the intentional D0(0)<0.05t root-switch subset and Tc=0 sets are excluded, while out-of-band roots are retained (not a stability claim). Current median enhancements for V_SO=0.2/0.4/0.6/0.8 are 1.052/1.179/1.352/1.600. | `ultrasonic/make_soc_enhancement_hist.py` |
 
 Data: `ultrasonic/results/soc_explicit.json`; discussion `project/SOC_EFFECT_SCATTERING.md` §4.

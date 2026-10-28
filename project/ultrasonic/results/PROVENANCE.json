@@ -1,10 +1,11 @@
 {
- "git_head": "605aacbe4abe98a2454351efa947e263076088fc",
- "utc": "2026-10-24T10:58:22+00:00",
- "python": "3.13.16",
- "numpy": "2.3.5",
+ "git_head": "c5f5ec3d5437183a43d7ed7fb4ecb1b8296de269",
+ "utc": "2026-10-28T13:29:17+00:00",
+ "python": "3.11.2",
+ "numpy": "2.4.6",
  "scipy": "1.17.1",
  "stage": "2-master",
  "with_pair": true,
- "schema": "ua-temp-sweep-v2"
+ "schema": "ua-temp-sweep-v2",
+ "MU_WINDOW_POLICY": "relaxed"
 }

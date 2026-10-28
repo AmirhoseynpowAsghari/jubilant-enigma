@@ -81,8 +81,10 @@ def run_master(with_pair=True):
         man[f"{v:.4f}"] = f"temp_sweep_VSO_{v:.4f}.json"
         print(f"  V_SO={v:.4f}  lim W/W_N = {sw['ratios']['a_signed'][-1]:.5f}", flush=True)
     io.save("temp_sweep_manifest.json", man)
+    policy = sc_loader.stage1().get("meta", {}).get("MU_WINDOW_POLICY", "unknown")
     io.save("PROVENANCE.json", io.provenance(dict(
-        stage="2-master", with_pair=bool(with_pair), schema="ua-temp-sweep-v2")))
+        stage="2-master", with_pair=bool(with_pair), schema="ua-temp-sweep-v2",
+        MU_WINDOW_POLICY=policy)))
 
 
 def run_groups(groups_stage1, n_of_set):
@@ -91,7 +93,7 @@ def run_groups(groups_stage1, n_of_set):
     for p in groups_stage1:
         s = p["set"]
         if not (p["Tc"] and p["Tc"] > 0):
-            # no superconducting state in the physical window (stage-1 flag): recorded, not evaluated
+            # no residual-verified superconducting root under the selected policy: record, do not evaluate
             out.append(dict(set=s, no_superconductivity=True, V_SO=p["V_SO"] if "V_SO" in p else s.get("V_SO"),
                             Tc=0.0, fracs=[], ratios={},
                             stage1={k: p[k] for k in ("Tc", "D0_0", "DS_0", "Deff_0")},

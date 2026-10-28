@@ -24,7 +24,7 @@ regenerated outputs (after).  Percentages are (new - old)/|old|.
 | B U=125t | 0.08607 | 0.08049 | -6.48 |  |
 | C Dt=3.5 | 0.40942 | 0.40660 | -0.69 |  |
 | C Dt=4.0 | 0.67195 | 0.66870 | -0.48 |  |
-| C Dt=4.5 | 0.95355 | 0.00000 | -100.00 | no superconducting state in the window (mu outside band) |
+| C Dt=4.5 | 0.95355 | 0.95045 | -0.32 |  |
 | D VSO=0.0 | 0.28605 | 0.27821 | -2.74 |  |
 | D VSO=0.4 | 0.37700 | 0.36990 | -1.88 |  |
 | D VSO=0.8 | 0.64941 | 0.64669 | -0.42 |  |
@@ -59,7 +59,7 @@ regenerated outputs (after).  Percentages are (new - old)/|old|.
 | B U = 125t | 0.10633 | 0.09815 | -7.69 |  |
 | C $\Delta_t$ = 3.5 | 0.46541 | 0.45090 | -3.12 |  |
 | C $\Delta_t$ = 4.0 | 0.79408 | 0.77514 | -2.38 |  |
-| C $\Delta_t$ = 4.5 | 0.99093 | - |  | no SC state (flagged) |
+| C $\Delta_t$ = 4.5 | 0.99093 | 0.99069 | -0.02 |  |
 | D VSO = 0.0 | 0.40004 | 0.38667 | -3.34 |  |
 | D VSO = 0.4 | 0.50207 | 0.48027 | -4.34 |  |
 | D VSO = 0.8 | 0.76112 | 0.74339 | -2.33 |  |
@@ -83,5 +83,5 @@ regenerated outputs (after).  Percentages are (new - old)/|old|.
 
 | file | old | new |
 |---|---|---|
-| param_features_peaks.json | 13 | 10 |
-| param_scans_peaks.json | 0 | 15 |
+| param_features_peaks.json | 13 | 4 |
+| param_scans_peaks.json | 0 | 0 |

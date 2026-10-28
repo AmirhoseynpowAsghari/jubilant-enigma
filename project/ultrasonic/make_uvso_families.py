@@ -140,7 +140,7 @@ def family_figure(data, panels, panel_kind, x_kind, path, title):
         if nosc:
             notes.append("no SC: " + _ranges(nosc))
         if flagged:
-            notes.append(r"$\Delta^0\ll\Delta^S$ (red squares): " + _ranges(flagged))
+            notes.append(r"$D_0(0)<0.05t$ (red squares): " + _ranges(flagged))
         if notes:
             ax.text(0.02, 0.98, "; ".join(notes), transform=ax.transAxes, va="top",
                     fontsize=7, color="tab:red")

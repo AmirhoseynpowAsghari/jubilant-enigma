@@ -11,9 +11,10 @@ Layout: one figure per family, 3 rows (the outer parameter) x 2 columns
 that temperature -- Delta is monotone in T so the right column is the same physics
 re-parameterised by the gap, showing how directly the ratio tracks Delta).
 
-Sets where the stage-1 solver returns no superconductivity (Tc = 0) are reported and
-skipped; sets on the correlated-hopping-dominated root (Delta^0_0 << Delta^S_0, cf. the
-U=50 point of the U-scan) are plotted but flagged in the panel title/legend.
+Sets without a residual-verified root are reported and skipped. Under the adopted relaxed
+window, out-of-band roots are retained and flagged with open gray triangles; red-square notes
+have the separate legacy criterion D0(0) < 0.05t. Out-of-band retention does not establish
+thermodynamic stability or a Fermi-surface interpretation.
 
 Outputs: results/delta_families.json,
          figures/WWN_vs_TTc_and_Delta_Ufamilies.png,
@@ -58,9 +59,9 @@ def one_set(task):
     try:
         s = s1sol.solve_set(U, 4.5, 1.885, VSO, Nk=80)
     except Exception:
-        return dict(U=U, VSO=VSO, Tc=0.0)
+        return dict(U=U, VSO=VSO, Tc=0.0, policy=s1sol.MU_WINDOW_POLICY, mu_window=None)
     if s["Tc"] <= 1e-9:
-        return dict(U=U, VSO=VSO, Tc=0.0)
+        return dict(U=U, VSO=VSO, Tc=0.0, policy=s1sol.MU_WINDOW_POLICY, mu_window=s.get("mu_window"))
     sc = SCState(params=dict(VSO=float(s["V_SO"]), Tc=float(s["Tc"]), D0_0=float(s["D0_0"]),
                              DS_0=float(s["DS_0"]), Deff_0=float(s["Deff_0"])), Nk_mu=200)
     dos = get_dos(VSO)
@@ -78,7 +79,8 @@ def one_set(task):
         tt.append(st["T"])
         dn.append(effective_gap(st["D0"], st["DS"], eps_grid) / s["Deff_0"])
     return dict(U=U, VSO=VSO, Tc=s["Tc"], D0_0=s["D0_0"], DS_0=s["DS_0"],
-                Deff_0=s["Deff_0"], mu_0=s["mu_0"], frac=list(FR_GRID), ratio=fr,
+                Deff_0=s["Deff_0"], mu_0=s["mu_0"], mu_window=s.get("mu_window"),
+                policy=s.get("policy", s1sol.MU_WINDOW_POLICY), frac=list(FR_GRID), ratio=fr,
                 D0=d0, Emin=em, T=tt, deffn=dn)
 
 
@@ -107,6 +109,15 @@ def family_figure(data, rows, row_kind, curve_kind, path, title):
                 lbl = (f"$U$={r[curve_kind]:g}" if curve_kind == "U"
                        else f"$V_{{SO}}$={r[curve_kind]:g}")
                 ax.plot(r[xk], r["ratio"], "-o", ms=2.4, lw=1.4, color=col, label=lbl)
+                mu_out = (r.get("mu_window") or {}).get("inside") is False
+                if mu_out:
+                    ax.plot(r[xk], r["ratio"], "^", ms=3.0, mfc="none", mec="0.25",
+                            mew=0.65, ls="none",
+                            label="mu outside band (relaxed)" if i == 0 and j == 0 else None)
+                if r.get("D0_0", 1.0) < 0.05:
+                    ax.plot(r[xk], r["ratio"], "s", ms=2.8, mfc="none", mec="tab:red",
+                            mew=0.7, ls="none",
+                            label="D0(0)<0.05t" if i == 0 and j == 0 else None)
             ax.set_xlabel(xl)
             ax.set_ylabel("$W/W_N$" if j == 0 else "")
             if xk == "deffn":
@@ -123,7 +134,9 @@ def family_figure(data, rows, row_kind, curve_kind, path, title):
                 if r["Tc"] <= 0:
                     notes.append(f"U={r['U']:g}: no SC")
                 elif r.get("D0_0", 1) < 0.05:
-                    notes.append(f"U={r['U']:g}: $\\Delta^0\\ll\\Delta^S$ root")
+                    notes.append(f"U={r['U']:g}: $D_0(0)<0.05t$")
+                if r.get("Tc", 0) > 0 and (r.get("mu_window") or {}).get("inside") is False:
+                    notes.append(f"U={r['U']:g}: mu outside band")
         if notes and row_kind == "VSO":
             axes[i, 1].text(0.98, 0.02, "; ".join(notes), transform=axes[i, 1].transAxes,
                             ha="right", va="bottom", fontsize=7, color="tab:red")
@@ -151,10 +164,10 @@ if __name__ == "__main__":
     family_figure([r for r in data if r["VSO"] in FAM1_VSO and r["U"] in FAM1_U],
                   list(FAM1_VSO), "VSO", "U",
                   "figures/WWN_vs_TTc_and_Delta_Ufamilies.png",
-                  "$W/W_N$ vs $T/T_c$ (left) and vs $\\Delta_{eff}(T)/\\Delta_{eff}(0)$ (right, paper convention); "
+                  "$W/W_N$ vs $T/T_c$ and normalized gap; relaxed $\\mu$ window (out-of-band roots marked); "
                   "$\\Delta_t=4.5t$, $n=1.885$, $\\hbar\\omega=0.7t$; rows: $V_{SO}$, curves: $U$")
     family_figure([r for r in data if r["U"] in FAM2_U and r["VSO"] in FAM2_VSO],
                   list(FAM2_U), "U", "VSO",
                   "figures/WWN_vs_TTc_and_Delta_VSOfamilies.png",
-                  "$W/W_N$ vs $T/T_c$ (left) and vs $\\Delta_{eff}(T)/\\Delta_{eff}(0)$ (right, paper convention); "
+                  "$W/W_N$ vs $T/T_c$ and normalized gap; relaxed $\\mu$ window (out-of-band roots marked); "
                   "$\\Delta_t=4.5t$, $n=1.885$, $\\hbar\\omega=0.7t$; rows: $U$, curves: $V_{SO}$")

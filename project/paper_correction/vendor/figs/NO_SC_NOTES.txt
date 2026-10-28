@@ -1,1 +1,1 @@
-U=-75t: no superconducting state at any V_SO in the physical window
+Dt=4.5 (group C): relaxed-policy root retained with mu outside the band; not a verified Fermi-surface state

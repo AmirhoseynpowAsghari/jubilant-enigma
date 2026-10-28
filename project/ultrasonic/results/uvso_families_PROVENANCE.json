@@ -1,0 +1,25 @@
+{
+ "stage": "U-family",
+ "policy": "relaxed",
+ "grid": "midpoint",
+ "U_min": 15.0,
+ "U_max": 150.0,
+ "dU": 0.5,
+ "n_U": 271,
+ "stage1_Nk": 80,
+ "stage2_Nk_mu": 200,
+ "DOS_Nk": 1200,
+ "DOS_nbins": 48000,
+ "DOS_smooth": 0.0025,
+ "nell": 20000,
+ "fracs": [
+  0.3,
+  0.5,
+  0.7,
+  0.9,
+  0.999
+ ],
+ "n_records": 1515,
+ "git_head": "c5f5ec3d5437183a43d7ed7fb4ecb1b8296de269",
+ "utc": "2026-10-28T13:56:13+00:00"
+}
