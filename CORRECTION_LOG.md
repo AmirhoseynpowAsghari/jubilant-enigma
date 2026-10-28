@@ -1,9 +1,13 @@
 # CORRECTION LOG — audit-driven correction campaign (2026-10-24; D1 policy update 2026-10-28)
 
 **Policy decision update (2026-10-28):** the user selected the relaxed chemical-potential window. The
-current code and regenerated active outputs use `MU_WINDOW_POLICY = "relaxed"`; strict-policy numbers
-below are historical unless explicitly re-run. Out-of-band roots are flagged, not silently treated as
-ordinary Fermi-surface states.
+project default is `MU_WINDOW_POLICY = "relaxed"`; strict-policy numbers below are historical unless
+explicitly re-run. Before overwriting dependent products, the planned scope is the D1-only
+`project/run_relaxed_regeneration.sh`: stage 1, stage 2, companion/SOC/parameter families, U-family,
+before/after tables, tests, paper inputs/figures, and the JSON manifest. It deliberately skips the
+independent D2 smoothing calibration and does not alter historical archives. Out-of-band roots are
+flagged, not silently treated as ordinary Fermi-surface states. Regeneration status is recorded below
+once validated.
 
 This document records every change made in response to the external audit
 `AUDIT_symmetrical-octo-pancake.md` (findings F-01 … F-18), the verification that each change
