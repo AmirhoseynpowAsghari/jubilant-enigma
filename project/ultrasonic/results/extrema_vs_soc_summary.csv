@@ -1,0 +1,78 @@
+ensemble,value,VSO,n,U_max,R_max,max_endpoint,U_min,R_min,min_endpoint,robust_maxima,robust_minima,SC_U_intervals,Tc_crossing_U_brackets
+fixed_T_over_Tc,0.3,0.0,55,15.0,0.0042135235767296626,True,150.0,3.608533900632753e-05,True,[],[],[],[]
+fixed_T_over_Tc,0.5,0.0,55,15.0,0.11847289415558816,True,150.0,0.0005782616801028674,True,[],[],[],[]
+fixed_T_over_Tc,0.7,0.0,55,15.0,0.4269334616007253,True,150.0,0.00229434877773252,True,[],[],[],[]
+fixed_T_over_Tc,0.9,0.0,55,15.0,0.8184064454411842,True,150.0,0.006030914785370663,True,[],[],[],[]
+fixed_T_over_Tc,0.999,0.0,55,15.0,0.9987520865721593,True,150.0,0.009503595157338467,True,[],[],[],[]
+fixed_absolute_T,0.1,0.0,43,120.0,0.10512761558662835,True,15.0,1.720994140135153e-23,True,[],[],"[[15.0,120.0]]","[{""sampled_U"":[15.0,120.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":121.06418930128152,""bracket"":[120.0,122.5],""method"":""linear Tc crossing""}}]"
+fixed_absolute_T,0.2,0.0,36,102.5,0.2105009893293574,True,15.0,1.79090622544089e-11,True,[],[],"[[15.0,102.5]]","[{""sampled_U"":[15.0,102.5],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":104.83011838178903,""bracket"":[102.5,105.0],""method"":""linear Tc crossing""}}]"
+fixed_T_over_Tc,0.3,0.1,55,15.0,0.004225266176561562,True,150.0,4.772718174772534e-05,True,[],[],[],[]
+fixed_T_over_Tc,0.5,0.1,55,15.0,0.11855762915001487,True,150.0,0.0006944091610615249,True,[],[],[],[]
+fixed_T_over_Tc,0.7,0.1,55,15.0,0.4273148088513162,True,150.0,0.0026232351458562995,True,[],[],[],[]
+fixed_T_over_Tc,0.9,0.1,55,15.0,0.8188235369481629,True,150.0,0.006637499417037964,True,[],[],[],[]
+fixed_T_over_Tc,0.999,0.1,55,15.0,0.9988333329068627,True,150.0,0.010244716407017192,True,[],[],[],[]
+fixed_absolute_T,0.1,0.1,43,120.0,0.09571425995471342,True,15.0,1.1657396079814113e-23,True,[],[],"[[15.0,120.0]]","[{""sampled_U"":[15.0,120.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":121.6975581967565,""bracket"":[120.0,122.5],""method"":""linear Tc crossing""}}]"
+fixed_absolute_T,0.2,0.1,37,105.0,0.25657086613252417,True,15.0,1.4787519077636006e-11,True,[],[],"[[15.0,105.0]]","[{""sampled_U"":[15.0,105.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":105.47471106681182,""bracket"":[105.0,107.5],""method"":""linear Tc crossing""}}]"
+fixed_T_over_Tc,0.3,0.2,55,15.0,0.004318205598733928,True,150.0,6.409819712883734e-05,True,[],[],[],[]
+fixed_T_over_Tc,0.5,0.2,55,15.0,0.11900237527329476,True,150.0,0.0009406148917944402,True,[],[],[],[]
+fixed_T_over_Tc,0.7,0.2,55,15.0,0.4288281339657209,True,150.0,0.0035664566027015375,True,[],[],[],[]
+fixed_T_over_Tc,0.9,0.2,55,15.0,0.8202177983405828,True,150.0,0.009053152586644433,True,[],[],[],[]
+fixed_T_over_Tc,0.999,0.2,55,17.5,0.9987783320469544,False,150.0,0.013989646719103703,True,[],[],[],[]
+fixed_absolute_T,0.1,0.2,44,122.5,0.10094242126424499,True,15.0,3.696146800422157e-24,True,[],[],"[[15.0,122.5]]","[{""sampled_U"":[15.0,122.5],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":123.83221983867922,""bracket"":[122.5,125.0],""method"":""linear Tc crossing""}}]"
+fixed_absolute_T,0.2,0.2,37,105.0,0.20552469047769684,True,15.0,8.415477798812584e-12,True,[],[],"[[15.0,105.0]]","[{""sampled_U"":[15.0,105.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":107.47344168923006,""bracket"":[105.0,107.5],""method"":""linear Tc crossing""}}]"
+fixed_T_over_Tc,0.3,0.3,55,17.5,0.004135482651135352,False,150.0,0.00010699392115932842,True,[],[],[],[]
+fixed_T_over_Tc,0.5,0.3,55,15.0,0.1192753514532845,True,150.0,0.001518023426888187,True,[],[],[],[]
+fixed_T_over_Tc,0.7,0.3,55,15.0,0.4305641968611285,True,150.0,0.005655736650994635,True,[],[],[],[]
+fixed_T_over_Tc,0.9,0.3,55,15.0,0.821831842065138,True,150.0,0.014159164853079121,True,[],[],[],[]
+fixed_T_over_Tc,0.999,0.3,55,17.5,0.9989281493995296,False,150.0,0.021724061639360675,True,[],[],[],[]
+fixed_absolute_T,0.1,0.3,45,125.0,0.08426211019862583,True,15.0,5.60300107769272e-25,True,[],[],"[[15.0,125.0]]","[{""sampled_U"":[15.0,125.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":127.3854537174963,""bracket"":[125.0,127.5],""method"":""linear Tc crossing""}}]"
+fixed_absolute_T,0.2,0.3,39,110.0,0.2396415347809144,True,15.0,3.323936621648288e-12,True,[],[],"[[15.0,110.0]]","[{""sampled_U"":[15.0,110.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":110.82325637718928,""bracket"":[110.0,112.5],""method"":""linear Tc crossing""}}]"
+fixed_T_over_Tc,0.3,0.4,55,17.5,0.004113841759193407,False,150.0,0.0001636984287614908,True,[],[],[],[]
+fixed_T_over_Tc,0.5,0.4,55,15.0,0.11966793934072767,True,150.0,0.002346597270379227,True,[],[],[],[]
+fixed_T_over_Tc,0.7,0.4,55,15.0,0.43305623145782585,True,150.0,0.008787230062244742,True,[],[],[],[]
+fixed_T_over_Tc,0.9,0.4,55,15.0,0.8244374865125834,True,150.0,0.02208977256174256,True,[],[],[],[]
+fixed_T_over_Tc,0.999,0.4,55,20.0,0.9988878183258968,False,150.0,0.03400528882300121,True,[],[],[],[]
+fixed_absolute_T,0.1,0.4,47,130.0,0.08046747285101932,True,15.0,3.7827328640175986e-26,True,[],[],"[[15.0,130.0]]","[{""sampled_U"":[15.0,130.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":132.37449115799168,""bracket"":[130.0,132.5],""method"":""linear Tc crossing""}}]"
+fixed_absolute_T,0.2,0.4,41,115.0,0.2376576517546004,True,15.0,8.49771607997018e-13,True,[],[],"[[15.0,115.0]]","[{""sampled_U"":[15.0,115.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":115.55562677298852,""bracket"":[115.0,117.5],""method"":""linear Tc crossing""}}]"
+fixed_T_over_Tc,0.3,0.4082,55,17.5,0.004116547585799365,False,150.0,0.00016037653246319956,True,[],[],[],[]
+fixed_T_over_Tc,0.5,0.4082,55,15.0,0.11955376734783309,True,150.0,0.0023525613303311084,True,[],[],[],[]
+fixed_T_over_Tc,0.7,0.4082,55,15.0,0.43304166290225465,True,150.0,0.008911610950181533,True,[],[],[],[]
+fixed_T_over_Tc,0.9,0.4082,55,15.0,0.8244514303795367,True,150.0,0.022610306877144815,True,[],[],[],[]
+fixed_T_over_Tc,0.999,0.4082,55,17.5,0.9989195743964688,False,150.0,0.0349744993345658,True,[],[],[],[]
+fixed_absolute_T,0.1,0.4082,48,132.5,0.10740573499187918,True,15.0,2.789093606834032e-26,True,[],[],"[[15.0,132.5]]","[{""sampled_U"":[15.0,132.5],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":132.88855716568358,""bracket"":[132.5,135.0],""method"":""linear Tc crossing""}}]"
+fixed_absolute_T,0.2,0.4082,41,115.0,0.22571076106025673,True,15.0,7.185228384324359e-13,True,[],[],"[[15.0,115.0]]","[{""sampled_U"":[15.0,115.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":115.98216763420996,""bracket"":[115.0,117.5],""method"":""linear Tc crossing""}}]"
+fixed_T_over_Tc,0.3,0.5,55,20.0,0.0040697238336755304,False,150.0,0.00026374667473641635,True,[],[],[],[]
+fixed_T_over_Tc,0.5,0.5,55,15.0,0.11984648934978909,True,150.0,0.00375831779820218,True,[],[],[],[]
+fixed_T_over_Tc,0.7,0.5,55,15.0,0.4353615240071492,True,150.0,0.014033303834989854,True,[],[],[],[]
+fixed_T_over_Tc,0.9,0.5,55,15.0,0.8268357923616713,True,150.0,0.035243914027821954,True,[],[],[],[]
+fixed_T_over_Tc,0.999,0.5,55,17.5,0.998779991528444,False,150.0,0.05436740178801476,True,[],[],[],[]
+fixed_absolute_T,0.1,0.5,50,137.5,0.08356425523749889,True,15.0,1.1916996541764014e-27,True,[],[],"[[15.0,137.5]]","[{""sampled_U"":[15.0,137.5],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":139.1451908486292,""bracket"":[137.5,140.0],""method"":""linear Tc crossing""}}]"
+fixed_absolute_T,0.2,0.5,43,120.0,0.2000261012790049,True,15.0,1.4579793602043608e-13,True,[],[],"[[15.0,120.0]]","[{""sampled_U"":[15.0,120.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":121.68178463846992,""bracket"":[120.0,122.5],""method"":""linear Tc crossing""}}]"
+fixed_T_over_Tc,0.3,0.6,55,17.5,0.004011866398759412,False,150.0,0.00047861175786257705,True,[],[],[],[]
+fixed_T_over_Tc,0.5,0.6,55,15.0,0.11887706396530005,True,150.0,0.00646353275516725,True,[],[],[],[]
+fixed_T_over_Tc,0.7,0.6,55,15.0,0.4381161045122121,True,150.0,0.023506331205687927,True,[],[],[],[]
+fixed_T_over_Tc,0.9,0.6,55,15.0,0.829558138749634,True,150.0,0.05799968859551908,True,[],[],[],[]
+fixed_T_over_Tc,0.999,0.6,55,15.0,0.9989590669991876,True,150.0,0.08885721587897548,True,[],[],[],[]
+fixed_absolute_T,0.1,0.6,54,147.5,0.09557817201513186,True,15.0,1.606261411916042e-29,True,[],[],"[[15.0,147.5]]","[{""sampled_U"":[15.0,147.5],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":147.80755460587295,""bracket"":[147.5,150.0],""method"":""linear Tc crossing""}}]"
+fixed_absolute_T,0.2,0.6,46,127.5,0.18969858290687847,True,15.0,1.535417621362816e-14,True,[],[],"[[15.0,127.5]]","[{""sampled_U"":[15.0,127.5],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":129.17523645279473,""bracket"":[127.5,130.0],""method"":""linear Tc crossing""}}]"
+fixed_T_over_Tc,0.3,0.7,55,20.0,0.003890139449057038,False,150.0,0.0006714748880562901,True,"[{""x"":20.0,""value"":0.003890139449057038,""prominence"":0.0006315319364591887}]",[],[],[]
+fixed_T_over_Tc,0.5,0.7,55,15.0,0.11853900544027762,True,150.0,0.009540999734910236,True,[],[],[],[]
+fixed_T_over_Tc,0.7,0.7,55,15.0,0.4454340622271381,True,150.0,0.035710358692824025,True,[],[],[],[]
+fixed_T_over_Tc,0.9,0.7,55,15.0,0.8349880073955268,True,150.0,0.0890656858092548,True,[],[],[],[]
+fixed_T_over_Tc,0.999,0.7,55,15.0,0.9989237163544571,True,150.0,0.13489797537915335,True,[],[],[],[]
+fixed_absolute_T,0.1,0.7,55,150.0,0.04153853462637982,True,15.0,1.4236710998997888e-31,True,[],[],"[[15.0,150.0]]","[{""sampled_U"":[15.0,150.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""}}]"
+fixed_absolute_T,0.2,0.7,50,137.5,0.20313430704860114,True,15.0,1.3603444946165565e-15,True,[],[],"[[15.0,137.5]]","[{""sampled_U"":[15.0,137.5],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":137.86913736219358,""bracket"":[137.5,140.0],""method"":""linear Tc crossing""}}]"
+fixed_T_over_Tc,0.3,0.8,55,32.5,0.0037717474282860665,False,150.0,0.0008228191396384415,True,"[{""x"":20.0,""value"":0.0037509935072427038,""prominence"":0.0007971580115196581},{""x"":32.5,""value"":0.0037717474282860665,""prominence"":0.0008179119325630209}]",[],[],[]
+fixed_T_over_Tc,0.5,0.8,55,17.5,0.11546424265260143,False,150.0,0.012829112560398412,True,"[{""x"":17.5,""value"":0.11546424265260143,""prominence"":0.006313580500461088}]",[],[],[]
+fixed_T_over_Tc,0.7,0.8,55,15.0,0.4462655278908376,True,150.0,0.050280998815184184,True,[],[],[],[]
+fixed_T_over_Tc,0.9,0.8,55,15.0,0.8364720468621866,True,150.0,0.12830373519984878,True,[],[],[],[]
+fixed_T_over_Tc,0.999,0.8,55,15.0,0.9989568499849361,True,150.0,0.19406146292506876,True,[],[],[],[]
+fixed_absolute_T,0.1,0.8,55,150.0,0.017148575460644758,True,15.0,7.817621123398938e-34,True,[],[],"[[15.0,150.0]]","[{""sampled_U"":[15.0,150.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""}}]"
+fixed_absolute_T,0.2,0.8,54,147.5,0.20847963609118847,True,15.0,9.552538962896248e-17,True,[],[],"[[15.0,147.5]]","[{""sampled_U"":[15.0,147.5],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":147.56530988002172,""bracket"":[147.5,150.0],""method"":""linear Tc crossing""}}]"
+fixed_T_over_Tc,0.3,0.9,55,32.5,0.0036864273779099017,False,150.0,0.000996509514453574,True,"[{""x"":32.5,""value"":0.0036864273779099017,""prominence"":0.0010240936673169246}]",[],[],[]
+fixed_T_over_Tc,0.5,0.9,55,17.5,0.1139700013636225,False,150.0,0.016669541476812766,True,"[{""x"":17.5,""value"":0.1139700013636225,""prominence"":0.014926394895171516}]",[],[],[]
+fixed_T_over_Tc,0.7,0.9,55,15.0,0.4476917553613873,True,150.0,0.06747337856772671,True,[],[],[],[]
+fixed_T_over_Tc,0.9,0.9,55,15.0,0.8378578455534607,True,150.0,0.17528026104978764,True,[],[],[],[]
+fixed_T_over_Tc,0.999,0.9,55,15.0,0.9989424877555108,True,150.0,0.26438008092806203,True,[],[],[],[]
+fixed_absolute_T,0.1,0.9,55,150.0,0.006785301215828398,True,15.0,2.7731251792750265e-36,True,[],[],"[[15.0,150.0]]","[{""sampled_U"":[15.0,150.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""}}]"
+fixed_absolute_T,0.2,0.9,55,150.0,0.1292766439135529,True,15.0,5.410184326385799e-18,True,[],[],"[[15.0,150.0]]","[{""sampled_U"":[15.0,150.0],""lower_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""},""upper_cutoff"":{""estimate"":null,""bracket"":null,""method"":""scan boundary""}}]"
