@@ -377,6 +377,25 @@ def t_LEVY():
     return ok, f"flat-DOS s-wave omega->0 vs Levy 2f(Delta): worst rel {worst:.1e} ({'; '.join(rows)})"
 
 
+# ----------------------------------------------------------------------------- F-19 normal chemical-potential seed
+
+def t_F19_mu_seed():
+    from gap_equations import find_mu_normal
+    eps = np.linspace(-4.0, 4.0, 10001)
+    details = []
+    ok = True
+    for filling in (1.4, 1.5):
+        mu0 = find_mu_normal(filling, np.inf, eps)
+        n0 = 2.0 * float(np.mean(eps < mu0))
+        err0 = abs(n0 - filling)
+        muT = find_mu_normal(filling, 20.0, eps)
+        nT = 1.0 - float(np.tanh(20.0 * (eps - muT) / 2.0).mean())
+        errT = abs(nT - filling)
+        ok &= err0 <= 2.0 / eps.size + 1e-12 and errT < 1e-10
+        details.append(f"n={filling}: T0 quantile err={err0:.2e}, finite-beta err={errT:.2e}")
+    return ok, "; ".join(details)
+
+
 # ----------------------------------------------------------------------------- main
 def main():
     check("F-01", "kernels: bruteforce == production (all variants)", t_F01)
@@ -397,6 +416,7 @@ def main():
     check("F-16", "packaging: vendored PDF manifest, pinned deps, no absolute paths", t_F16)
     check("F-17", "JSON writers strict (no NaN/Inf)", t_F17)
     check("F-18", "overflow-safe Fermi functions, no hidden clamps", t_F18)
+    check("F-19", "normal-state mu seed uses n in [0, 2] correctly", t_F19_mu_seed)
     check("PHYS", "Levy 1963 limit (benchmark T5)", t_LEVY)
 
     width = max(len(r[1]) for r in RESULTS) + 2

@@ -17,16 +17,38 @@ from parameters_tc import T, Nk_DEF
 from kgrid import build_kgrid
 
 def find_mu_normal(n_target, beta, epsilon_ks):
+    """Return a normal-state chemical-potential seed for filling n in [0, 2].
+
+    `epsilon_ks` contains both helicity bands, so the filling is twice the occupied
+    fraction at T=0.  At finite beta, use the same number convention as make_residual:
+    n = 1 - mean(tanh(beta * (epsilon - mu) / 2)).
+
+    The T=0 equation is a step function on a finite k grid and generally has no exact
+    root for arbitrary filling.  A quantile gives a robust seed without pretending
+    that the discrete step function can be solved continuously.
+    """
+    epsilon_ks = np.asarray(epsilon_ks, dtype=float)
+    if epsilon_ks.size == 0 or not np.all(np.isfinite(epsilon_ks)):
+        raise ValueError("epsilon_ks must be a non-empty finite array")
+    if not np.isfinite(n_target) or not 0.0 <= n_target <= 2.0:
+        raise ValueError(f"n_target must lie in [0, 2], got {n_target!r}")
+
+    if np.isinf(beta):
+        if n_target == 0.0:
+            return float(np.min(epsilon_ks) - 1e-12)
+        if n_target == 2.0:
+            return float(np.max(epsilon_ks) + 1e-12)
+        return float(np.quantile(epsilon_ks, n_target / 2.0))
+    if not np.isfinite(beta) or beta <= 0.0:
+        raise ValueError(f"beta must be positive or +inf, got {beta!r}")
+
     def eq(mu):
-        if np.isinf(beta):
-            return np.mean(epsilon_ks < mu) - n_target
-        x = np.clip(beta * (epsilon_ks - mu), -500, 500)
-        return 1.0 / (1.0 + np.exp(x)).mean() - n_target
-    lo, hi = np.min(epsilon_ks) - 15.0, np.max(epsilon_ks) + 15.0
-    try:
-        return brentq(eq, lo, hi)
-    except Exception:
-        return float(np.mean(epsilon_ks))
+        x = np.clip(beta * (epsilon_ks - mu) / 2.0, -350.0, 350.0)
+        return 1.0 - float(np.tanh(x).mean()) - n_target
+
+    margin = max(15.0, 20.0 / beta)
+    lo, hi = float(np.min(epsilon_ks) - margin), float(np.max(epsilon_ks) + margin)
+    return float(brentq(eq, lo, hi, xtol=1e-12))
 
 
 def make_residual(Delta_t):
