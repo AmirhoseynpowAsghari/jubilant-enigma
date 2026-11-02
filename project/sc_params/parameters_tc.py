@@ -51,6 +51,8 @@ VSO_EXACT = (0.0, 0.4082, 0.8)
 # "relaxed" accepts every residual-verified self-consistent root, including roots with mu
 # outside the bare-band interval.  The diagnostic mu_window.inside flag is retained in outputs;
 # out-of-band roots must not be silently presented as ordinary Fermi-surface states.
-# This is an explicit model-scope choice, not a claim that every accepted root is thermodynamically
-# stable.  Use "strict" only for a deliberate sensitivity comparison.
+# Historical/default scans remain relaxed for reproducibility. For the advisor-recommended
+# strict physical-admissibility analysis, run ultrasonic/strict_policy_zoom.py; that script sets
+# solvers.MU_WINDOW_POLICY="strict" locally and writes separate outputs without overwriting these.
+# Neither policy by itself ranks multiple in-band roots by free energy.
 MU_WINDOW_POLICY = "relaxed"
