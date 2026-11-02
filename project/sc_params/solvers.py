@@ -81,27 +81,45 @@ def _folded_root(residual, sol, beta, n_fill, epsilon_ks, term, mu_band=None):
             cand = x2
     if cand is None:
         return None
-    if mu_band is not None and not (mu_band[0] <= cand[2] <= mu_band[1]):
+    if mu_band is not None and not (mu_band[0] - BAND_EDGE_TOL <= cand[2] <= mu_band[1] + BAND_EDGE_TOL):
         return None
     return cand
 
 
-def _band(epsilon_ks):
-    """Band window [min eps, max eps] of the k-grid, or None under the "relaxed" policy."""
+BAND_EDGE_TOL = 1e-8  # numerical tolerance in units of t for the strict bare-band test
+
+
+def bare_band_window(epsilon_ks, V_SO=None):
+    """Return the continuum bare-band interval used by the strict admissibility test.
+
+    For this square-lattice Rashba dispersion the exact edge is
+    4 t sqrt(1 + V_SO**2/(2 t**2)); if V_SO is unavailable, fall back to the sampled
+    grid extrema.  The analytic interval avoids falsely rejecting a root because a
+    finite midpoint grid misses a band extremum.
+    """
+    if V_SO is None:
+        return float(np.min(epsilon_ks)), float(np.max(epsilon_ks))
+    edge = 4.0 * T * np.sqrt(1.0 + 0.5 * (float(V_SO) / T) ** 2)
+    return -float(edge), float(edge)
+
+
+def _band(epsilon_ks, V_SO=None):
+    """Strict-policy constraint; relaxed mode still accepts roots and records diagnostics."""
     if MU_WINDOW_POLICY != "strict":
         return None
-    return (float(np.min(epsilon_ks)), float(np.max(epsilon_ks)))
+    return bare_band_window(epsilon_ks, V_SO)
 
 
-def mu_window(epsilon_ks, mu):
-    """Diagnostic: is mu inside the band window (independent of the policy)?"""
-    lo, hi = float(np.min(epsilon_ks)), float(np.max(epsilon_ks))
-    return dict(mu=float(mu), band=[lo, hi], inside=bool(lo <= mu <= hi),
-                excess=float(max(mu - hi, lo - mu, 0.0)))
+def mu_window(epsilon_ks, mu, V_SO=None):
+    """Diagnostic against the continuum band window, independent of policy."""
+    lo, hi = bare_band_window(epsilon_ks, V_SO)
+    excess = float(max(mu - hi, lo - mu, 0.0))
+    return dict(mu=float(mu), band=[lo, hi], inside=bool(excess <= BAND_EDGE_TOL),
+                excess=excess, edge_tolerance=BAND_EDGE_TOL)
 
 
-def find_T0_solution(n_fill, epsilon_ks, term, residual):
-    band = _band(epsilon_ks)
+def find_T0_solution(n_fill, epsilon_ks, term, residual, V_SO=None):
+    band = _band(epsilon_ks, V_SO)
     mu0 = find_mu_normal(n_fill, np.inf, epsilon_ks)
     best_sol, best_gap = None, 0.0
     for D0i in (0.1, 0.5, 1.0, 2.0, 5.0):
@@ -129,7 +147,7 @@ def find_T0_solution(n_fill, epsilon_ks, term, residual):
     return D0, DS, mu, effective_gap(D0, DS, epsilon_ks)
 
 
-def diagnose_outside_band(n_fill, epsilon_ks, term, residual):
+def diagnose_outside_band(n_fill, epsilon_ks, term, residual, V_SO=None):
     """Diagnostic only (F-08 transparency): the best T=0 root WITHOUT the in-band requirement.
 
     Returned in the stage-1 JSON when the physical-window rule rejects every root, so that a
@@ -153,9 +171,11 @@ def diagnose_outside_band(n_fill, epsilon_ks, term, residual):
                     continue
                 Deff = effective_gap(folded[0], folded[1], epsilon_ks)
                 if best is None or Deff > best["Deff_0"]:
-                    band = _band(epsilon_ks)
+                    band = bare_band_window(epsilon_ks, V_SO)
+                    inside = band[0] - BAND_EDGE_TOL <= folded[2] <= band[1] + BAND_EDGE_TOL
                     best = dict(D0_0=folded[0], DS_0=folded[1], mu_0=folded[2], Deff_0=Deff,
-                                band=list(band), mu_inside_band=bool(band[0] <= folded[2] <= band[1]))
+                                band=list(band), mu_inside_band=bool(inside),
+                                mu_excess=float(max(folded[2] - band[1], band[0] - folded[2], 0.0)))
     return best
 
 
@@ -163,7 +183,7 @@ SEED_FRACS = (1.0, 0.8, 0.6, 0.4, 0.2, 0.05)
 SEED_FRACS_FULL = tuple(round(0.05 * i, 3) for i in range(1, 21))
 
 
-def _gap_at_T(TT, guess, n_fill, epsilon_ks, term, residual, t0=None, full=False):
+def _gap_at_T(TT, guess, n_fill, epsilon_ks, term, residual, t0=None, full=False, mu_band=None):
     """Effective gap at temperature TT (max-gap over converged, residual-checked starts).
 
     The trivial solution (D0, DS) = 0 is an EXACT root of the residual at every T, and a
@@ -173,8 +193,12 @@ def _gap_at_T(TT, guess, n_fill, epsilon_ks, term, residual, t0=None, full=False
     (e.g. U=17.5, V_SO=0.6: Tc 1.376 instead of ~2.55).  Multi-start over scaled copies of
     the T=0 root -- same max-gap philosophy as find_T0_solution -- removes the artifact;
     `full=True` widens the seed grid (used as escalation in the bisection).  Every accepted
-    start passes the F-07 residual check after sign normalisation.
+    start passes the F-07 residual check after sign normalisation. If strict mode is active
+    and no explicit continuum band was supplied, the sampled grid interval is used as a
+    conservative fallback.
     """
+    if mu_band is None and MU_WINDOW_POLICY == "strict":
+        mu_band = _band(epsilon_ks)
     seeds = [guess]
     if t0 is not None:
         for f in (SEED_FRACS_FULL if full else SEED_FRACS):
@@ -189,7 +213,7 @@ def _gap_at_T(TT, guess, n_fill, epsilon_ks, term, residual, t0=None, full=False
         if ier != 1:
             continue
         folded = _folded_root(residual, s, 1.0 / TT, n_fill, epsilon_ks, term,
-                              mu_band=_band(epsilon_ks))
+                              mu_band=mu_band)
         if folded is None:
             continue
         D0, DS, mu = folded
@@ -209,22 +233,23 @@ def solve_set_core(U, Delta_t, n_fill, V_SO, Nk=Nk_DEF):
     eps, term = build_kgrid(V_SO, U, Delta_t, Nk)
     residual = make_residual(Delta_t)
     base = dict(U=U, Delta_t=Delta_t, n=n_fill, V_SO=V_SO, Nk=int(Nk), grid="midpoint")
-    D0_T0, DS_T0, mu_T0, Deff_T0 = find_T0_solution(n_fill, eps, term, residual)
+    band = _band(eps, V_SO)
+    D0_T0, DS_T0, mu_T0, Deff_T0 = find_T0_solution(n_fill, eps, term, residual, V_SO=V_SO)
     if Deff_T0 < MIN_GAP_FOR_SC:
-        diag = diagnose_outside_band(n_fill, eps, term, residual)
+        diag = diagnose_outside_band(n_fill, eps, term, residual, V_SO=V_SO)
         return dict(base, Tc=0.0, D0_0=0.0, DS_0=0.0, Deff_0=0.0, mu_0=mu_T0,
                     Tc_bracketed=True, no_inband_root=True, diagnostic_unrestricted=diag,
                     policy=MU_WINDOW_POLICY)
     threshold = GAP_THRESHOLD_FRAC * Deff_T0
     t0 = [D0_T0, DS_T0, mu_T0]
     T_max = 0.57 * Deff_T0 * 3.0
-    Deff, sol = _gap_at_T(T_max, t0, n_fill, eps, term, residual, t0=t0)
+    Deff, sol = _gap_at_T(T_max, t0, n_fill, eps, term, residual, t0=t0, mu_band=band)
     bracketed = Deff <= threshold
     for _ in range(10):
         if bracketed:
             break
         T_max *= 1.5
-        Deff, sol = _gap_at_T(T_max, sol, n_fill, eps, term, residual, t0=t0)
+        Deff, sol = _gap_at_T(T_max, sol, n_fill, eps, term, residual, t0=t0, mu_band=band)
         bracketed = Deff <= threshold
     if not bracketed:
         print(f"  WARNING (F-08): U={U}, Dt={Delta_t}, V_SO={V_SO}, Nk={Nk}: Deff(T) "
@@ -238,12 +263,12 @@ def solve_set_core(U, Delta_t, n_fill, V_SO, Nk=Nk_DEF):
     sol = list(t0)
     for _ in range(BISECTION_ITER):
         T_mid = 0.5 * (T_low + T_high)
-        Deff, out = _gap_at_T(T_mid, sol, n_fill, eps, term, residual, t0=t0)
+        Deff, out = _gap_at_T(T_mid, sol, n_fill, eps, term, residual, t0=t0, mu_band=band)
         if Deff <= threshold and (T_high - T_low) > 0.1:
             # narrow-basin guard: retry this midpoint with the full seed grid before
             # accepting "no SC here" (prevents trivial-root slides from capping Tc)
             Deff2, out2 = _gap_at_T(T_mid, sol, n_fill, eps, term, residual,
-                                    t0=t0, full=True)
+                                    t0=t0, full=True, mu_band=band)
             if Deff2 > Deff:
                 Deff, out = Deff2, out2
         if Deff > threshold:
@@ -255,7 +280,7 @@ def solve_set_core(U, Delta_t, n_fill, V_SO, Nk=Nk_DEF):
     Tc = 0.5 * (T_low + T_high)
     return dict(base, Tc=Tc, Tc_bracketed=True,
                 D0_0=D0_T0, DS_0=DS_T0, Deff_0=Deff_T0, mu_0=mu_T0,
-                mu_window=mu_window(eps, mu_T0), policy=MU_WINDOW_POLICY)
+                mu_window=mu_window(eps, mu_T0, V_SO=V_SO), policy=MU_WINDOW_POLICY)
 
 
 def solve_set(U, Delta_t, n_fill, V_SO, Nk=Nk_DEF, check_conv=False):
@@ -298,13 +323,15 @@ def sweep_T(set_dict, fracs, Nk=Nk_DEF):
     eps, term = build_kgrid(set_dict["V_SO"], set_dict["U"], set_dict["Delta_t"], Nk)
     residual = make_residual(set_dict["Delta_t"])
     guess = [set_dict["D0_0"], set_dict["DS_0"], set_dict["mu_0"]]
+    mu_band = _band(eps, set_dict["V_SO"])
     out = []
     for f in fracs:
         TT = f * set_dict["Tc"]
         if TT <= 1e-9:
             D0, DS, mu = guess
         else:
-            Deff, guess = _gap_at_T(TT, guess, set_dict["n"], eps, term, residual)
+            Deff, guess = _gap_at_T(TT, guess, set_dict["n"], eps, term, residual,
+                                    mu_band=mu_band)
             D0, DS, mu = guess
         out.append(dict(frac=f, T=TT, D0=float(D0), DS=float(DS), mu=float(mu),
                         Deff=effective_gap(D0, DS, eps)))

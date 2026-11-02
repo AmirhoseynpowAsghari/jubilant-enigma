@@ -76,6 +76,8 @@ def _evaluate(task):
     tc = float(sol.get("Tc") or 0.0)
     row.update(Tc=tc, Tc_bracketed=bool(sol.get("Tc_bracketed", tc > 0)),
                mu_0=sol.get("mu_0"), mu_window=sol.get("mu_window"),
+               no_inband_root=bool(sol.get("no_inband_root", False)),
+               diagnostic_unrestricted=sol.get("diagnostic_unrestricted"),
                D0_0=sol.get("D0_0"), DS_0=sol.get("DS_0"),
                Deff_0=sol.get("Deff_0"))
     if tc <= 0.0:
@@ -104,6 +106,8 @@ def _evaluate_high(task):
     tc = float(sol.get("Tc") or 0.0)
     row.update(Tc=tc, Tc_bracketed=bool(sol.get("Tc_bracketed", tc > 0)),
                mu_0=sol.get("mu_0"), mu_window=sol.get("mu_window"),
+               no_inband_root=bool(sol.get("no_inband_root", False)),
+               diagnostic_unrestricted=sol.get("diagnostic_unrestricted"),
                D0_0=sol.get("D0_0"), DS_0=sol.get("DS_0"),
                Deff_0=sol.get("Deff_0"))
     if tc <= 0.0:

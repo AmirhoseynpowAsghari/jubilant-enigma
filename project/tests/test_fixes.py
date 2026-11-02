@@ -396,6 +396,28 @@ def t_F19_mu_seed():
     return ok, "; ".join(details)
 
 
+# ----------------------------------------------------------------------------- F-20 strict bare-band policy
+
+def t_F20_strict_band():
+    import solvers as S
+    old_policy = S.MU_WINDOW_POLICY
+    try:
+        S.MU_WINDOW_POLICY = "strict"
+        lo, hi = S.bare_band_window(np.array([-3.9, 0.0, 3.9]), V_SO=0.0)
+        lo_soc, hi_soc = S.bare_band_window(np.array([-4.0, 0.0, 4.0]), V_SO=0.8)
+        edge_soc = 4.0 * np.sqrt(1.0 + 0.8 ** 2 / 2.0)
+        r = S.solve_set_core(46.5, 4.5, 1.885, 0.0, Nk=40)
+    finally:
+        S.MU_WINDOW_POLICY = old_policy
+    diag = r.get("diagnostic_unrestricted") or {}
+    ok = (abs(lo + 4.0) < 1e-12 and abs(hi - 4.0) < 1e-12
+          and abs(lo_soc + edge_soc) < 1e-12 and abs(hi_soc - edge_soc) < 1e-12
+          and r.get("policy") == "strict" and r.get("no_inband_root") is True
+          and diag.get("mu_inside_band") is False and diag.get("mu_excess", 0.0) > 0.0)
+    return ok, (f"analytic VSO=0 band=[{lo:.3f},{hi:.3f}]; strict rejected in-band T0 root, "
+                f"unrestricted diagnostic mu={diag.get('mu_0')}, excess={diag.get('mu_excess')}")
+
+
 # ----------------------------------------------------------------------------- main
 def main():
     check("F-01", "kernels: bruteforce == production (all variants)", t_F01)
@@ -417,6 +439,7 @@ def main():
     check("F-17", "JSON writers strict (no NaN/Inf)", t_F17)
     check("F-18", "overflow-safe Fermi functions, no hidden clamps", t_F18)
     check("F-19", "normal-state mu seed uses n in [0, 2] correctly", t_F19_mu_seed)
+    check("F-20", "strict policy uses analytic band edges and preserves rejected-root diagnostics", t_F20_strict_band)
     check("PHYS", "Levy 1963 limit (benchmark T5)", t_LEVY)
 
     width = max(len(r[1]) for r in RESULTS) + 2
