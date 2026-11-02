@@ -4,9 +4,9 @@ SHELL := /bin/bash
 .SHELLFLAGS := -o pipefail -c
 PY ?= python3
 
-.PHONY: test test-kernels test-fixes master figures
+.PHONY: test test-kernels test-fixes test-hhm master figures
 
-test: test-kernels test-fixes
+test: test-kernels test-fixes test-hhm
 	cd project/ultrasonic && $(PY) validate_ua.py
 	cd project/ultrasonic && $(PY) case2_checks.py > /dev/null
 	cd project/ultrasonic && $(PY) levy1963_check.py > /dev/null
@@ -18,6 +18,9 @@ test-kernels:
 
 test-fixes:
 	cd project/tests && $(PY) test_fixes.py
+
+test-hhm:
+	cd project/tests && $(PY) test_hhm_finite_t.py
 
 master:
 	cd project/ultrasonic && $(PY) main_ua.py master
