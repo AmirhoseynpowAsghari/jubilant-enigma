@@ -193,6 +193,7 @@ def _plot_uvso(data, panels, panel_kind, x_kind, filename, title):
             ys = [r["ratio"][j] if r.get("Tc", 0.0) > 0 and r.get("ratio") else np.nan for r in rows]
             if xs:
                 ax.plot(xs, ys, "-", lw=1.4, color=col, label=f"$T/T_c$={frac:g}")
+                ax.set_xlim(min(xs), max(xs))
                 small = [(x, y) for x, y, r in zip(xs, ys, rows)
                          if np.isfinite(y) and float(r.get("D0_0", 1.0)) < 0.05]
                 if small:
@@ -203,6 +204,10 @@ def _plot_uvso(data, panels, panel_kind, x_kind, filename, title):
         ax.set_xlabel(kl); ax.set_ylabel("$W/W_N$"); ax.set_title(f"{pl} = {pv:g}", fontsize=10)
         ax.grid(alpha=0.3)
         subset = [r for r in data if r[panel_kind] == pv]
+        if not any(float(r.get("Tc") or 0.0) > 0.0 and
+                   any(y is not None and np.isfinite(float(y)) for y in r.get("ratio", []))
+                   for r in subset):
+            ax.set_ylim(0.0, 1.0)
         n_excluded = sum(float(r.get("Tc") or 0.0) <= 0.0 for r in subset)
         if n_excluded:
             ax.text(0.02, 0.98, f"no strict SC root: {n_excluded}/{len(subset)} sampled points",
