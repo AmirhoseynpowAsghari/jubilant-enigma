@@ -13,6 +13,7 @@ sys.path.insert(0, str(ULTRA))
 from extract_wwn_temperature_maxima import (  # noqa: E402
     FRACS, VSO_VALUES, RESULTS, _load_sources, _normalise_records, extract,
 )
+from plot_temperature_peak_analysis import load_strict_peak_rows
 
 
 class TestWWNTemperatureMaxima(unittest.TestCase):
@@ -54,6 +55,20 @@ class TestWWNTemperatureMaxima(unittest.TestCase):
         self.assertGreater(len(self.envelope), len(self.peaks))
         self.assertTrue(all(r["n_valid_temperatures"] >= 1 for r in self.envelope))
         self.assertTrue(all(r["frac_at_max"] in FRACS for r in self.envelope))
+
+    def test_two_panel_export_uses_same_strict_peaks_and_flags_boundaries(self):
+        source_csv = ULTRA / "analysis" / "wwn_temperature_maxima" / "temperature_specific_maxima.csv"
+        rows = load_strict_peak_rows(source_csv)
+        self.assertEqual(len(rows), len(VSO_VALUES) * len(FRACS))
+        self.assertTrue(all(r["policy"] == "strict" for r in rows))
+        self.assertTrue(all(r["U_peak_over_t"] is not None for r in rows))
+        self.assertTrue(all(r["W_WN_peak"] is not None for r in rows))
+        self.assertTrue(all(r["at_admissible_domain_boundary"] is False for r in rows))
+        extracted = {(r["V_SO"], r["frac"]): r for r in self.peaks if r["policy"] == "strict"}
+        for r in rows:
+            ref = extracted[(r["V_SO_over_t"], r["T_over_Tc"])]
+            self.assertEqual(r["U_peak_over_t"], ref["U_peak"])
+            self.assertEqual(r["W_WN_peak"], ref["W_WN_peak"])
 
 
 if __name__ == "__main__":

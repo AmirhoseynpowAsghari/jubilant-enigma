@@ -57,3 +57,34 @@ list. They are not continuous-domain extrema, and the data do not resolve temper
 between the five existing curves. The underlying family scan used the legacy fitted-gap
 state model. It is not a recomputation with the optional self-consistent HHM pathway, nor a
 thermodynamic stability ranking.
+
+## Strict-only two-panel publication figure
+
+Generate the professor-requested strict-admissible two-panel figure from the existing
+maxima CSV without re-solving or mixing relaxed roots:
+
+```bash
+python project/ultrasonic/plot_temperature_peak_analysis.py
+```
+
+Outputs are new files; the earlier figures and source data remain unchanged:
+
+- `temperature_peak_analysis_two_panel.png` (360 dpi)
+- `temperature_peak_analysis_two_panel.pdf` (vector PDF)
+- `temperature_peak_analysis_two_panel.csv` (strict-only, 25 SOC/temperature records)
+
+Panel A is a scatter plot of each temperature curve's actual sampled maximum,
+`(U_peak/t, (W/W_N)_peak)`, with exact, unjittered U positions. Color encodes SOC and marker
+shape encodes temperature; no points are connected. Panel B connects those exact same 25
+maxima against `T/Tc` to show their temperature dependence. The CSV is the shared source for
+both panels and includes the strict admissible U interval and a boundary flag. The strict U
+samples are contiguous at `0.5t` spacing. All 25 maxima are interior to their admissible U
+intervals in the current data (`at_admissible_domain_boundary=False`); none is a boundary
+maximum.
+
+Scientifically, the strict peak location shifts upward with SOC: approximately `52.5t`,
+`54.5t`, `61t`, `72t`, and `86.5t` for `V_SO/t=0,0.2,0.4,0.6,0.8`; only the last SOC at
+`T/Tc=0.999` is `86t`. Peak magnitude rises with temperature at every SOC, approaching
+`0.926–0.975` at `T/Tc=0.999`. Panel A directly answers the request by showing each
+per-temperature maximum against its maximizing U. Panel B is complementary: it reveals how
+those maxima change with temperature without implying that they share one U location.
