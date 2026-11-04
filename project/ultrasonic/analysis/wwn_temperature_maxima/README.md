@@ -88,3 +88,20 @@ Scientifically, the strict peak location shifts upward with SOC: approximately `
 `0.926–0.975` at `T/Tc=0.999`. Panel A directly answers the request by showing each
 per-temperature maximum against its maximizing U. Panel B is complementary: it reveals how
 those maxima change with temperature without implying that they share one U location.
+
+## Relaxed-policy companion
+
+To create a separate, explicitly diagnostic version, run:
+
+```bash
+python project/ultrasonic/plot_temperature_peak_analysis.py --policy relaxed
+```
+
+This writes `temperature_peak_analysis_two_panel_relaxed.png`, `.pdf`, and `_relaxed.csv`;
+it does not replace any strict outputs. A relaxed solution has no band-admissibility cutoff,
+so the relaxed CSV leaves `at_admissible_domain_boundary` blank and separately reports
+`at_sampled_U_domain_boundary` relative to the finite `U=15..150t` scan. In these data, 17 of
+25 relaxed maxima sit at the lower sampled-U endpoint, and all relaxed peak T=0 chemical
+potentials are outside the band. Treat these values as diagnostics, not strict physical
+acceptance results. Their clustering near `U=15t` is why the relaxed Panel A points overlap
+heavily; they are plotted at their exact U positions, without jitter.

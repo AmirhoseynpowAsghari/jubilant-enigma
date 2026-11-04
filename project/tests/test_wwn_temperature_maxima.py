@@ -13,7 +13,7 @@ sys.path.insert(0, str(ULTRA))
 from extract_wwn_temperature_maxima import (  # noqa: E402
     FRACS, VSO_VALUES, RESULTS, _load_sources, _normalise_records, extract,
 )
-from plot_temperature_peak_analysis import load_strict_peak_rows
+from plot_temperature_peak_analysis import load_peak_rows
 
 
 class TestWWNTemperatureMaxima(unittest.TestCase):
@@ -58,7 +58,7 @@ class TestWWNTemperatureMaxima(unittest.TestCase):
 
     def test_two_panel_export_uses_same_strict_peaks_and_flags_boundaries(self):
         source_csv = ULTRA / "analysis" / "wwn_temperature_maxima" / "temperature_specific_maxima.csv"
-        rows = load_strict_peak_rows(source_csv)
+        rows = load_peak_rows(source_csv, policy="strict")
         self.assertEqual(len(rows), len(VSO_VALUES) * len(FRACS))
         self.assertTrue(all(r["policy"] == "strict" for r in rows))
         self.assertTrue(all(r["U_peak_over_t"] is not None for r in rows))
@@ -69,6 +69,18 @@ class TestWWNTemperatureMaxima(unittest.TestCase):
             ref = extracted[(r["V_SO_over_t"], r["T_over_Tc"])]
             self.assertEqual(r["U_peak_over_t"], ref["U_peak"])
             self.assertEqual(r["W_WN_peak"], ref["W_WN_peak"])
+
+    def test_relaxed_two_panel_data_are_separate_and_flag_scan_endpoints(self):
+        source_csv = ULTRA / "analysis" / "wwn_temperature_maxima" / "temperature_specific_maxima.csv"
+        rows = load_peak_rows(source_csv, policy="relaxed")
+        self.assertEqual(len(rows), len(VSO_VALUES) * len(FRACS))
+        self.assertTrue(all(r["policy"] == "relaxed" for r in rows))
+        # A relaxed root has no band-admissibility cutoff: leave that field blank and flag
+        # only whether the peak sits on the sampled U interval's edge.
+        self.assertTrue(all(r["at_admissible_domain_boundary"] is None for r in rows))
+        self.assertEqual(sum(r["at_sampled_U_domain_boundary"] is True for r in rows), 17)
+        self.assertTrue(all(r["U_peak_over_t"] is not None and r["W_WN_peak"] is not None
+                            for r in rows))
 
 
 if __name__ == "__main__":
