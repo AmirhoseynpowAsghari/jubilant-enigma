@@ -1,4 +1,4 @@
-# Pinned to the versions used for the 2026-10-24 regeneration (see CORRECTION_LOG.md).
+# Minimum supported versions; for exact reproduction use a locked environment/export.
 numpy>=2.0        # code uses np.trapezoid (numpy 2.x API)
 scipy>=1.10
 matplotlib>=3.8
