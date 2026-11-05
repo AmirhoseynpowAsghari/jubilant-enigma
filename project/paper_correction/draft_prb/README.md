@@ -4,6 +4,7 @@
 
 - `draft_prb.tex` — APS REVTeX 4.2 manuscript source, structured as a Physical Review B working draft.
 - `draft_references.bib` — bibliography entries used in the source.
+- `draft_prb.pdf` — generated reading proof; the REVTeX source remains authoritative and editable.
 
 The author names and affiliation follow the original manuscript in `../vendor/arXiv_2607.02812_original.pdf`; please confirm the author list, corresponding-author details, acknowledgments, and funding before submission.
 
@@ -38,13 +39,13 @@ Missing or rejected strict-policy samples are described as gaps, not zeros. The 
 
 ## Build
 
-From this directory, with REVTeX 4.2 and a working LaTeX/BibTeX installation:
+For a publication-layout build, compile the editable source from this directory with REVTeX 4.2 and a working LaTeX/BibTeX installation:
 
 ```sh
 latexmk -pdf -interaction=nonstopmode draft_prb.tex
 ```
 
-The current sandbox does not have `pdflatex`/`latexmk` available, so this source has **not** been compiled or visually typeset here. The figure paths are relative and assume compilation from this directory.
+The checked-in PDF is a reading proof generated in this sandbox through Pandoc-to-Typst because no TeX engine is installed here. It was visually checked for the shared affiliation, figure captions, and bibliography. This conversion is not a substitute for compiling the REVTeX source: equation/layout details can differ, so use the `.tex` and `.bib` files as the authoritative manuscript and rebuild them with REVTeX before submission. Figure paths are relative and assume compilation from this directory.
 
 ## Open items for author review
 
