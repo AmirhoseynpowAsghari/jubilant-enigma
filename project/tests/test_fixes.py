@@ -323,7 +323,7 @@ def t_F16():
     src = open(os.path.join(ROOT, "project", "paper_correction", "build_corrected_pdf.py")).read()
     abs_path = "/usr/local/lib" in src
     ok = (h == man[0]) and pym and not abs_path
-    return ok, f"vendored PDF md5 matches manifest={h == man[0]}; pymupdf pinned={pym}; absolute font path removed={not abs_path}"
+    return ok, f"vendored PDF md5 matches manifest={h == man[0]}; pymupdf listed in requirements={pym}; absolute font path removed={not abs_path}"
 
 
 # ----------------------------------------------------------------------------- F-17 writers
@@ -435,7 +435,7 @@ def main():
     check("F-13", "input validation rejects bad arguments", t_F13)
     check("F-14", "SOC binning: branch-consistent, V_SO=0 limit exact", t_F14)
     check("F-15", "pair-threshold crossing interpolated", t_F15)
-    check("F-16", "packaging: vendored PDF manifest, pinned deps, no absolute paths", t_F16)
+    check("F-16", "packaging: vendored PDF manifest, requirements entry, no absolute paths", t_F16)
     check("F-17", "JSON writers strict (no NaN/Inf)", t_F17)
     check("F-18", "overflow-safe Fermi functions, no hidden clamps", t_F18)
     check("F-19", "normal-state mu seed uses n in [0, 2] correctly", t_F19_mu_seed)
