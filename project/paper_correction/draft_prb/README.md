@@ -27,15 +27,20 @@ The full earlier finite-q audit is in `../ultrasonic/FINITE_Q_ACOUSTIC_COUPLING_
 
 ## Figures included by reference
 
-No image was copied or changed. The `.tex` file points directly to existing repository figures:
+No figure data or image files were copied, overwritten, or regenerated for the manuscript. The `.tex` points directly to these existing repository assets:
 
 1. `ultrasonic/figures/strict_policy/WWN_vs_TTc_and_Delta_VSOfamilies.png` — strict-window temperature/gap families.
-2. `ultrasonic/figures/strict_policy/WWN_vs_VSO_families_U.png` — strict-window SOC families.
-3. `ultrasonic/figures/branch_decomposition.png` — energy-root branches and the model-specific spectral threshold.
-4. `ultrasonic/figures/dual_space_k_vs_energy.png` — numerical cross-check within the unrestricted model.
-5. `ultrasonic/figures/soc_explicit_vertex.png` — helicity-vertex sensitivity diagnostic, explicitly labeled as not finite-q.
+2. `ultrasonic/figures/strict_policy/WWN_vs_U_families_VSO.png` — strict-window $U$ families across SOC.
+3. `ultrasonic/figures/strict_policy/WWN_vs_VSO_families_U.png` — strict-window SOC families across $U$.
+4. `ultrasonic/figures/W_WN_groups_Dt_scan.png` — corrected first-paper Group C, retained as a relaxed-window comparison; the $\Delta_t=4.5t$ root is out of band and diagnostic.
+5. `ultrasonic/figures/W_WN_groups_VSO_scan.png` — corrected first-paper Group D, retained as a relaxed-window comparison distinct from the strict scan.
+6. `ultrasonic/analysis/wwn_temperature_maxima/temperature_envelope_max_vs_U.png` — pointwise envelope over the five sampled temperatures, with strict and relaxed policies separately styled.
+7. `ultrasonic/analysis/wwn_temperature_maxima/temperature_peak_analysis_two_panel.png` — strict-only exact sampled maxima and their temperature dependence.
+8. `ultrasonic/figures/branch_decomposition.png` — energy-root branches and the model-specific spectral threshold.
+9. `ultrasonic/figures/dual_space_k_vs_energy.png` — numerical cross-check within the unrestricted model.
+10. `ultrasonic/figures/soc_explicit_vertex.png` — helicity-vertex sensitivity diagnostic, explicitly not a finite-$q$ calculation.
 
-Missing or rejected strict-policy samples are described as gaps, not zeros. The legacy figures in `paper_correction/figures/` were not substituted for these current strict-policy plots.
+Strict-policy results remain primary; missing or rejected strict samples are gaps, not zeros. The corrected Group C/D composites are shown separately and explicitly identified as relaxed-window legacy comparisons, not replacements for the strict family figures. The maxima plots use only existing sampled data; no interpolation, smoothing, jitter, or response recalculation was applied.
 
 ## Build
 
@@ -45,11 +50,11 @@ For a publication-layout build, compile the editable source from this directory 
 latexmk -pdf -interaction=nonstopmode draft_prb.tex
 ```
 
-The checked-in PDF is a reading proof generated in this sandbox through Pandoc-to-Typst because no TeX engine is installed here. It was visually checked for the shared affiliation, figure captions, and bibliography. This conversion is not a substitute for compiling the REVTeX source: equation/layout details can differ, so use the `.tex` and `.bib` files as the authoritative manuscript and rebuild them with REVTeX before submission. Figure paths are relative and assume compilation from this directory.
+The checked-in 15-page PDF is a reading proof generated in this sandbox through Pandoc-to-Typst because no TeX engine is installed here. It was visually checked for the shared affiliation, all ten included figure assets, captions, strict/relaxed policy labels, and bibliography. This conversion is not a substitute for compiling the REVTeX source: equation/layout details can differ, so use the `.tex` and `.bib` files as the authoritative manuscript and rebuild them with REVTeX before submission. Figure paths are relative and assume compilation from this directory.
 
 ## Open items for author review
 
 1. Confirm the author list, correspondence, acknowledgments, and funding.
 2. Decide whether the paper should remain a clearly labeled phenomenological model study or wait for a specified electron--phonon vertex and finite-q calculation.
 3. Verify references and any claims against the cited source papers before submission; the current draft cites only the HHM and Levy works represented in the repository.
-4. Review the selected strict-policy figures and captions. They are already-generated outputs and have not been regenerated or modified for this draft.
+4. Review the strict-policy figures, corrected legacy Group C/D composites, and maxima-analysis figures in context. All are existing repository outputs; the manuscript only references them and does not regenerate or modify them.

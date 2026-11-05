@@ -6,7 +6,7 @@
 
 \usepackage{amsmath,amssymb,bm,graphicx}
 \usepackage[colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
-\graphicspath{{../../ultrasonic/figures/}{../../ultrasonic/figures/strict_policy/}}
+\graphicspath{{../../ultrasonic/figures/}{../../ultrasonic/figures/strict_policy/}{../../ultrasonic/analysis/wwn_temperature_maxima/}}
 
 \newcommand{\kb}{k_{\mathrm B}}
 \newcommand{\hbarw}{\hbar\omega}
@@ -177,19 +177,63 @@ For parameter-family plots, we use the repository's strict bare-band chemical-po
 
 \section{Results: conditional model behavior}
 
-The strict-window figures show the repository results for the energy-averaged constant-vertex scattering ratio. They should be read as conditional predictions of the coherence-factor and constant-vertex response model, not as calibrated ultrasonic attenuation coefficients. Curve gaps denote missing or rejected samples and are not zero-valued data. The SOC dependence is nontrivial within this model because SOC changes the helicity-band DOS and the stage-one thermodynamic scales. Since the SOC dependence of the acoustic vertex is unknown, these trends do not establish a material-independent SOC enhancement or suppression.
+The figures in this section report the energy-averaged, constant-vertex scattering ratio. Strict-window outputs are the primary admissibility results: a missing strict root or rejected stage-two state is shown as a gap, not as zero response. These curves remain conditional on the fitted gap inputs and the shared matrix element; they are not a material-specific finite-$q$ ultrasonic prediction.
+
+\subsection{Strict-window parameter families}
+
+The first three figures show complementary views of the strict-policy families. The $U$-scan resolves the sampled response across interaction strength at five fixed SOC values, while the SOC-scan shows the converse family at several fixed $U$. The temperature/gap panels retain the existing strict-window comparison to the supplied gap scale. The square markers in the $U$-scan denote the generator's $D_0(0)<0.05t$ diagnostic; they are not zero-response markers. The printed no-root counts and gaps identify where no strict superconducting root was accepted.
 
 \begin{figure}[t]
  \includegraphics[width=\linewidth]{strict_policy/WWN_vs_TTc_and_Delta_VSOfamilies.png}
- \caption{Strict-window constant-vertex scattering ratio versus $T/T_c$ and normalized effective gap for the parameter families identified in the panels. Only strict band-admissible roots are displayed. Blank regions and gaps indicate absent/rejected samples, not zero absorption. These are model results for the scattering channel and do not include the finite-$q$ acoustic vertex or the pair-creation contribution above its threshold.}
+ \caption{Strict-window constant-vertex scattering ratio versus $T/T_c$ and normalized effective gap for the parameter families identified in the panels. Only strict band-admissible roots are displayed. Blank regions and gaps indicate absent or rejected samples, not zero absorption. These model results show the scattering channel only; they omit the finite-$q$ acoustic vertex and any pair-creation contribution above its threshold.}
  \label{fig:strict-temperature}
 \end{figure}
 
 \begin{figure}[t]
+ \includegraphics[width=\linewidth]{strict_policy/WWN_vs_U_families_VSO.png}
+ \caption{Strict-window $W/W_N$ versus $U/t$ for the SOC families marked in the panels, with the sampled temperature fractions shown in the legend. Red open squares mark points with $D_0(0)<0.05t$ as defined by the figure generator; the red annotations give the number of sampled points without a strict superconducting root. Missing or rejected samples remain gaps rather than zeros. This is the primary strict-admissibility $U$-family result for the conditional constant-vertex scattering model.}
+ \label{fig:strict-u-families}
+\end{figure}
+
+\begin{figure}[t]
  \includegraphics[width=\linewidth]{strict_policy/WWN_vs_VSO_families_U.png}
- \caption{Strict-window $\Rsc$ versus $V_{\mathrm{SO}}/t$ for the parameter families and temperature fractions marked in the panels. The plot retains missing-root gaps. The trends are conditional on the shared constant matrix element and on the supplied gap/$T_c$ inputs; they are not a finite-$q$ ultrasonic prediction.}
+ \caption{Strict-window $W/W_N$ versus $V_{\mathrm{SO}}/t$ for the interaction families and temperature fractions marked in the panels. The displayed SOC trends are conditional on the shared constant matrix element and supplied gap/$T_c$ inputs; missing-root samples are gaps, not zeros. This scan complements the strict $U$-family figure and does not establish a universal SOC enhancement or suppression.}
  \label{fig:strict-soc}
 \end{figure}
+
+\subsection{Corrected legacy parameter families}
+
+The next two composites retain figure families from the corrected first-paper calculations. They are included to connect the present draft to those parameter scans, but they use the archived relaxed-window roots rather than the regenerated strict-policy family data. Treat them as supplemental comparisons, not as replacements for the strict-window results above. In the $\Delta_t$ scan, the $\Delta_t=4.5t$ relaxed root has its zero-temperature chemical potential outside the bare-band interval; that curve is diagnostic under the stated professor-guided acceptance rule. This qualification does not assert that every relaxed root in every setting is generally unphysical.
+
+\begin{figure}[t]
+ \includegraphics[width=\linewidth]{W_WN_groups_Dt_scan.png}
+ \caption{Corrected Group-C composite from the first-paper figure set: $U=75t$, $n=1.885$, $V_{\mathrm{SO}}=0.8t$, with $\Delta_t$ varied. The absorption panels use archived relaxed-window roots; in particular, the $\Delta_t=4.5t$ zero-temperature root is out of band and is diagnostic, not a strict-policy acceptance result. The remaining gap, chemical-potential, and fitted-gap panels provide parameter context and are not additional attenuation observables.}
+ \label{fig:legacy-delta-scan}
+\end{figure}
+
+\begin{figure}[t]
+ \includegraphics[width=\linewidth]{W_WN_groups_VSO_scan.png}
+ \caption{Corrected Group-D composite from the first-paper figure set: $U=95t$, $n=1.885$, $\Delta_t=4.5t$, with $V_{\mathrm{SO}}$ varied. These curves use the archived relaxed-window family calculation and are retained as a supplemental comparison; they should not be conflated with the regenerated strict-policy SOC scan. The auxiliary panels show the fitted gap and chemical-potential state inputs.}
+ \label{fig:legacy-vso-scan}
+\end{figure}
+
+\subsection{Sampled maxima and temperature envelopes}
+
+We also analyze maxima from the existing sampled family data without a new response calculation. These scans use $\Delta_t=4.5t$, $n=1.885$, $\hbar\omega=0.7t$, $V_{\mathrm{SO}}/t=0,0.2,0.4,0.6,0.8$, and the stored $U=15t$--$150t$ grid at $0.5t$ spacing. For each policy, SOC, and sampled temperature fraction, the temperature-specific maximum is the largest finite $W/W_N$ on that grid; no interpolation or smoothing is used. The pointwise envelope instead takes the largest value over the five sampled temperatures at each sampled $U$. These are distinct operations, neither a continuous-domain optimization nor a free-energy stability test. The strict-only peak analysis is primary; relaxed-policy curves in the envelope are visibly separated and remain diagnostic.
+
+\begin{figure}[t]
+ \includegraphics[width=\linewidth]{temperature_envelope_max_vs_U.png}
+ \caption{Pointwise upper envelope of $W/W_N$ over the five sampled temperatures versus $U/t$, evaluated separately for each SOC and policy on the existing grid. Solid curves are strict-window results and are primary; dashed curves are relaxed-window diagnostics. At every $U$, the plotted value is the maximum among the available sampled temperatures, not an interpolated or continuous-temperature maximum. Relaxed roots are not substituted for missing strict values.}
+ \label{fig:temperature-envelope}
+\end{figure}
+
+\begin{figure}[t]
+ \includegraphics[width=\linewidth]{temperature_peak_analysis_two_panel.png}
+ \caption{Strict-only sampled peak analysis. Panel A plots each temperature curve's exact sampled maximum as $(U_{\mathrm{peak}}/t,(W/W_N)_{\mathrm{peak}})$, with color denoting SOC and marker shape denoting $T/T_c$; points are neither jittered nor connected, and the maximizing $U$ values are retained exactly. Panel B shows those same peak magnitudes against the five sampled temperatures. All 25 maxima lie inside their strict-admissible $U$ intervals; this finite-grid analysis does not interpolate between samples.}
+ \label{fig:strict-temperature-peaks}
+\end{figure}
+
+For the strict-only peak data, the sampled maximizing interaction shifts upward with SOC: from $U_{\mathrm{peak}}/t=52.5$ at $V_{\mathrm{SO}}/t=0$ to $86.5$ at $V_{\mathrm{SO}}/t=0.8$ for $T/T_c=0.3$--$0.9$ (the $T/T_c=0.999$ maximum at the latter SOC occurs at $86.0$). At $T/T_c=0.999$, the sampled peak height decreases from $0.9746$ at zero SOC to $0.9262$ at $V_{\mathrm{SO}}/t=0.8$. These are exact maxima on the stored $0.5t$ grid, not estimates of continuous extrema; the underlying family model uses the repository's fitted gap shape and does not rank multiple in-band roots by free energy.
 
 The branch-decomposition figure separates the energy-inversion branches and compares the spectral threshold $2E_{\min}$ with the commonly plotted effective-gap scale. This is a property of the adopted quasiparticle spectrum; it does not replace a finite-$q$ response calculation.
 
